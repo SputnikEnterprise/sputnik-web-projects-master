@@ -1,0 +1,73 @@
+/* Konstrukt
+*******************************************************************************/
+
+body#lightboxen {
+	background: none;
+	background: #fff;
+	overflow: hidden;
+}
+
+#wrapBox {
+	position: relative;
+	width: 681px;
+	height: 442px;
+	border: #f7b131 3px solid;
+}
+
+
+/* content
+*******************************************************************************/
+
+#lightbox11 {
+	position: absolute;
+	left: 20px;
+	top: 16px;
+}
+
+#lightbox12 {
+	position: absolute;
+	left: 351px;
+	top: 16px;
+}
+
+#lightbox21 {
+	position: absolute;
+	left: 20px;
+	top: 209px;
+}
+
+/* grosse 4er-Box */
+.lightboxFull {
+	width: 575px;
+	height: 319px;
+	border: #f7b131 3px solid;
+	background: #fff url(/_images/bg_cont_klein.gif) no-repeat;
+	padding: 22px 24px 24px 36px;
+	overflow: auto;
+	line-height: 1.3em;
+}
+
+/* 2er-Box vertikal */
+.lightbox2V {
+	width: 244px;
+	height: 319px;
+	border: #f7b131 3px solid;
+	background: #fff url(/_images/bg_cont_klein.gif) no-repeat;
+	padding: 22px 24px 24px 36px;
+	overflow: auto;
+	line-height: 1.3em;
+}
+
+/* 2er-Box horizontal */
+.lightbox2H {
+	width: 575px;
+	height: 123px;
+	border: #f7b131 3px solid;
+	background: #fff url(/_images/bg_cont_klein.gif) no-repeat;
+	padding: 22px 24px 24px 36px;
+	overflow: auto;
+	line-height: 1.3em;
+}
+
+.lightbox {
+}

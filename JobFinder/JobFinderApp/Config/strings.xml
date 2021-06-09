@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Translations>
+
+  <!-- gerneral texts -->
+
+  <String key="TEXT_DEFAULT_APPLICATION_TITLE">
+    <Language_DE>goodjobs App</Language_DE>
+    <Language_EN>goodjobs App</Language_EN>
+    <Language_FR>goodjobs App</Language_FR>
+    <Language_IT>goodjobs App</Language_IT>
+  </String>
+
+  <String key="TEXT_PLEASE_WAIT">
+    <Language_DE>Bitte warten...</Language_DE>
+    <Language_EN>Please wait...</Language_EN>
+    <Language_FR>Bitte warten...</Language_FR>
+    <Language_IT>Bitte warten...</Language_IT>
+  </String>
+
+  <String key="TEXT_BACK_BUTTON">
+    <Language_DE>Zurück</Language_DE>
+    <Language_EN>Back</Language_EN>
+    <Language_FR>Back</Language_FR>
+    <Language_IT>Back</Language_IT>
+  </String>
+
+  <String key="TEXT_SELECT_OPTION_ALL">
+    <Language_DE>Alle</Language_DE>
+    <Language_EN>All</Language_EN>
+    <Language_FR>Alle</Language_FR>
+    <Language_IT>Alle</Language_IT>
+  </String>
+
+  <String key="TEXT_MISSING_VALUE">
+    <Language_DE>Keine Angabe</Language_DE>
+    <Language_EN>Not declared</Language_EN>
+    <Language_FR>Keine Angabe</Language_FR>
+    <Language_IT>Keine Angabe</Language_IT>
+  </String>
+
+  <String key="TEXT_INSTALL_MSG1">
+    <Language_DE><![CDATA[Installieren Sie diese App auf Ihren iPhone: Pfeil-Symbol und <b>\'Zum Home-Bildschirm\'</b> antippen]]></Language_DE>
+    <Language_EN><![CDATA[Install this app on your iPhone: Tip on arrow symbol and on <b>\'To Home-Screen\'</b>]]></Language_EN>
+    <Language_FR><![CDATA[Installieren Sie diese App auf Ihren iPhone: Pfeil-Symbol und <b>\'Zum Home-Bildschirm\'</b> antippen]]></Language_FR>
+    <Language_IT><![CDATA[Installieren Sie diese App auf Ihren iPhone: Pfeil-Symbol und <b>\'Zum Home-Bildschirm\'</b> antippen]]></Language_IT>
+  </String>
+
+  <String key="TEXT_INSTALL_MSG2">
+    <Language_DE><![CDATA[Installieren Sie diese App auf Ihren iPhone: tippen Sie auf <b style="font-size:15px">+</b> und dann <b>\'Zum Home-Bildschirm\'</b>]]></Language_DE>
+    <Language_EN><![CDATA[Install this app on your iPhone: Tip on <b style="font-size:15px">+</b> and then on <b>\'To Home-Screen\'</b>]]></Language_EN>
+    <Language_FR><![CDATA[Installieren Sie diese App auf Ihren iPhone: tippen Sie auf <b style="font-size:15px">+</b> und dann <b>\'Zum Home-Bildschirm\'</b>]]></Language_FR>
+    <Language_IT><![CDATA[Installieren Sie diese App auf Ihren iPhone: tippen Sie auf <b style="font-size:15px">+</b> und dann <b>\'Zum Home-Bildschirm\'</b>]]></Language_IT>
+  </String>
+
+  <String key="TEXT_CONTACT_TITLE">
+    <Language_DE>Kontakt</Language_DE>
+    <Language_EN>Contact</Language_EN>
+    <Language_FR>Kontakt</Language_FR>
+    <Language_IT>Kontakt</Language_IT>
+  </String>
+
+  <String key="TEXT_CONTACT_TELEPHONE">
+    <Language_DE>Telefon:</Language_DE>
+    <Language_EN>Phone:</Language_EN>
+    <Language_FR>Telefon:</Language_FR>
+    <Language_IT>Telefon:</Language_IT>
+  </String>
+
+  <String key="TEXT_CONTACT_EMAIL">
+    <Language_DE>Email:</Language_DE>
+    <Language_EN>eMail:</Language_EN>
+    <Language_FR>Email:</Language_FR>
+    <Language_IT>Email:</Language_IT>
+  </String>
+
+  <!-- general header translations -->
+
+  <String key="TEXT_HEADER_INFO">
+    <Language_DE>Info</Language_DE>
+    <Language_EN>Info</Language_EN>
+    <Language_FR>Info</Language_FR>
+    <Language_IT>Info</Language_IT>
+  </String>
+
+  <!-- general footer tabs translations -->
+  <String key="TEXT_FOOTER_TAB_JOBSEARCH">
+    <Language_DE>Jobsuche</Language_DE>
+    <Language_EN>Job search</Language_EN>
+    <Language_FR>Jobsuche</Language_FR>
+    <Language_IT>Jobsuche</Language_IT>
+  </String>
+
+  <String key="TEXT_FOOTER_TAB_CANDIDATESEARCH">
+    <Language_DE>Suche</Language_DE>
+    <Language_EN>Search</Language_EN>
+    <Language_FR>Suche</Language_FR>
+    <Language_IT>Suche</Language_IT>
+  </String>
+  
+  <String key="TEXT_FOOTER_TAB_JOBS">
+    <Language_DE>Jobs</Language_DE>
+    <Language_EN>Jobs</Language_EN>
+    <Language_FR>Jobs</Language_FR>
+    <Language_IT>Jobs</Language_IT>
+  </String>
+
+  <String key="TEXT_FOOTER_TAB_CANDIDATES">
+    <Language_DE>Kandidaten</Language_DE>
+    <Language_EN>Candidates</Language_EN>
+    <Language_FR>Kandidaten</Language_FR>
+    <Language_IT>Kandidaten</Language_IT>
+  </String>
+
+  <String key="TEXT_FOOTER_TAB_DETAILS">
+    <Language_DE>Details</Language_DE>
+    <Language_EN>Details</Language_EN>
+    <Language_FR>Details</Language_FR>
+    <Language_IT>Details</Language_IT>
+  </String>
+
+  <!-- translations for page: Home -->
+
+  <String key="TEXT_PAGE_HOME_JOBSEEKER_TITLE">
+    <Language_DE>Jobsuche</Language_DE>
+    <Language_EN>Job search</Language_EN>
+    <Language_FR>Jobsuche</Language_FR>
+    <Language_IT>Jobsuche</Language_IT>
+  </String>
+
+  <String key="TEXT_PAGE_HOME_CANDIDATESEEKER_TITLE">
+    <Language_DE>Suche</Language_DE>
+    <Language_EN>Search</Language_EN>
+    <Language_FR>Suche</Language_FR>
+    <Language_IT>Suche</Language_IT>
+  </String>
+
+  <String key="TEXT_PAGE_HOME_CANTON">
+    <Language_DE>Kanton</Language_DE>
+    <Language_EN>Canton</Language_EN>
+    <Language_FR>Kanton</Language_FR>
+    <Language_IT>Kanton</Language_IT>
+  </String>
+  <String key="TEXT_PAGE_HOME_BRANCH">
+    <Language_DE>Branche</Language_DE>
+    <Language_EN>Branch</Language_EN>
+    <Language_FR>Branche</Language_FR>
+    <Language_IT>Branche</Language_IT>
+  </String>
+  <String key="TEXT_PAGE_HOME_IAMLOOKINGFOR_JOB">
+    <Language_DE>Ich suche eine Stelle als...</Language_DE>
+    <Language_EN>I'am looking for a job as a(n)...</Language_EN>
+    <Language_FR>Ich suche eine Stelle als...</Language_FR>
+    <Language_IT>Ich suche eine Stelle als...</Language_IT>
+  </String>
+  <String key="TEXT_PAGE_HOME_IAMLOOKINGFOR_CANDIDATE_JOB_QUALIFICATION">
+    <Language_DE>Ich suche einen Kandidaten mit folgendem Beruf...</Language_DE>
+    <Language_EN>Ich suche einen Kandidaten mit folgendem Beruf...</Language_EN>
+    <Language_FR>Ich suche einen Kandidaten mit folgendem Beruf...</Language_FR>
+    <Language_IT>Ich suche einen Kandidaten mit folgendem Beruf...</Language_IT>
+  </String>
+  <String key="TEXT_PAGE_HOME_STARTSEARCH">
+    <Language_DE>Suche starten</Language_DE>
+    <Language_EN>Start search</Language_EN>
+    <Language_FR>Suche starten</Language_FR>
+    <Language_IT>Suche starten</Language_IT>
+  </String>
+  <String key="TEXT_PAGE_HOME_JOB_QUALIFICATION">
+    <Language_DE>Beruf</Language_DE>
+    <Language_EN>Beruf</Language_EN>
+    <Language_FR>Beruf</Language_FR>
+    <Language_IT>Beruf</Language_IT>
+  </String>
+  
+  <!-- translations for page: Results -->
+  <String key="TEXT_PAGE_JOBRESULTS_TITLE">
+    <Language_DE>Jobs</Language_DE>
+    <Language_EN>Jobs</Language_EN>
+    <Language_FR>Jobs</Language_FR>
+    <Language_IT>Jobs</Language_IT>
+  </String>
+
+  <String key="TEXT_PAGE_CANDIDATERESULTS_TITLE">
+    <Language_DE>Kandidaten</Language_DE>
+    <Language_EN>Candidates</Language_EN>
+    <Language_FR>Kandidaten</Language_FR>
+    <Language_IT>Kandidaten</Language_IT>
+  </String>
+
+  <!-- translations for page: About -->
+  <String key="TEXT_PAGE_ABOUT_TITLE">
+    <Language_DE>About</Language_DE>
+    <Language_EN>About</Language_EN>
+    <Language_FR>About</Language_FR>
+    <Language_IT>About</Language_IT>
+  </String>
+
+  <String key="TEXT_PAGE_ABOUT_COPYRIGHT">
+    <Language_DE>© Sputnik-IT 2012</Language_DE>
+    <Language_EN>© Sputnik-IT 2012</Language_EN>
+    <Language_FR>© Sputnik-IT 2012</Language_FR>
+    <Language_IT>© Sputnik-IT 2012</Language_IT>
+  </String>
+
+  <!-- translations for page: ResultDetail -->
+
+  <String key="TEXT_PAGE_RESULTDETAIL_TITLE">
+    <Language_DE>Details</Language_DE>
+    <Language_EN>Details</Language_EN>
+    <Language_FR>Details</Language_FR>
+    <Language_IT>Details</Language_IT>
+  </String>
+
+
+  <!-- translations for visible vacancy columns -->
+  <!-- Use 'TEXT_COLUMN_' as prefix for the name!  -->
+
+  <!-- Beginn -->
+  <String key="TEXT_COLUMN_BEGINN">
+    <Language_DE>Beginn</Language_DE>
+    <Language_EN>Begin</Language_EN>
+    <Language_FR>Beginn</Language_FR>
+    <Language_IT>Beginn</Language_IT>
+  </String>
+
+  <!-- Taetigkeit -->
+  <String key="TEXT_COLUMN_TAETIGKEIT">
+    <Language_DE>Tätigkeit</Language_DE>
+    <Language_EN>Function</Language_EN>
+    <Language_FR>Tätigkeit</Language_FR>
+    <Language_IT>Tätigkeit</Language_IT>
+  </String>
+
+  <!-- Anforderung -->
+  <String key="TEXT_COLUMN_ANFORDERUNG">
+    <Language_DE>Anforderung</Language_DE>
+    <Language_EN>Requirements</Language_EN>
+    <Language_FR>Anforderung</Language_FR>
+    <Language_IT>Anforderung</Language_IT>
+  </String>
+
+  <!-- JobProzent -->
+  <String key="TEXT_COLUMN_JOBPROZENT">
+    <Language_DE>Anstellung (%)</Language_DE>
+    <Language_EN>Employment (%)</Language_EN>
+    <Language_FR>Anstellung (%)</Language_FR>
+    <Language_IT>Anstellung (%)</Language_IT>
+  </String>
+
+  <!-- Anstellung -->
+  <String key="TEXT_COLUMN_ANSTELLUNG">
+    <Language_DE>Anstellung</Language_DE>
+    <Language_EN>Employment</Language_EN>
+    <Language_FR>Anstellung</Language_FR>
+    <Language_IT>Anstellung</Language_IT>
+  </String>
+
+  <!-- Vak_Kanton -->
+  <String key="TEXT_COLUMN_VAK_KANTON">
+    <Language_DE>Kanton</Language_DE>
+    <Language_EN>Canton</Language_EN>
+    <Language_FR>Kanton</Language_FR>
+    <Language_IT>Kanton</Language_IT>
+  </String>
+
+  <!-- Vak_Region -->
+  <String key="TEXT_COLUMN_VAK_REGION">
+    <Language_DE>Region</Language_DE>
+    <Language_EN>Region</Language_EN>
+    <Language_FR>Region</Language_FR>
+    <Language_IT>Region</Language_IT>
+  </String>
+
+  <!-- JobOrt -->
+  <String key="TEXT_COLUMN_JOBORT">
+    <Language_DE>Ort</Language_DE>
+    <Language_EN>Location</Language_EN>
+    <Language_FR>Ort</Language_FR>
+    <Language_IT>Ort</Language_IT>
+  </String>
+
+  <!-- Ausbildung -->
+  <String key="TEXT_COLUMN_AUSBILDUNG">
+    <Language_DE>Ausbildung</Language_DE>
+    <Language_EN>Education</Language_EN>
+    <Language_FR>Ausbildung</Language_FR>
+    <Language_IT>Ausbildung</Language_IT>
+  </String>
+
+  <!-- Berater -->
+  <String key="TEXT_COLUMN_BERATER">
+    <Language_DE>Berater</Language_DE>
+    <Language_EN>Adviser</Language_EN>
+    <Language_FR>Berater</Language_FR>
+    <Language_IT>Berater</Language_IT>
+  </String>
+
+  <!-- Filiale -->
+  <String key="TEXT_COLUMN_FILIALE">
+    <Language_DE>Filiale</Language_DE>
+    <Language_EN>Subsidiary</Language_EN>
+    <Language_FR>Filiale</Language_FR>
+    <Language_IT>Filiale</Language_IT>
+  </String>
+
+</Translations>
+

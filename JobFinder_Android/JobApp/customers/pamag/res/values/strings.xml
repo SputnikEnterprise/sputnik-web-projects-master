@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PAMAG Personal AG - JobApp</string>
+    <string name="jobFinderAppCreateURL"><![CDATA[http://asmx.sputnik-it.com/goodjobs/AppRequest/Create/55917566-FA93-4859-AAE5-29E985A1C249/DE/JobSeeker]]></string>
+</resources>

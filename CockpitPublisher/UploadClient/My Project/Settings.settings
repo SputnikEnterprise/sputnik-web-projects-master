@@ -1,0 +1,29 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="DBName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Sputnik Cockpit</Value>
+    </Setting>
+    <Setting Name="CustomerName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Mustermann AG</Value>
+    </Setting>
+    <Setting Name="ServerCertThumbprint" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">7E43DA9185BDB24FF2B4E73BD74DBA8406D568A6</Value>
+    </Setting>
+    <Setting Name="SputnikCockpit_ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.19.52;Initial Catalog="Sputnik Cockpit";Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=192.168.19.52;Initial Catalog="Sputnik Cockpit";Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="EndpointAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:1331/TableDataUploadService.svc</Value>
+    </Setting>
+    <Setting Name="Certificate" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MIICLTCCAZqgAwIBAgIQBCE2szVhQIBI0OcT/6KAVjAJBgUrDgMCHQUAMCkxJzAlBgNVBAMTHm15Y29ja3BpdFdlYlNlcnZpY2VDZXJ0aWZpY2F0ZTAeFw0xMTEwMjEwODM5MDFaFw0zOTEyMzEyMzU5NTlaMCkxJzAlBgNVBAMTHm15Y29ja3BpdFdlYlNlcnZpY2VDZXJ0aWZpY2F0ZTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA4Zmcj7i7CpY9e1efJK9gVMiUjWY+X29kHc5Tbl2lKIutZVtsW1GmKwJ0CKLk+Y4NpyK+PhW3XrIPgMyIKqDj/qHUOxtdx05ocut9pOdHs3tX3vxqsBgQ39GEJ4O+0fJ5Dv18G6fLMh9OIIUkDOlU1dfCQGZyGTVKAzmEgLauVCUCAwEAAaNeMFwwWgYDVR0BBFMwUYAQaZQIMSTKLVajwuk2Z4NAhKErMCkxJzAlBgNVBAMTHm15Y29ja3BpdFdlYlNlcnZpY2VDZXJ0aWZpY2F0ZYIQBCE2szVhQIBI0OcT/6KAVjAJBgUrDgMCHQUAA4GBAIyrrWYNMB+w+krqjdl7vsqrNdYXpN9SxsCGeG7wi7RHg4v59ol93syexEh24OH+Gh4fsCok0vF+9KrLbgUjTNCo7G3NzEZHtgLFpwA2Hh5iPIVbnIJlyL/M1aC2K3ewkEHizN7BB4+kitfO+R1aeSqDPYrYbLyOjVX2QNOpwt96</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

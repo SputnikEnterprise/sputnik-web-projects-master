@@ -1,0 +1,37 @@
+﻿/* Common */
+
+
+/* Master Page */
+
+body   
+{
+    width: 480px;
+}
+
+/* Sputnik Cockpit page */
+
+
+#imgLoadingAnimation 
+{
+
+    left: 430px;
+}
+
+
+/* Select identity control */
+
+#selectIdentityBtn
+{
+    width:390px;
+    margin-bottom: 10px;
+}
+
+#selectIdentityWrapper 
+{
+    position:relative;
+   
+}
+#chooseIdentityWrapper
+{
+    width:370px;
+}

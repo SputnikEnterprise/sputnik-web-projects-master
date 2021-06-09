@@ -1,0 +1,149 @@
+﻿/* Common */
+
+.floatClearing 
+{
+    clear:both;
+}
+
+a:active {
+    outline:none; /* FF1.5+ IE7+*/
+    -moz-outline:none; /* FF<=1.5*/
+}
+
+
+/* Master Page */
+
+body   
+{
+    font-size: 0.7em;
+    font-family: "Arial", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    padding: 0px;
+    text-align: center;
+    width: 960px;
+    margin: 50px auto;  
+}
+
+/* Sputnik Cockpit page */
+
+div#main 
+{
+    position:relative;
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #000000;
+    background-color: #eeeeee;
+    visibility:hidden;
+}
+
+#imgLoadingAnimation 
+{
+    position:absolute;
+    top: 10px;
+    left: 910px;
+    width: 32px;
+    height: 32px; 
+    display:none;
+    float:right;
+    background: url("../Images/loading.gif");
+}
+
+.DataTab 
+{
+    min-height: 600px;
+}
+
+#globalDialogWrapper
+{
+    display:none;
+}
+
+.MultipleTableWrapper 
+{
+    width:100%
+}
+
+
+/* Select identity control */
+
+#selectIdentityBtn
+{
+    width:420px;
+    margin-bottom: 10px;
+}
+
+#selectIdentityWrapper 
+{
+    position:relative;
+   
+}
+#chooseIdentityWrapper
+{
+    position:absolute;
+    display:none;
+    left:0px;
+    top:0px;
+    width:400px;
+    height:120px;
+    padding:10px;
+    z-index:10000;
+}
+
+#ddlMDs 
+{
+    width: 250px;
+}
+
+#ddlAdvisors 
+{
+    width: 250px;  
+}
+
+#closeIdentityBtn
+{
+    margin-top: 30px;
+}
+
+/* Table data control */
+
+.tableDataWrapper
+{
+    margin:5px
+}
+
+.tableDataHeader 
+{
+    height:25px;
+}
+
+.tableCaption 
+{
+    padding-left: 3px;
+    float:left;
+    vertical-align:bottom;
+    line-height:24px;
+}
+
+.imgMagnifier
+{
+    width: 24px;
+    height:24px;
+    float:right;
+    cursor:pointer;
+}
+
+.imgMangifierStateNormal
+{
+        background: url("../Images/magnifier.png");
+}
+
+.imgMangifierStateHighlight
+{
+        background: url("../Images/magnifier_highlight.png");
+}
+
+.RowBlackCss{ color:#000000 !important; }
+.RowBlueCss{ color:#0000FF !important; }
+.RowVioletCss{ color:#CC00FF !important; }
+.RowRedCss{ color:#FF0000 !important; }
+
+.RowYellowBackgroundCss{ color:#C9C909 !important; }

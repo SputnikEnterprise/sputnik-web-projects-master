@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ef7ac2ea-e4ad-451e-87b5-e71df9815c1e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="8315513e-3320-4c73-a94e-e67e91994663" name="UI Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="f2d88541-3873-4e59-9072-b69d22ca3e3f" direction="Forward">
+          <layerMoniker Id="44c36da1-18f8-46fe-a90a-4e3a2152394c" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="9a61b837-3353-4120-8b6a-5cc56c44ecd6" direction="Forward">
+          <layerMoniker Id="989ad16a-371c-4dd5-bddb-f048c8fedb95" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="527ec4ac-a74a-4f8a-b59e-e300c8333815" name="JobFinderApp.Controllers">
+          <ArtifactNode Label="JobFinderApp.Controllers" Category="CodeSchema_Namespace" Id="(Namespace=JobFinderApp.Controllers)" />
+          <ExpandedNode Id="(Assembly=JobFinderApp)" Label="JobFinderApp.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Dsl.NamespaceUsedInAssembly" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Namespace=JobFinderApp.Controllers)" Label="JobFinderApp.Controllers" Category="CodeSchema_Namespace">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="6313ef65-2fe8-408e-8a23-339ac8170656" name="JobFinderApp.Services">
+          <ArtifactNode Label="JobFinderApp.Services" Category="CodeSchema_Namespace" Id="(Namespace=JobFinderApp.Services)" />
+          <ExpandedNode Id="(Assembly=JobFinderApp)" Label="JobFinderApp.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Dsl.NamespaceUsedInAssembly" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Namespace=JobFinderApp.Services)" Label="JobFinderApp.Services" Category="CodeSchema_Namespace">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="e0620803-42b0-4325-b55d-49a54e7b61b2" name="JobFinderApp.ViewModels">
+          <ArtifactNode Label="JobFinderApp.ViewModels" Category="CodeSchema_Namespace" Id="(Namespace=JobFinderApp.ViewModels)" />
+          <ExpandedNode Id="(Assembly=JobFinderApp)" Label="JobFinderApp.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Dsl.NamespaceUsedInAssembly" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Namespace=JobFinderApp.ViewModels)" Label="JobFinderApp.ViewModels" Category="CodeSchema_Namespace">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="989ad16a-371c-4dd5-bddb-f048c8fedb95" name="Domain Logic Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="00f8ea2b-9096-4cd9-af2a-6de995b4c5f2" direction="Forward">
+          <layerMoniker Id="44c36da1-18f8-46fe-a90a-4e3a2152394c" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="c7f8414f-e9c2-4b41-bf79-e761c75ea841" name="JobFinderApp.Domain">
+          <ArtifactNode Label="JobFinderApp.Domain" Category="CodeSchema_Namespace" Id="(Namespace=JobFinderApp.Domain)" />
+          <ExpandedNode Id="(Assembly=JobFinderApp.Domain)" Label="JobFinderApp.Domain.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Dsl.NamespaceUsedInAssembly" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Namespace=JobFinderApp.Domain)" Label="JobFinderApp.Domain" Category="CodeSchema_Namespace">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="af89360e-7125-473c-9f80-dbf25e5d03ed" name="JobFinderApp.Domain.Utility">
+          <ArtifactNode Label="JobFinderApp.Domain.Utility" Category="CodeSchema_Namespace" Id="(Namespace=JobFinderApp.Domain.Utility)" />
+          <ExpandedNode Id="(Assembly=JobFinderApp.Domain)" Label="JobFinderApp.Domain.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Dsl.NamespaceUsedInAssembly" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Namespace=JobFinderApp.Domain.Utility)" Label="JobFinderApp.Domain.Utility" Category="CodeSchema_Namespace">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="b45dbad2-327b-4b78-a7b5-b4829f4dd7c3" name="JobFinderApp.Domain.Services">
+          <ArtifactNode Label="JobFinderApp.Domain.Services" Category="CodeSchema_Namespace" Id="(Namespace=JobFinderApp.Domain.Services)" />
+          <ExpandedNode Id="(Assembly=JobFinderApp.Domain)" Label="JobFinderApp.Domain.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Dsl.NamespaceUsedInAssembly" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Namespace=JobFinderApp.Domain.Services)" Label="JobFinderApp.Domain.Services" Category="CodeSchema_Namespace">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="a790fff1-dfbf-44f0-bed0-9cb35456493e" name="Data Access Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="fce45706-ef4f-4e7a-97ff-8c46c7438c64" direction="Forward">
+          <layerMoniker Id="989ad16a-371c-4dd5-bddb-f048c8fedb95" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="ffa8c32c-68d5-4a5c-943a-b590a7227a6d" direction="Forward">
+          <layerMoniker Id="44c36da1-18f8-46fe-a90a-4e3a2152394c" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="6d0a40b3-13d0-4e35-b4e3-3ae2fc0e9d6b" name="JobFinderApp.DataAccess">
+          <ArtifactNode Label="JobFinderApp.DataAccess" Category="CodeSchema_Namespace" Id="(Namespace=JobFinderApp.DataAccess)" />
+          <ExpandedNode Id="(Assembly=JobFinderApp.DataAccess)" Label="JobFinderApp.DataAccess.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Dsl.NamespaceUsedInAssembly" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Namespace=JobFinderApp.DataAccess)" Label="JobFinderApp.DataAccess" Category="CodeSchema_Namespace">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="44c36da1-18f8-46fe-a90a-4e3a2152394c" name="Contract">
+      <references>
+        <reference Id="7d9ebc51-1eb4-4570-84bf-fc9f33f5a80f" name="JobFinderApp.Contracts">
+          <ArtifactNode Label="JobFinderApp.Contracts" Category="CodeSchema_Namespace" Id="(Namespace=JobFinderApp.Contracts)" />
+          <ExpandedNode Id="(Assembly=JobFinderApp.Contracts)" Label="JobFinderApp.Contracts.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Dsl.NamespaceUsedInAssembly" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Namespace=JobFinderApp.Contracts)" Label="JobFinderApp.Contracts" Category="CodeSchema_Namespace">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

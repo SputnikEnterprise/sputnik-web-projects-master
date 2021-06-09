@@ -1,0 +1,20 @@
+<font face="Trebuchet MS" size="2"> <p>Guten Tag,
+
+Es sind einige Dokumente für Sie bereit gestellt worden.
+http://edoc.sputnik-it.com/sponlinedoc/DefaultPage.aspx?sp={TMPL_VAR name='MAOwner_Guid'}
+
+P.S. Dies ist eine automatisch erstellte Nachricht. Bitte antworten Sie nicht auf dieses Mail.
+<font face="Trebuchet MS" size="2">
+
+Freundliche Grüsse
+{TMPL_VAR name='USVorname'}
+<hr />
+{TMPL_VAR name='USMDName'}
+{TMPL_VAR name='USMDStrasse'}
+{TMPL_VAR name='USMDort'}
+
+Telefon: {TMPL_VAR name='USMDTelefon'} 
+Telefax: {TMPL_VAR name='USMDTelefax'} 
+EMail: {TMPL_VAR name='USMDeMail'}
+WWW: {TMPL_VAR name='USMDHomepage'}
+

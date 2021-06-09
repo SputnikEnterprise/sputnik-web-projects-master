@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="connectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spUpdates;Data Source=192.168.19.53</Value>
+    </Setting>
+    <Setting Name="FileSaveToLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Temp\</Value>
+    </Setting>
+    <Setting Name="MySmtpServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">smtp.magnet.ch</Value>
+    </Setting>
+    <Setting Name="bSaveAllLOGS" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="bSaveJustErrors" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="bDeleteUploadFile" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="errMailFrom" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">spwebService@sputnik-it.com</Value>
+    </Setting>
+    <Setting Name="errMailSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">error@sputnik-it.ch</Value>
+    </Setting>
+    <Setting Name="errMailBody" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Fehler...</Value>
+    </Setting>
+    <Setting Name="strErrorLOGFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Temp\WS_Err.Text</Value>
+    </Setting>
+    <Setting Name="strProgLOGFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Temp\WS_Prog.Text</Value>
+    </Setting>
+    <Setting Name="SettingDb_Connection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spContract;Data Source=192.168.19.53</Value>
+    </Setting>
+    <Setting Name="ConnStr_GAV" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=1234;Persist Security Info=True;User ID=GAVUser;Initial Catalog=GAV_PVL25;Data Source=192.168.19.53</Value>
+    </Setting>
+    <Setting Name="ConnStr_ServiceUtil" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=1234;Persist Security Info=True;User ID=GAVUser;Initial Catalog=Sputnik GAV;Data Source=192.168.19.53</Value>
+    </Setting>
+    <Setting Name="Connstr_InfoService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=1234;Persist Security Info=True;User ID=GAVUser;Initial Catalog=Sputnik InfoSystem;Data Source=192.168.19.53</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{856c8f9e-ecfe-4c28-af2c-409d3b2d44cb}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>JobFinderApp.Modelling</Name>
+    <RootNamespace>JobFinderApp.Modelling</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <ValidateArchitecture>true</ValidateArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="false" />
+  <ItemGroup>
+    <Content Include="UMLUseCaseDiagram.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLUseCaseDiagram.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLUseCaseDiagram.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\JobFinderApp.Modelling.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Layers.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Layers.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Layers.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\JobFinderApp.Contracts.vbproj">
+      <Name>JobFinderApp.Contracts</Name>
+      <Project>{0752da62-ecba-4c52-92a0-b6a0e0fb30b8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\JobFinderApp.DataAccess\JobFinderApp.DataAccess.vbproj">
+      <Name>JobFinderApp.DataAccess</Name>
+      <Project>{f15480b8-bf83-4459-9011-684b5ef8ec85}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\JobFinderApp.Domain\JobFinderApp.Domain.vbproj">
+      <Name>JobFinderApp.Domain</Name>
+      <Project>{8afcb3e3-94ba-4d49-ac6f-6875f4165e02}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\JobFinderApp\JobFinderApp.vbproj">
+      <Name>JobFinderApp</Name>
+      <Project>{0f8ad6ba-1eb5-4c2a-b746-2686704df3de}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

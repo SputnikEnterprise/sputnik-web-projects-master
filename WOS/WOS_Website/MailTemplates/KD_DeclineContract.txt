@@ -1,0 +1,33 @@
+﻿<font face="Trebuchet MS" size="2"> Guten Tag,
+
+<p>
+Leider haben Sie den Vertrag {ESNr} nicht akzeptiert. 
+Ihr Kundenberater {Berater} wird sich mit Ihnen in Verbindung setzen.
+</p>
+
+<p>Wir bedanken uns ganz herzlich und wünschen Ihnen einen schönen Tag.</p>
+
+<p>
+P.S. Dies ist eine automatisch erstellte Nachricht. Bitte antworten Sie nicht auf dieses Mail.
+Ihr Kundenberater wurde bereits informiert.
+</p>
+
+<hr />
+
+<font face="Trebuchet MS" size="2">
+<b>
+<br/>
+{Berater} <br/>
+{KundenName} <br/>
+{KundeStrasse} <br/>
+{KundeOrt} <br/>
+<br/>
+Telefon: {UserTelefon} <br/>
+Telefax: {UserTelefax} <br/>
+<br/>
+EMail {UserEmail} <br/>
+WWW   http://{KundeHomepage} <br/>
+
+<hr />
+
+

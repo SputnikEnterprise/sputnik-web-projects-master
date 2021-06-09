@@ -1,0 +1,403 @@
+
+/*******************************************************************************/
+
+/*         CSS-CODE BY FRESH INTERACTIVE AG, USTER-ZUERICH, WWW.FIA.CH         */
+
+/*******************************************************************************/
+
+
+
+/* Generell
+*******************************************************************************/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-size: 12px;
+	background: #f19300 url(../images/bg.gif) no-repeat center center;
+    overflow:hidden;
+}
+
+a:link,
+a:visited {
+	color: #f29400;
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+#wrap a.aktiv {
+	color: #000;
+	text-decoration: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+td {
+	vertical-align: top;
+}
+
+h1 {
+	clear: both;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+	margin: 0 0 20px 0;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+h2 {
+	clear: both;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	margin: 0 0 5px 0;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+h3 {
+	clear: both;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+}
+
+.clear {
+	clear: both;
+	width: 100%;
+	height: 1px;
+	overflow: hidden;
+}
+
+img {
+	border: none;
+}
+
+hr {
+	width: 100%;
+	height: 1px;
+	margin-bottom: 12px;
+	margin-top: 10px;
+	border: none;
+	border-bottom: #f19300 1px solid;	
+	overflow: hidden;
+}
+
+/* Der Kern von Clearfix */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+/* IE-Patches für Clearfix */
+.clearfix { display: inline-block; }
+/* Vor IE5/Mac verstecken mit dem Commented Backslash Hack \*/
+* html .clearfix { height: 1px; }
+.clearfix { display: block; }
+/* Ende des Versteckspiels für den IE5/Mac */
+
+
+/* Konstrukt
+*******************************************************************************/
+
+#distance {
+	width: 1px; 
+	height: 50%; 
+	float: left;
+	margin-bottom: -394px;
+}
+
+#wrap {
+	position: relative;
+	clear: left; 
+	height: 788px;
+	width: 990px;
+	margin: 0 auto;
+	background: #fff;
+	border: #f29400 1px solid;
+}
+
+
+/* Navigation
+*******************************************************************************/
+
+#navigation {
+	position: absolute;
+	left: 30px;
+	top: 200px;
+	width: auto;
+	text-align: right;
+	font-size: 11px;
+	width: 195px;
+}
+
+#navigation ul {
+	list-style: none;
+}
+
+#navigation li {
+	padding-bottom: 5px;
+}
+
+#navigation a, #navigation span {
+	font-weight: bold;
+	color: #000;
+}
+
+#navigation ul ul a {
+	font-weight: normal;
+	color: #555;
+}
+
+#navigation a:hover,
+#navigation a:active,
+#navigation a.aktiv {
+	color: #f29400 !important;
+}
+
+
+/* Globalnavigation
+*******************************************************************************/
+
+#globNav {
+	position: absolute;
+	left: 37px;
+	bottom: 60px;
+	width: 100px;
+	text-align: left;
+	font-size: 11px;
+}
+
+#globNav ul {
+	list-style: none;
+}
+
+#globNav li {
+	padding-bottom: 5px;
+}
+
+#globNav a {
+	font-weight: bold;
+	color: #000;
+}
+
+#globNav a:hover,
+#globNav a:active,
+#globNav a.aktiv {
+	color: #f29400 !important;
+}
+
+
+/* Header
+*******************************************************************************/
+
+.customerLogo {
+	position: absolute;
+	top: 34px;
+	left: 30px;
+}
+
+.customerName { position:absolute; top:165px; left: 250px }
+
+#welcomeText { font-weight:bold; font-size: 14px}
+
+#icons {
+	position: absolute;
+	top: 40px;
+	left: 650px;
+	width: 256px;
+	height: 91px;
+	background: url(../images/icons.gif) no-repeat;
+}
+
+
+
+/* content
+*******************************************************************************/
+
+#cont {
+	position: absolute;
+	left: 144px;
+	top: 255px;
+	width: 735px;
+	height: 475px;
+}
+
+#boxV {
+	position: absolute;
+	left: 250px;
+	top: 200px;
+}
+
+
+.boxVH {
+	width: 650px;
+	height: 480px;
+	border: #f7b131 3px solid;
+	padding: 20px;
+	line-height: 1.3em;
+}
+
+#AGBText table td {
+        padding-left:20px 
+}
+
+#CheckBox1 {
+        margin-right:5px;
+}
+
+.mehr {
+	position: absolute;
+	bottom: -1px;
+	right: -1px;
+	width: 59px;
+	height: 26px;
+}
+
+.grid  {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  width: 100%;
+  white-space: nowrap;
+}
+.grid .rowStyle td
+{
+  background: #e5e5e5;
+  padding:2px;
+  white-space: nowrap;
+  padding-right: 18px;
+}
+
+.grid .alternatingRowStyle td
+{
+  padding:2px;
+  white-space: nowrap;
+  padding-right: 18px;
+}
+
+.grid .footerStyle 
+{
+  background:#507CD1;
+  font-weight:bold;
+  color: #fff;
+}
+
+.grid .pagerStyle 
+{
+  background:#f7b131;
+  color:#fff;
+  text-align:center;
+  padding:2px;
+}
+
+.grid .pagerStyle td
+{
+  background:#f7b131;
+  color:#fff;
+  text-align:center;
+  padding:2px;
+}
+
+.grid .pagerStyle td a:visited
+{
+  color:#fff;
+}
+
+.grid .pagerStyle td a
+{
+  color:#000;
+}
+
+
+.grid .selectedRowStyle td
+{
+  background:#D1DDF1;
+  font-weight:bold;
+  color:#333333;
+}
+.grid .headerStyle th 
+{
+  background:#f7b131;
+  font-weight:bold;
+  color:#fff;
+  text-align:left;
+  padding:2px;
+}
+.grid .editRowStyle td 
+{
+  background:#e5e5e5;
+}
+.grid .alternatingRowStyle td
+{
+  background:#fff;
+  padding:2px;
+  margin-right: 20px;
+}
+
+#divCheckBox label 
+{
+    padding-left: 4px;
+}  
+
+div.formLabel {
+    float: left;
+    min-width: 130px;
+    width: auto !important;
+}
+
+div.formElement {
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+div.ui-dialog-content  
+{
+    padding: 5px;
+}
+
+/* footer
+*******************************************************************************/
+
+#footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 955px;
+	height: 29px;
+	padding: 16px 35px 0 0;
+	text-align: right;
+	color: #fff;
+	background: #f29400;
+	font-size: 11px;
+}
+
+#footer a:link,
+#footer a:visited {
+	color: #fff;
+}
+
+#footer a:hover,
+#footer a:active {
+	color: #000;
+}	
+
+

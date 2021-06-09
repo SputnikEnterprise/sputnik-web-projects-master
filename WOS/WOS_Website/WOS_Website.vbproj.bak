@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{0B8988D0-99F5-477E-BADA-B0503FB7C5CD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WOS_Website</RootNamespace>
+    <AssemblyName>WOS_Website</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WOS_Website.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WOS_Website.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <IncludeIisSettings>true</IncludeIisSettings>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Export, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.Resources.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Imt.Common.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Imt.Common.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\strings.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="css\hacks-ie-win.css" />
+    <Content Include="css\jquery.alerts.css" />
+    <Content Include="css\lightboxen.css" />
+    <Content Include="css\sputnik-vertraege.css" />
+    <Content Include="css\sputnik.css" />
+    <Content Include="css\style-vertraege.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\ui-lightness\jquery-ui-1.8.13.custom.css" />
+    <Content Include="CustomerLogo.aspx" />
+    <Content Include="DefaultPage.aspx" />
+    <Content Include="ForwardDocument.asmx" />
+    <Content Include="images\AGB.PNG" />
+    <Content Include="images\agb_pdf.png" />
+    <Content Include="images\AGB_small.PNG" />
+    <Content Include="images\agb_tou_pdf.png" />
+    <Content Include="images\bg.gif" />
+    <Content Include="images\bg_cont_klein.gif" />
+    <Content Include="images\help.gif" />
+    <Content Include="images\icons.gif" />
+    <Content Include="images\important.gif" />
+    <Content Include="images\info.gif" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\NO.gif" />
+    <Content Include="images\NO_1.GIF" />
+    <Content Include="images\PDF_Big.png" />
+    <Content Include="images\PDF_Icon.gif" />
+    <Content Include="images\printer.gif" />
+    <Content Include="images\title.gif" />
+    <Content Include="images\title_.gif" />
+    <Content Include="images\YES.gif" />
+    <Content Include="images\YES_1.GIF" />
+    <Content Include="jquery.fancybox\jquery.easing.1.3.js" />
+    <Content Include="jquery.fancybox\jquery.fancybox-1.2.1.js" />
+    <Content Include="jquery.fancybox\jquery.fancybox.css" />
+    <Content Include="js\jquery-1.3.2.min.js" />
+    <Content Include="js\jquery-1.4.4.min.js" />
+    <Content Include="js\jquery-1.5.1.min.js" />
+    <Content Include="js\jquery-ui-1.8.13.custom.min.js" />
+    <Content Include="js\jquery.alerts.js" />
+    <Content Include="js\tooltip.js" />
+    <Content Include="js\utils.js" />
+    <Content Include="Kandidaten\Arbeitsbescheinigung.aspx" />
+    <Content Include="Kandidaten\Einsatzvertraege.aspx" />
+    <Content Include="Kandidaten\Lohnabrechnungen.aspx" />
+    <Content Include="Kandidaten\Lohnausweis.aspx" />
+    <Content Include="Kandidaten\MARapporte.aspx" />
+    <Content Include="Kandidaten\Vakanzen.aspx" />
+    <Content Include="Kandidaten\Zwischenverdienstformulare.aspx" />
+    <Content Include="Kunden\AllPropose.aspx" />
+    <Content Include="Kunden\JobKandidaten.aspx" />
+    <Content Include="Kunden\NewPropose.aspx" />
+    <Content Include="Kunden\NewPropose_Feedback.aspx" />
+    <Content Include="Kunden\OffeneVerleihvertraege.aspx" />
+    <Content Include="Kunden\Rapporte.aspx" />
+    <Content Include="Kunden\Rechnungen.aspx" />
+    <Content Include="Kunden\Verleihvertraege.aspx" />
+    <Content Include="libs\Imt.Common.Utility.dll" />
+    <Content Include="MailTemplates\Candidate_ForwardDocument.txt" />
+    <Content Include="MailTemplates\Candidate_infoDocument.txt" />
+    <Content Include="MailTemplates\KD_DeclinePropose.txt" />
+    <Content Include="MailTemplates\KD_InterestPropose.txt" />
+    <Content Include="MailTemplates\KD_AcceptContract.txt" />
+    <Content Include="MailTemplates\KD_DeclineContract.txt" />
+    <Content Include="MailTemplates\KD_ForwardDocument.txt" />
+    <Content Include="MailTemplates\KD_infoDocument.txt" />
+    <Content Include="MailTemplates\ZHD_DeclinePropose.txt" />
+    <Content Include="MailTemplates\ZHD_InterestPropose.txt" />
+    <Content Include="MailTemplates\ZHD_AcceptContract.txt" />
+    <Content Include="MailTemplates\ZHD_DeclineContract.txt" />
+    <Content Include="MailTemplates\ZHD_ForwardDocument.txt" />
+    <Content Include="MailTemplates\ZHD_infoDocument.txt" />
+    <Content Include="NavigationControls\CandidatesNav.ascx" />
+    <Content Include="NavigationControls\KDNav.ascx" />
+    <Content Include="NavigationControls\ZHDNav.ascx" />
+    <Content Include="NotFound.aspx" />
+    <Content Include="UserControls\SendMessage.ascx" />
+    <Content Include="UserControls\TwoColumnTable.ascx" />
+    <Content Include="WebServices\EmailService.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomerLogo.aspx.designer.vb">
+      <DependentUpon>CustomerLogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultPage.aspx.designer.vb">
+      <DependentUpon>DefaultPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForwardDocument.vb">
+      <DependentUpon>ForwardDocument.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Kandidaten\Arbeitsbescheinigung.aspx.designer.vb">
+      <DependentUpon>Arbeitsbescheinigung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kandidaten\Einsatzvertraege.aspx.designer.vb">
+      <DependentUpon>Einsatzvertraege.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kandidaten\Lohnabrechnungen.aspx.designer.vb">
+      <DependentUpon>Lohnabrechnungen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kandidaten\Lohnausweis.aspx.designer.vb">
+      <DependentUpon>Lohnausweis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kandidaten\MARapporte.aspx.designer.vb">
+      <DependentUpon>MARapporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kandidaten\Vakanzen.aspx.designer.vb">
+      <DependentUpon>Vakanzen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kandidaten\Zwischenverdienstformulare.aspx.designer.vb">
+      <DependentUpon>Zwischenverdienstformulare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kunden\AllPropose.aspx.designer.vb">
+      <DependentUpon>AllPropose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kunden\AllPropose.aspx.vb">
+      <DependentUpon>AllPropose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kunden\JobKandidaten.aspx.designer.vb">
+      <DependentUpon>JobKandidaten.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kunden\NewPropose.aspx.designer.vb">
+      <DependentUpon>NewPropose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kunden\NewPropose.aspx.vb">
+      <DependentUpon>NewPropose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kunden\NewPropose_Feedback.aspx.designer.vb">
+      <DependentUpon>NewPropose_Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kunden\NewPropose_Feedback.aspx.vb">
+      <DependentUpon>NewPropose_Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Kunden\OffeneVerleihvertraege.aspx.designer.vb">
+      <DependentUpon>OffeneVerleihvertraege.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kunden\Rapporte.aspx.designer.vb">
+      <DependentUpon>Rapporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kunden\Rechnungen.aspx.designer.vb">
+      <DependentUpon>Rechnungen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kunden\Verleihvertraege.aspx.designer.vb">
+      <DependentUpon>Verleihvertraege.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.vb">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationControls\CandidatesNav.ascx.designer.vb">
+      <DependentUpon>CandidatesNav.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationControls\KDNav.ascx.designer.vb">
+      <DependentUpon>KDNav.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationControls\ZHDNav.ascx.designer.vb">
+      <DependentUpon>ZHDNav.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="NotFound.aspx.designer.vb">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\ApplicationInfo.vb" />
+    <Compile Include="Navigation\BasePage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navigation\CandidatesBasePage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navigation\CustomerBasePage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navigation\DocumentBasePage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navigation\DocumentSQLStrings.vb" />
+    <Compile Include="Navigation\DTO\JobCandidateFilter.vb" />
+    <Compile Include="Navigation\DTO\VacancyFilter.vb" />
+    <Compile Include="Navigation\NavigationBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navigation\NavLinkInfo.vb" />
+    <Compile Include="Navigation\Utility.vb" />
+    <Compile Include="CustomerLogo.aspx.vb">
+      <DependentUpon>CustomerLogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultPage.aspx.vb">
+      <DependentUpon>DefaultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kandidaten\Arbeitsbescheinigung.aspx.vb">
+      <DependentUpon>Arbeitsbescheinigung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kandidaten\Einsatzvertraege.aspx.vb">
+      <DependentUpon>Einsatzvertraege.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kandidaten\Lohnabrechnungen.aspx.vb">
+      <DependentUpon>Lohnabrechnungen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kandidaten\Lohnausweis.aspx.vb">
+      <DependentUpon>Lohnausweis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kandidaten\MARapporte.aspx.vb">
+      <DependentUpon>MARapporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kandidaten\Vakanzen.aspx.vb">
+      <DependentUpon>Vakanzen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kandidaten\Zwischenverdienstformulare.aspx.vb">
+      <DependentUpon>Zwischenverdienstformulare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kunden\JobKandidaten.aspx.vb">
+      <DependentUpon>JobKandidaten.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kunden\OffeneVerleihvertraege.aspx.vb">
+      <DependentUpon>OffeneVerleihvertraege.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kunden\Rapporte.aspx.vb">
+      <DependentUpon>Rapporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kunden\Rechnungen.aspx.vb">
+      <DependentUpon>Rechnungen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kunden\Verleihvertraege.aspx.vb">
+      <DependentUpon>Verleihvertraege.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.vb">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NavigationControls\CandidatesNav.ascx.vb">
+      <DependentUpon>CandidatesNav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigationControls\KDNav.ascx.vb">
+      <DependentUpon>KDNav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigationControls\ZHDNav.ascx.vb">
+      <DependentUpon>ZHDNav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotFound.aspx.vb">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SendMessage.ascx.designer.vb">
+      <DependentUpon>SendMessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SendMessage.ascx.vb">
+      <DependentUpon>SendMessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\TwoColumnTable.ascx.designer.vb">
+      <DependentUpon>TwoColumnTable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TwoColumnTable.ascx.vb">
+      <DependentUpon>TwoColumnTable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebServices\EmailService.vb">
+      <DependentUpon>EmailService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AGB.ashx" />
+    <Content Include="Documents.ashx" />
+    <Content Include="FrameworkAgreement.ashx" />
+    <None Include="images\Thumbs.db" />
+    <Content Include="Kandidaten\ImageHandler.ashx" />
+    <Content Include="MasterPage.master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WOS_Modules\Imt.Common.I18N\Imt.Common.I18N.csproj">
+      <Project>{76dc78d6-c93d-44ab-9d71-e987f0cc3d06}</Project>
+      <Name>Imt.Common.I18N</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>35639</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:35639/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

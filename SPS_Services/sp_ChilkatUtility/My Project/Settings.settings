@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnStr_SystemInfo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spSystemInfo;Data Source=192.168.19.55;Current Language=German;Max Pool Size=1000</Value>
+    </Setting>
+    <Setting Name="AVAM_UserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AVAM_Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AVAM_JobroomURI" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AVAM_JobroomAllRecordURI" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AVAM_JobroomSingleRecordURI" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ConnStr_spJobplattforms" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spJobPlattforms;Data Source=192.168.19.55;Current Language=German</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,26 @@
+﻿<font face="Trebuchet MS" size="2"> <b>{Anrede} {Nachname},</b>
+
+<p>hiermit erhalten Sie den von Ihnen akzeptierten Vertrag als PDF für Ihre Unterlagen.</p>
+
+<p>Für Ihren Auftrag bedanken wir uns ganz herzlich und wünschen Ihnen einen schönen Tag.</p>
+
+<p>P.S. Dies ist eine automatisch erstellte Nachricht. Bitte antworten Sie nicht auf dieses Mail.
+Ihr Kundenberater wurde bereits informiert.</p>
+<hr />
+
+<font face="Trebuchet MS" size="2">
+<b>
+<br/>
+{Berater} <br/>
+{KundenName} <br/>
+{KundeStrasse} <br/>
+{KundeOrt} <br/>
+<br/>
+Telefon: {UserTelefon} <br/>
+Telefax: {UserTelefax} <br/>
+<br/>
+EMail {UserEmail} <br/>
+WWW   http://{KundeHomepage} <br/>
+
+<hr />
+

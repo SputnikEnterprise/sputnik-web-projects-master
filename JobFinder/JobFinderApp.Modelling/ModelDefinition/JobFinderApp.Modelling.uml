@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="bc34b766-0ad6-4279-b6bd-b8f9fc8257eb"
+  name="JobFinderApp.Modelling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="2146f20a-c5c9-48e3-803c-5784a5a1af8f"
+        name="Stellensuchender"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0ddd7ccc-963f-4d63-95e3-6f6e470c334d"
+            isDerived="false"
+            sourceEndRoleName="Stellensuchender"
+            targetEndRoleName="App Update"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b7ea1e57-963b-4a5f-bb51-7e91f8d8955b"
+              LastKnownName="App Update"
+              LastKnownLocation="JobFinderApp.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="378e8117-c374-45e6-b53d-e2d284d14ee6"
+                  name="Stellensuchender"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4722fd52-20f1-4b90-916c-1fce891aba52"
+                  name="App Update"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f1a274e3-58e2-43ce-ba29-16c6c476ceb8"
+            isDerived="false"
+            sourceEndRoleName="Stellensuchender"
+            targetEndRoleName="Stelle suchen"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="60d77bde-2e85-497f-9dfc-fe7932939a8b"
+              LastKnownName="Stelle suchen"
+              LastKnownLocation="JobFinderApp.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="918b8658-930a-4731-9194-cac8fcc9b7fb"
+                  name="Stellensuchender"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2611e009-a988-4c64-bc79-8a13d54e2f5b"
+                  name="Stelle suchen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fe337ddb-c611-4120-ac24-4e13f348e10f"
+            isDerived="false"
+            sourceEndRoleName="Stellensuchender"
+            targetEndRoleName="App installieren"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="571387da-f156-499b-b536-abbf0784b78a"
+              LastKnownName="App installieren"
+              LastKnownLocation="JobFinderApp.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd38d94f-d47a-49fb-99b3-7d747bc03c85"
+                  name="Stellensuchender"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a3849d1a-c9c3-4f0d-aece-7d6e89cef69a"
+                  name="App installieren"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e535fd2c-e704-495c-9548-bfb167108143"
+            isDerived="false"
+            sourceEndRoleName="Stellensuchender"
+            targetEndRoleName="Stellenanbieter kontaktieren"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d6d29619-527a-42d5-ad12-243c9ca5aa16"
+              LastKnownName="Stellenanbieter kontaktieren"
+              LastKnownLocation="JobFinderApp.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba0b7339-97a1-42cb-b69e-86b5214361bf"
+                  name="Stellensuchender"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cdd83159-a76d-44f7-bde6-5a43a8ca873b"
+                  name="Stellenanbieter kontaktieren"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="4dde98e5-6100-48c3-b1d9-6c2643806ae9"
+        name="Administrator"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="68a368b6-80fb-457d-a5c0-984d7780f331"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Statistiken"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2be39f46-6661-4d7c-8da2-197175793c9f"
+              LastKnownName="Statistiken"
+              LastKnownLocation="JobFinderApp.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fe8770a4-d572-4c42-ae22-9714c72b1e97"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="74ab3998-5f0e-45c9-baef-536166d79675"
+                  name="Statistiken"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="312c64ba-7fe4-4c6c-bc07-831b3a997017"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="App-Deployment"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3187d66a-5257-459d-994f-f10288ab9de0"
+              LastKnownName="App-Deployment"
+              LastKnownLocation="JobFinderApp.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="868d8588-e259-4097-a9e9-b0429cee341d"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e891b35c-414a-469e-907c-08e88b80f348"
+                  name="App-Deployment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="178cab5a-7599-429d-8714-5a1dd671e6ce"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Kunde einrichten"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="14e671f7-76a9-431d-83db-5ec2483fc13b"
+              LastKnownName="Kunde einrichten"
+              LastKnownLocation="JobFinderApp.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fb5d91a8-ebb1-48db-9995-7af868958b98"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="feef1ae9-12ec-4218-b6b7-367fdf88a9e1"
+                  name="Kunde einrichten"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="60d77bde-2e85-497f-9dfc-fe7932939a8b"
+        name="Stelle suchen"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="c4bbc501-f09d-4be2-afa0-ef33cf79784e">
+            <useCaseMoniker
+              Id="14e671f7-76a9-431d-83db-5ec2483fc13b"
+              LastKnownName="Kunde einrichten"
+              LastKnownLocation="JobFinderApp.Modelling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="14e671f7-76a9-431d-83db-5ec2483fc13b"
+        name="Kunde einrichten"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d6d29619-527a-42d5-ad12-243c9ca5aa16"
+        name="Stellenanbieter kontaktieren"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="571387da-f156-499b-b536-abbf0784b78a"
+        name="App installieren"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3187d66a-5257-459d-994f-f10288ab9de0"
+        name="App-Deployment"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2be39f46-6661-4d7c-8da2-197175793c9f"
+        name="Statistiken"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="03501950-ba83-4ec5-8255-6f56e7241c18">
+            <useCaseMoniker
+              Id="571387da-f156-499b-b536-abbf0784b78a"
+              LastKnownName="App installieren"
+              LastKnownLocation="JobFinderApp.Modelling.uml" />
+          </dependency>
+          <dependency
+            Id="5e8013f0-64f5-451b-ab1b-0f00d1bfbd66">
+            <useCaseMoniker
+              Id="60d77bde-2e85-497f-9dfc-fe7932939a8b"
+              LastKnownName="Stelle suchen"
+              LastKnownLocation="JobFinderApp.Modelling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b7ea1e57-963b-4a5f-bb51-7e91f8d8955b"
+        name="App Update"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="21cdb8b8-dac3-48f4-9b5e-74f6c9948458">
+            <useCaseMoniker
+              Id="3187d66a-5257-459d-994f-f10288ab9de0"
+              LastKnownName="App-Deployment"
+              LastKnownLocation="JobFinderApp.Modelling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="b472f04f-3215-40ec-ab7a-92f60e6eda1c"
+        name="JobFinder"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

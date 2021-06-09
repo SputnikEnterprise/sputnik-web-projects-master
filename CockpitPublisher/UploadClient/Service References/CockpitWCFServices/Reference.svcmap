@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="82c9704f-ff31-4d6a-9e7d-8aae7da1e072" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1331/TableDataUploadService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TableDataUploadService.disco" MetadataType="Disco" ID="3fc7804f-1b65-4433-9b76-bad0983d9d33" SourceId="1" SourceUrl="http://localhost:1331/TableDataUploadService.svc?disco" />
+    <MetadataFile FileName="TableDataUploadService.wsdl" MetadataType="Wsdl" ID="2d58f95e-d4af-4611-98ec-40bb621bc6a2" SourceId="1" SourceUrl="http://localhost:1331/TableDataUploadService.svc?wsdl" />
+    <MetadataFile FileName="TableDataUploadService.xsd" MetadataType="Schema" ID="b37fa330-b149-479f-af7d-f909c236826e" SourceId="1" SourceUrl="http://localhost:1331/TableDataUploadService.svc?xsd=xsd3" />
+    <MetadataFile FileName="TableDataUploadService1.xsd" MetadataType="Schema" ID="f4265deb-5097-474f-829c-fb6afbeb3e61" SourceId="1" SourceUrl="http://localhost:1331/TableDataUploadService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TableDataUploadService2.xsd" MetadataType="Schema" ID="8f8382a4-7b48-4c45-915d-141828bd2943" SourceId="1" SourceUrl="http://localhost:1331/TableDataUploadService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TableDataUploadService3.xsd" MetadataType="Schema" ID="c2d32fb6-6439-4f60-a164-d8f8c045ebe8" SourceId="1" SourceUrl="http://localhost:1331/TableDataUploadService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>Job.App</groupId>
+    <artifactId>jobapp</artifactId>
+    <version>1.0.0</version>
+    <packaging>apk</packaging>
+    <name>JobApp</name>
+    
+ 	<properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+      <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> 
+    </properties>
+        
+    <profiles>
+        
+        <!--Profile for pamag -->
+        <profile>
+		  <id>pamag</id> 
+		  <properties> 
+		    <customer>pamag</customer> 
+		    <customerPackage>ch.pamagpersonal.jobfinderapp</customerPackage> 
+		    <customerResources>customers/${customer}/res</customerResources> 
+		    <customerApkName>${customer}-${project.artifactId}</customerApkName> 
+		  </properties> 
+		</profile> 
+		
+        <!--Profile for helvetic -->
+		<profile>
+		  <id>helvetic</id> 
+		  <properties> 
+		    <customer>helvetic</customer> 
+		    <customerPackage>ch.helveticpersonal.jobfinderapp</customerPackage> 
+		    <customerResources>customers/${customer}/res</customerResources> 
+		    <customerApkName>${customer}-${project.artifactId}</customerApkName> 
+		  </properties> 
+		</profile>
+		
+	    <!--Profile for app signings -->
+		<profile>
+            <id>sign</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jarsigner-plugin</artifactId>
+                        <version>1.2</version>
+                        <executions>
+                             <execution><id>signing</id>
+                                 <goals>
+                                     <goal>sign</goal>
+                                </goals>
+                                <phase>package</phase>
+                                <inherited>true</inherited>
+                                <configuration>
+                                    <archiveDirectory>
+                                    </archiveDirectory>
+                                    <includes>
+                                        <include>target/${customerApkName}-${project.version}.apk</include>
+                                    </includes>
+                                    <keystore>keystore/keystore</keystore>
+                                    <storepass>SputnikAndroid</storepass>
+                                    <keypass>SputnikAndroid</keypass>
+                                    <alias>sputnik_android_release_key</alias>
+                                    <arguments>
+                                        <argument>-sigalg
+                                        </argument>
+                                        <argument>MD5withRSA
+                                        </argument>
+                                        <argument>-digestalg
+                                        </argument>
+                                        <argument>SHA1
+                                        </argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>com.jayway.maven.plugins.android.generation2
+                        </groupId>
+                        <artifactId>android-maven-plugin</artifactId>
+                        <inherited>true</inherited>
+                          <version>3.2.0</version>
+                        <configuration>
+                            <sign>
+                                <debug>
+                                    false
+                                </debug>
+                            </sign>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>         
+        </profile>
+    </profiles>
+  
+    <dependencies>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>2.1.2</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    
+    <build>
+     <finalName>${customerApkName}-${project.version}</finalName> 
+        <sourceDirectory>src</sourceDirectory>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                    <artifactId>android-maven-plugin</artifactId>
+                    <extensions>true</extensions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+           <plugin>
+				  <artifactId>maven-compiler-plugin</artifactId>
+				  <configuration>
+				    <source>1.5</source>
+				    <target>1.5</target>				    
+				  </configuration>
+				   <version>2.3.2</version>
+		    </plugin>
+            <plugin>
+                <version>3.2.0</version>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <configuration>
+                    <sdk>
+                        <!-- platform or api level (api level 4 = platform 1.6)-->
+                        <platform>7</platform>
+                    </sdk>
+                    
+                    <!-- Rename manifest package info -->
+                    <renameManifestPackage>${customerPackage}</renameManifestPackage> 
+                    
+                    <!-- Customer specific resource overlay -->
+                    <resourceOverlayDirectory>${customerResources}</resourceOverlayDirectory>   
+                    
+                    <!--Package zip aligning -->
+                    <zipalign>
+				      <verbose>true</verbose>
+				      <skip>false</skip><!-- defaults to true -->
+				      <inputApk>
+				    	target/${customerApkName}-${project.version}.apk
+				      </inputApk>
+				      <outputApk>
+				    	target/${customerApkName}-${project.version}-publish.apk
+				      </outputApk>
+				    </zipalign>
+                </configuration>
+                <executions>
+				    <execution>
+				      <id>zipalign</id>
+				      <phase>verify</phase>
+				      <goals>
+				        <goal>zipalign</goal>
+				      </goals>
+				    </execution>
+				  </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

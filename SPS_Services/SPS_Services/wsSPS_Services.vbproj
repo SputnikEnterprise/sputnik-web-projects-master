@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9BF8F0BB-EF38-4A03-8F4E-78DE1AB2E4F7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>wsSPS_Services</RootNamespace>
+    <AssemblyName>wsSPS_Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress>true</Use64BitIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>wsSPS_Services.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Components.net\</OutputPath>
+    <DocumentationFile>wsSPS_Services.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=3.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Libraries\.Net 4.5\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="exernalservices\SPEmployeeServices.asmx" />
+    <Content Include="exernalservices\SPVacancyServices.asmx" />
+    <Content Include="IBANKernel.dll" />
+    <Content Include="SPApplication.asmx" />
+    <Content Include="SPALKUtil.asmx" />
+    <Content Include="SPNotification.asmx" />
+    <Content Include="SPIBANUtil.asmx" />
+    <Content Include="SPNotification_MailNotification.asmx" />
+    <Content Include="SPNotification_SystemTables.asmx" />
+    <Content Include="SPOstJobsCHVacancies.asmx" />
+    <Content Include="SPBankUtil.asmx" />
+    <Content Include="SPCustomerPaymentServices.asmx" />
+    <Content Include="SPEmployeeTaxInfoService.asmx" />
+    <Content Include="SPInternVacancies.asmx" />
+    <Content Include="SPModulUtil.asmx" />
+    <Content Include="SPPVLGAVUtil.asmx" />
+    <Content Include="SPScanJobUtility.asmx" />
+    <Content Include="SPUpdateUtilities.asmx" />
+    <Content Include="SPVacancyData.asmx" />
+    <Content Include="SPWOSCustomerUtilities.asmx" />
+    <Content Include="SPWOSEmployeeUtilities.asmx" />
+    <Content Include="SPX28Profilmatcher.asmx" />
+    <Content Include="SP_JobsCH_Util.asmx" />
+    <Content Include="IBANkKernel_Readme.txt" />
+    <Content Include="Test.asmx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SPJobsCHVacancies.asmx" />
+    <Content Include="SPJobPlattformsCreateXML.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBaseAccess\CVLizerDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\INotificationDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\IScanDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\ISystemInfoDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\IUpdateInfoDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\iVacancyDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\NotificationDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\PublicDataDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\PVL\IPVLDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\PVL\PVLDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\ScanDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\SystemInfoDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\UpdateDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\WOS\IWOSDatabaseAccess.vb" />
+    <Compile Include="DataBaseAccess\WOS\WOSDatabaseAccess.vb" />
+    <Compile Include="DataTransferObjects\Notify\ScanDTO.vb" />
+    <Compile Include="DataTransferObjects\SystemInfo\CommonData.vb" />
+    <Compile Include="DataTransferObjects\SystemInfo\SystemInfoDTO.vb" />
+    <Compile Include="exernalservices\SPEmployeeServices.asmx.vb">
+      <DependentUpon>SPEmployeeServices.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="exernalservices\SPVacancyServices.asmx.vb">
+      <DependentUpon>SPVacancyServices.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="JobPlatform\AVAM\AVAMDbAccess.vb" />
+    <Compile Include="JobPlatform\AVAM\AVAMDbData.vb" />
+    <Compile Include="JobPlatform\AVAM\AVAM_Datatransfer.vb" />
+    <Compile Include="JobPlatform\X28\Db\ProfilmatcherDbAccess.vb" />
+    <Compile Include="JobPlatform\X28\Db\ProfilmatcherDbData.vb" />
+    <Compile Include="JobPlatform\X28\Model\Profilmatcher.vb" />
+    <Compile Include="SPNotification_MailNotification.asmx.vb">
+      <DependentUpon>SPNotification_MailNotification.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPNotification_SystemTables.asmx.vb">
+      <DependentUpon>SPNotification_SystemTables.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPX28Profilmatcher.asmx.vb">
+      <DependentUpon>SPX28Profilmatcher.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SupportCode\CVLizer\PM_QueryData.vb" />
+    <Compile Include="SupportCode\Notification\Notification_ApplicantData.vb" />
+    <Compile Include="SupportCode\CVLizer\CVLizer_DocumentData.vb" />
+    <Compile Include="SupportCode\CVLizer\CVLizer_EducationData.vb" />
+    <Compile Include="SupportCode\CVLizer\CVLizer_ObjectiveData.vb" />
+    <Compile Include="SupportCode\CVLizer\CVLizer_OtherinformationData.vb" />
+    <Compile Include="SupportCode\CVLizer\CVLizer_PersonalInformationData.vb" />
+    <Compile Include="SupportCode\CVLizer\CVLizer_PhasesData.vb" />
+    <Compile Include="SupportCode\CVLizer\CVLizer_ProfileData.vb" />
+    <Compile Include="SupportCode\CVLizer\CVLizer_PublicationData.vb" />
+    <Compile Include="SupportCode\CVLizer\CVLizer_StatisticData.vb" />
+    <Compile Include="SupportCode\CVLizer\CVLizer_WorkData.vb" />
+    <Compile Include="DataTransferObjects\DatabaseAccessBase.vb" />
+    <Compile Include="DataBaseAccess\ICVLizerDatabaseAccess.vb" />
+    <Compile Include="DataTransferObjects\Notify\CVLizerDTO.vb" />
+    <Compile Include="SPApplication.asmx.vb">
+      <DependentUpon>SPApplication.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CLSDivReg.vb" />
+    <Compile Include="ClsMain_Net.vb" />
+    <Compile Include="ClsSetting.vb" />
+    <Compile Include="SupportCode\DocumentScan\Scan_DropInData.vb" />
+    <Compile Include="SupportCode\DocumentScan\Scan_Notification.vb" />
+    <Compile Include="SupportCode\DocumentScan\Scan_SystemInfo.vb" />
+    <Compile Include="SupportCode\PVL\PVLInfo_FLData.vb" />
+    <Compile Include="SupportCode\PVL\PVLInfo_Version.vb" />
+    <Compile Include="SupportCode\PVL\PVLInfo_Categories.vb" />
+    <Compile Include="SupportCode\SystemInfo\PublicData_GeoData.vb" />
+    <Compile Include="SupportCode\SystemInfo\PublicData_STMPData.vb" />
+    <Compile Include="SupportCode\SystemInfo\PublicData_SystemTables.vb" />
+    <Compile Include="SupportCode\SystemInfo\PublicData_Tax.vb" />
+    <Compile Include="SupportCode\SystemInfo\SystemInfo_Logins.vb" />
+    <Compile Include="SupportCode\SystemInfo\PublicData_SBN2000Data.vb" />
+    <Compile Include="SupportCode\SystemInfo\SystemInfo_Services.vb" />
+    <Compile Include="SupportCode\Update\UpdateInfo_FTPUpdate.vb" />
+    <Compile Include="SupportCode\SystemInfo\SytemInfo_Notification.vb" />
+    <Compile Include="SupportCode\WOS\WOS_Candidates.vb" />
+    <Compile Include="SupportCode\WOS\WOS_Customer.vb" />
+    <Compile Include="SupportCode\WOS\WOS_InternalVacancy.vb" />
+    <Compile Include="SupportCode\WOS\WOS_Notification.vb" />
+    <Compile Include="SupportCode\WOS\WOS_Vacancy.vb" />
+    <Compile Include="Utilities\ClsEncryption.vb" />
+    <Compile Include="Utilities\ClsUtilities.vb" />
+    <Compile Include="DataTransferObjects\ALKResultDTO.vb" />
+    <Compile Include="DataTransferObjects\BankSearchResultDTO.vb" />
+    <Compile Include="DataTransferObjects\PVL\PVLResultDTO.vb" />
+    <Compile Include="DataTransferObjects\KDVakanzenDTO.vb" />
+    <Compile Include="DataTransferObjects\Notify\NotifyDTO.vb" />
+    <Compile Include="DataTransferObjects\PaymentDataTO.vb" />
+    <Compile Include="DataTransferObjects\TaxInfoService\QstDataAllowedDTO.vb" />
+    <Compile Include="DataTransferObjects\TaxInfoService\QstDataDTO.vb" />
+    <Compile Include="DataTransferObjects\TaxInfoService\TaxDatatemDTO.vb" />
+    <Compile Include="DataTransferObjects\TaxInfoService\TaxDataDTO.vb" />
+    <Compile Include="DataTransferObjects\UpdateUtilitiesDTO.vb" />
+    <Compile Include="DataTransferObjects\WOS\Db\WOSDbAccessBase.vb" />
+    <Compile Include="DataTransferObjects\WOS\WOSData.vb" />
+    <Compile Include="IBANUtil\IBANDecoder.vb" />
+    <Compile Include="IBANUtil\SwissIBANEncoder.vb" />
+    <Compile Include="IBANUtil\IBANToolDllDeclarations.vb" />
+    <Compile Include="JobPlatform\CustomerData.vb" />
+    <Compile Include="JobPlatform\JobsCH\Model\Vacancy.vb" />
+    <Compile Include="JobPlatform\JobsCH\Model\Vacancies.vb" />
+    <Compile Include="JobPlatform\JobsCH\Db\VacancyDbData.vb" />
+    <Compile Include="JobPlatform\JobsCH\Db\VacancyDbAccess.vb" />
+    <Compile Include="JobPlatform\JobsCH\Util\StringWriterWithEncoding.vb" />
+    <Compile Include="JobPlatform\JobsCH\VacancyXMLGenerator.vb" />
+    <Compile Include="JobPlatform\OstJobsCH\Db\VacancyDbAccess.vb" />
+    <Compile Include="JobPlatform\OstJobsCH\Model\Vacancies.vb" />
+    <Compile Include="JobPlatform\OstJobsCH\Model\Vacancy.vb" />
+    <Compile Include="JobPlatform\OstJobsCH\OstJobChVacanciesXMLGenerator.vb" />
+    <Compile Include="JobPlatform\VacancyDbAccessBase.vb" />
+    <Compile Include="JobPlatform\VacancyXMLGeneratorBase.vb" />
+    <Compile Include="SPALKUtil.asmx.vb">
+      <DependentUpon>SPALKUtil.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPNotification.asmx.vb">
+      <DependentUpon>SPNotification.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPIBANUtil.asmx.vb">
+      <DependentUpon>SPIBANUtil.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPOstJobsCHVacancies.asmx.vb">
+      <DependentUpon>SPOstJobsCHVacancies.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SPBankUtil.asmx.vb">
+      <DependentUpon>SPBankUtil.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPCustomerPaymentServices.asmx.vb">
+      <DependentUpon>SPCustomerPaymentServices.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPEmployeeTaxInfoService.asmx.vb">
+      <DependentUpon>SPEmployeeTaxInfoService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPInternVacancies.asmx.vb">
+      <DependentUpon>SPInternVacancies.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPModulUtil.asmx.vb">
+      <DependentUpon>SPModulUtil.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPPVLGAVUtil.asmx.vb">
+      <DependentUpon>SPPVLGAVUtil.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPScanJobUtility.asmx.vb">
+      <DependentUpon>SPScanJobUtility.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPUpdateUtilities.asmx.vb">
+      <DependentUpon>SPUpdateUtilities.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPVacancyData.asmx.vb">
+      <DependentUpon>SPVacancyData.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPWOSCustomerUtilities.asmx.vb">
+      <DependentUpon>SPWOSCustomerUtilities.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPWOSEmployeeUtilities.asmx.vb">
+      <DependentUpon>SPWOSEmployeeUtilities.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SP_JobsCH_Util.asmx.vb">
+      <DependentUpon>SP_JobsCH_Util.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPJobsCHVacancies.asmx.vb">
+      <DependentUpon>SPJobsCHVacancies.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPJobPlattformsCreateXML.asmx.vb">
+      <DependentUpon>SPJobPlattformsCreateXML.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Test.asmx.vb">
+      <DependentUpon>Test.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utilities\Logger\iLogger.vb" />
+    <Compile Include="Utilities\Logger\Logger.vb" />
+    <Compile Include="Utilities\SettingsXml.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebLive.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>44721</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44721/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

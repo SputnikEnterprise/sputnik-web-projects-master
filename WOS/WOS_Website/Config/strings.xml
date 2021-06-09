@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Translations>
+	<!-- General Language Codes -->
+	<String key="TEXT_GENERAL_NO_DOCUMENTS">
+		<Language_DE>Es sind keine Dokumente in diesem Bereich vorhanden.</Language_DE>
+		<Language_EN>There are no documents in this section available.</Language_EN>
+		<Language_FR>Ce secteur ne contient aucun document.</Language_FR>
+		<Language_IT>Non sono disponibili documenti in questo settore.</Language_IT>
+	</String>
+	<String key="TEXT_GENERAL_NUMBERS_OF_DOCUMENTS">
+		<Language_DE>Anzahl vorliegende Dokumente: </Language_DE>
+		<Language_EN>Numbers of documents: </Language_EN>
+		<Language_FR>Quantité de documents présents: </Language_FR>
+		<Language_IT>Numero di documenti presenti: </Language_IT>
+	</String>
+	<String key="TEXT_GENERAL_TERMS_AND_CONDITIONS">
+		<Language_DE>Nutzungsbedingungen</Language_DE>
+		<Language_EN>Terms of Use</Language_EN>
+		<Language_FR>Conditions générales (CG)</Language_FR>
+		<Language_IT>Condizioni generali (CG)</Language_IT>
+	</String>
+	<String key="TEXT_GENERAL_BUTTON_SEARCHS">
+		<Language_DE>Suchen</Language_DE>
+		<Language_EN>Search</Language_EN>
+		<Language_FR>Recherche</Language_FR>
+		<Language_IT>Cerca</Language_IT>
+	</String>
+	<String key="TEXT_GENERAL_BUTTON_PRINTER_FRIENDLY_VERSION">
+		<Language_DE>Druckerfreundliche Version</Language_DE>
+		<Language_EN>Printer-friendly version</Language_EN>
+		<Language_FR>Version imprimable</Language_FR>
+		<Language_IT>Versione stampabile</Language_IT>
+	</String>
+	<String key="TEXT_GENERAL_BUTTON_PRINT">
+		<Language_DE>Drucken</Language_DE>
+		<Language_EN>Print</Language_EN>
+		<Language_FR>Imprimer</Language_FR>
+		<Language_IT>Stampa</Language_IT>
+	</String>
+
+	<!-- Masterpage Language Codes -->
+	<String key="TEXT_MASTER_WELCOME">
+		<Language_DE>Herzlich willkommen, </Language_DE>
+		<Language_EN>Welcome, </Language_EN>
+		<Language_FR>Bienvenue, </Language_FR>
+		<Language_IT>Benvenuti, </Language_IT>
+	</String>
+	<String key="TEXT_MASTER_PREPARED_DOCUMENTS_SP">
+		<Language_DE>Hier finden Sie Unterlagen, welche wir für Sie bereitgestellt haben.</Language_DE>
+		<Language_EN>Here you will find documents which we have provided for you.</Language_EN>
+		<Language_FR>Ici, vous trouvez une documentation que nous avons préparée pour vous.</Language_FR>
+		<Language_IT>Qui trova i documenti che abbiamo messo a sua disposizione.</Language_IT>
+	</String>
+	<String key="TEXT_MASTER_PREPARED_DOCUMENTS_KD">
+		<Language_DE>Hier finden Sie Unterlagen, welche wir für Sie bereitgestellt haben.</Language_DE>
+		<Language_EN>Here you will find documents which we have provided for you.</Language_EN>
+		<Language_FR>Ici, vous trouvez une documentation que nous avons préparée pour vous.</Language_FR>
+		<Language_IT>Qui trova i documenti che abbiamo messo a sua disposizione.</Language_IT>
+	</String>
+	<String key="TEXT_MASTER_PREPARED_DOCUMENTS_ZHD">
+		<Language_DE>Hier finden Sie Unterlagen, welche wir für Sie bereitgestellt haben.</Language_DE>
+		<Language_EN>Here you will find documents which we have provided for you.</Language_EN>
+		<Language_FR>Ici, vous trouvez une documentation que nous avons préparée pour vous.</Language_FR>
+		<Language_IT>Qui trova i documenti che abbiamo messo a sua disposizione.</Language_IT>
+	</String>
+	<String key="TEXT_LOGIN_TERMS_AND_CONDITIONS">
+		<Language_DE>Bitte lesen und bestätigen Sie die "Nutzungsbedingungen" (Terms of Use), bevor sie fortfahren.</Language_DE>
+		<Language_EN>Please read and confirm the "Terms of Use" before continuing.</Language_EN>
+		<Language_FR>Veuillez prendre connaissance des "Conditions d'utilisation" (Terms of Use) et les confirmer avant de continuer.</Language_FR>
+		<Language_IT>Per favore, legga e confermi le “Condizioni d'uso” (Terms of Use) prima di procedere.</Language_IT>
+	</String>
+  <String key="TEXT_LOGIN_TERMS_AND_CONDITIONS_AFTER_CONFIRMATION">
+    <Language_DE>Besten Dank für die Bestätigung der "Nutzungsbedingungen" (Terms of Use). Sie können nun über das linke Menü auf Ihre Dokumente zugreifen.</Language_DE>
+    <Language_EN>Thank you for confirming the "Terms of Use". You can now access your documents via the left menu.</Language_EN>
+    <Language_FR>Merci de confirmer les "Conditions d'utilisation" (Terms of Use). Vous pouvez maintenant accéder à vos documents via le menu de gauche.</Language_FR>
+    <Language_IT>Grazie per aver confermato "Condizioni d'uso" (Terms of Use). Ora puoi accedere ai tuoi documenti tramite il menu di sinistra.</Language_IT>
+  </String>
+	<String key="TEXT_LOGIN_TERMS_AND_CONDITIONS_CONFIRM">
+		<Language_DE>Ich bestätige, die "Nutzungsbedingungen" (Terms of Use) gelesen und akzeptiert zu haben.</Language_DE>
+		<Language_EN>I confirm to have read and accepted the "Terms of Use".</Language_EN>
+		<Language_FR>Je confirme avoir lu les "Conditions d'utilisation" (Terms of Use) et les avoir acceptées.</Language_FR>
+		<Language_IT>Confermo d’aver letto e accettato le "Condizioni d'uso” (Terms of Use).</Language_IT>
+	</String>
+  <String key="TEXT_LOGIN_BUTTON_TERMS_AND_CONDITIONS_CONFIRMIRMATION">
+    <Language_DE>Ich bestätige</Language_DE>
+    <Language_EN>Confirm TERMS</Language_EN>
+    <Language_FR>Je confirme</Language_FR>
+    <Language_IT>Confermo</Language_IT>
+  </String>
+
+	<!-- Menu Language Codes -->
+	<String key="TEXT_MENU_TERMS_AND_CONDITIONS">
+		<Language_DE>NUTZUNGSBEDINGUNGEN</Language_DE>
+		<Language_EN>TERMS OF USE</Language_EN>
+		<Language_FR>CONDITIONS D'UTILISATION</Language_FR>
+		<Language_IT>CONDIZIONI D'USO</Language_IT>
+	</String>
+	<String key="TEXT_MENU_FRAME_AGREEMENT">
+		<Language_DE>RAHMENARBEITSVERTRAG</Language_DE>
+		<Language_EN>GENERAL WORK CONTRACT</Language_EN>
+		<Language_FR>CONTRAT-CADRE DE TRAVAIL</Language_FR>
+		<Language_IT>CONTRATTO DI LAVORO GENERALE</Language_IT>
+	</String>
+	<String key="TEXT_MENU_EMPLOYERS_CERTIFICATE">
+		<Language_DE>ARBEITGEBERBESCHEINIGUNG</Language_DE>
+		<Language_EN>EMPLOYER CERTIFICATE</Language_EN>
+		<Language_FR>ATTESTATION DE L'EMPLOYEUR</Language_FR>
+		<Language_IT>ATTESTATO DEL DATORE DI LAVORO</Language_IT>
+	</String>
+	<String key="TEXT_MENU_JOB_VACANCIES">
+		<Language_DE>OFFENE STELLEN</Language_DE>
+		<Language_EN>JOB VACANCIES</Language_EN>
+		<Language_FR>POSTES VACANTS</Language_FR>
+		<Language_IT>POSTI VACANTI</Language_IT>
+	</String>
+	<String key="TEXT_MENU_JOB_VACANCIES_ALL">
+		<Language_DE>ALLE</Language_DE>
+		<Language_EN>ALL</Language_EN>
+		<Language_FR>TOUS</Language_FR>
+		<Language_IT>TUTTI</Language_IT>
+	</String>
+	<String key="TEXT_MENU_JOB_VACANCIES_FOR_ME">
+		<Language_DE>ZU MIR PASSEND</Language_DE>
+		<Language_EN>SUITABLE FOR ME</Language_EN>
+		<Language_FR>POUR MOI </Language_FR>
+		<Language_IT>ADATTI A ME</Language_IT>
+	</String>
+	<String key="TEXT_MENU_AVAILABLE_CANDIDATES">
+		<Language_DE>VERFÜGBARE KANDIDATEN</Language_DE>
+		<Language_EN>AVAILABLE CANDIDATES</Language_EN>
+		<Language_FR>CANDIDATS DISPONIBLES</Language_FR>
+		<Language_IT>CANDIDATI DISPONIBILI</Language_IT>
+	</String>
+	<String key="TEXT_MENU_AVAILABLE_CANDIDATES_ALL">
+		<Language_DE>ALLE</Language_DE>
+		<Language_EN>ALL</Language_EN>
+		<Language_FR>TOUS</Language_FR>
+		<Language_IT>TUTTI</Language_IT>
+	</String>
+	<String key="TEXT_MENU_AVAILABLE_CANDIDATES_FOR_ME">
+		<Language_DE>ZU MIR PASSEND</Language_DE>
+		<Language_EN>SUITABLE FOR ME</Language_EN>
+		<Language_FR>POUR MOI</Language_FR>
+		<Language_IT>ADATTI A ME</Language_IT>
+	</String>
+	<String key="TEXT_MENU_BETWEEN_EARNINGS_FORMS">
+		<Language_DE>ZWISCHENVERDIENSTFORMULARE</Language_DE>
+		<Language_EN>INTERMEDIATE EARNING FORM</Language_EN>
+		<Language_FR>ATTESTATION DE GAIN INTERMÉDIAIRE</Language_FR>
+		<Language_IT>ATTESTATO DI GUADAGNO INTERMEDIO</Language_IT>
+	</String>
+	<String key="TEXT_MENU_PAYROLL">
+		<Language_DE>LOHNABRECHNUNGEN</Language_DE>
+		<Language_EN>PAYROLL ACCOUNTING</Language_EN>
+		<Language_FR>DÉCOMPTES DE SALAIRE</Language_FR>
+		<Language_IT>CONTEGGIO DEL SALARIO</Language_IT>
+	</String>
+	<String key="TEXT_MENU_WAGE_STATEMENT">
+		<Language_DE>LOHNAUSWEIS</Language_DE>
+		<Language_EN>SALARY CERTIFICATE</Language_EN>
+		<Language_FR>CERTIFICAT DE SALAIRE</Language_FR>
+		<Language_IT>CERTIFICATO DEL SALARIO</Language_IT>
+	</String>
+	<String key="TEXT_MENU_OPERATING_CONTRACTS">
+		<Language_DE>EINSATZVERTRÄGE</Language_DE>
+		<Language_EN>OPERATING CONTRACTS</Language_EN>
+		<Language_FR>LETTRES DE MISSION</Language_FR>
+		<Language_IT>CONTRATTO D'IMPIEGO</Language_IT>
+	</String>
+	<String key="TEXT_MENU_REPORTS">
+		<Language_DE>RAPPORTE</Language_DE>
+		<Language_EN>REPORTS</Language_EN>
+		<Language_FR>RAPPORTS</Language_FR>
+		<Language_IT>RAPPORTI</Language_IT>
+	</String>
+	<String key="TEXT_MENU_RENTAL_AGREEMENT">
+		<Language_DE>VERLEIHVERTRÄGE</Language_DE>
+		<Language_EN>RENTAL AGREEMENTS</Language_EN>
+		<Language_FR>CONTRATS DE LOCATION</Language_FR>
+		<Language_IT>CONTRATTO DI PRESTITO</Language_IT>
+	</String>
+	<String key="TEXT_MENU_RENTAL_AGREEMENT_OPEN">
+		<Language_DE>NOCH OFFEN</Language_DE>
+		<Language_EN>STILL OPEN</Language_EN>
+		<Language_FR>ENCORE EN SUSPENS</Language_FR>
+		<Language_IT>ANCORA APERTI</Language_IT>
+	</String>
+
+	<String key="TEXT_MENU_ALL_PROPOSE">
+		<Language_DE>ALLE VORSCHLÄGE</Language_DE>
+		<Language_EN>ALL SUGGESTIONS</Language_EN>
+		<Language_FR>TOUTES LES SUGGESTIONS</Language_FR>
+		<Language_IT>TUTTI I SUGGERIMENTI</Language_IT>
+	</String>
+	<String key="TEXT_MENU_NEW_PROPOSE">
+		<Language_DE>NEUE VORSCHLÄGE</Language_DE>
+		<Language_EN>NEW SUGGESTIONS</Language_EN>
+		<Language_FR>NOUVELLES SUGGESTIONS</Language_FR>
+		<Language_IT>NUOVI SUGGERIMENTI</Language_IT>
+	</String>
+
+	<String key="TEXT_MENU_BILLS">
+		<Language_DE>RECHNUNGEN</Language_DE>
+		<Language_EN>INVOICES</Language_EN>
+		<Language_FR>FACTURES</Language_FR>
+		<Language_IT>FATTURE</Language_IT>
+	</String>
+
+	<!-- Grid Language Codes -->
+	<String key="TEXT_DOCUMENT_ACTION_FORWARD">
+		<Language_DE>weiterleiten</Language_DE>
+		<Language_EN>forward</Language_EN>
+		<Language_FR>trasmettre</Language_FR>
+		<Language_IT>prosegui</Language_IT>
+	</String>
+	<String key="TEXT_DOCUMENT_ACTION_ACCEPT">
+		<Language_DE>akzeptieren</Language_DE>
+		<Language_EN>accept</Language_EN>
+		<Language_FR>accepter</Language_FR>
+		<Language_IT>accetta</Language_IT>
+	</String>
+  <String key="TEXT_DOCUMENT_ACTION_INTERESTING">
+    <Language_DE>interessiert</Language_DE>
+    <Language_EN>Interested</Language_EN>
+    <Language_FR>intéressé</Language_FR>
+    <Language_IT>Interessato</Language_IT>
+  </String>
+	<String key="TEXT_DOCUMENT_ACTION_DECLINE">
+		<Language_DE>ablehnen</Language_DE>
+		<Language_EN>decline</Language_EN>
+		<Language_FR>refuser</Language_FR>
+		<Language_IT>rifiuta</Language_IT>
+	</String>
+	<String key="TEXT_DOCUMENT_ACTION_SEND_FEEDBACK_PROPOSE">
+		<Language_DE>feedback</Language_DE>
+		<Language_EN>Feedback</Language_EN>
+		<Language_FR>Commentaires</Language_FR>
+		<Language_IT>feedback</Language_IT>
+	</String>
+  <String key="TEXT_DOCUMENT_ACTION_SEND_FEEDBACK">
+    <Language_DE>Feedback senden</Language_DE>
+    <Language_EN>Send feedback</Language_EN>
+    <Language_FR>Envoyer des commentaires</Language_FR>
+    <Language_IT>Inviare feedback</Language_IT>
+  </String>
+  <String key="TEXT_DOCUMENT_ACTION_CANCEL_FEEDBACK">
+    <Language_DE>Abbrechen</Language_DE>
+    <Language_EN>Cancel</Language_EN>
+    <Language_FR>Annuler</Language_FR>
+    <Language_IT>Annullare</Language_IT>
+  </String>
+	<String key="TEXT_CAPTION_DOCUMENT">
+		<Language_DE>Dokument</Language_DE>
+		<Language_EN>Document</Language_EN>
+		<Language_FR>Document</Language_FR>
+		<Language_IT>Documento</Language_IT>
+	</String>
+	<String key="TEXT_CAPTION_ACCEPTED">
+		<Language_DE>Akzeptiert am</Language_DE>
+		<Language_EN>Accepted on</Language_EN>
+		<Language_FR>Accepté le</Language_FR>
+		<Language_IT>Accettato il</Language_IT>
+	</String>
+	<String key="TEXT_CAPTION_DATE">
+		<Language_DE>Datum</Language_DE>
+		<Language_EN>Date</Language_EN>
+		<Language_FR>Date</Language_FR>
+		<Language_IT>Data</Language_IT>
+	</String>
+	<String key="TEXT_CAPTION_DESCRIPTION">
+		<Language_DE>Bezeichnung</Language_DE>
+		<Language_EN>Description</Language_EN>
+		<Language_FR>Désignation</Language_FR>
+		<Language_IT>Descrizione</Language_IT>
+	</String>
+
+	<!-- Titles of Pages Language Codes -->
+	<String key="TEXT_PAGETITLE_RENTAL_CONTRACTS">
+		<Language_DE>Verleihverträge</Language_DE>
+		<Language_EN>Rental contacts</Language_EN>
+		<Language_FR>Contrats de location</Language_FR>
+		<Language_IT>Contratti di prestito</Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_RENTAL_PROPOSE">
+		<Language_DE>Vorschläge</Language_DE>
+		<Language_EN>Suggestions</Language_EN>
+		<Language_FR>Proposition</Language_FR>
+		<Language_IT>Suggerimenti</Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_OPEN_RENTAL_CONTRACTS">
+		<Language_DE>Offene Verträge</Language_DE>
+		<Language_EN>Open contracts</Language_EN>
+		<Language_FR>Contrats en suspens</Language_FR>
+		<Language_IT>Contratti aperti</Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_OPEN_PROPOSE">
+		<Language_DE>Offene Vorschläge</Language_DE>
+		<Language_EN>Open suggestions</Language_EN>
+		<Language_FR>Propositions ouverts</Language_FR>
+		<Language_IT>Suggerimenti aperti</Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_BILLS">
+		<Language_DE>Rechnungen</Language_DE>
+		<Language_EN>Invoices</Language_EN>
+		<Language_FR>Factures</Language_FR>
+		<Language_IT>Fatture</Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_REPORTS">
+		<Language_DE>Rapporte</Language_DE>
+		<Language_EN>Reports</Language_EN>
+		<Language_FR>Rapports</Language_FR>
+		<Language_IT>Rapporti</Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_BETWEEN_EARNINGS_FORM">
+		<Language_DE>Zwischenverdienstformulare</Language_DE>
+		<Language_EN>Intermediate earning forms</Language_EN>
+		<Language_FR>Formulaires de gain intermédiaire</Language_FR>
+		<Language_IT>Attestato di guadagno intermedio</Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_SIGNED_REPORTS">
+		<Language_DE>Unterschreibene Rapporte</Language_DE>
+		<Language_EN>Signed reports</Language_EN>
+		<Language_FR>Rapports signés</Language_FR>
+		<Language_IT>Rapporti firmati</Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_WAGE_STATEMENT">
+		<Language_DE>Lohnausweise</Language_DE>
+		<Language_EN>Salary certificates</Language_EN>
+		<Language_FR>Certificates de Salaire</Language_FR>
+		<Language_IT>Certificati di salario</Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_PAYROLL">
+		<Language_DE>Lohnabrechnungen</Language_DE>
+		<Language_EN>Payroll accountings</Language_EN>
+		<Language_FR>Décomptes salaire</Language_FR>
+		<Language_IT>Conteggi del salario</Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_OPERATING_CONTRACTS">
+		<Language_DE>Einsatzverträge</Language_DE>
+		<Language_EN>Operating contracts</Language_EN>
+		<Language_FR>Lettres de mission</Language_FR>
+		<Language_IT>Contratti d'impiego</Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_CERTIFICATE_OF_EMPLOYMENT">
+		<Language_DE>Arbeitsbescheinigung</Language_DE>
+		<Language_EN>Employment certificate</Language_EN>
+		<Language_FR>Certificat de travail</Language_FR>
+		<Language_IT>Certificato di lavoro</Language_IT>
+	</String>
+	
+	<!-- Customer (KD, ZHD) -->
+	<String key="TEXT_CUSTOMER_NUMBERS_OF_CANDIDATES">
+		<Language_DE>Anzahl Kandidaten: </Language_DE>
+		<Language_EN>Number of candidates</Language_EN>
+		<Language_FR>Nombre de candidats</Language_FR>
+		<Language_IT>Numero di candidati</Language_IT>
+	</String>
+	<String key="TEXT_CUSTOMER_NO_CANDIDATES">
+		<Language_DE>Keine Kandidaten gefunden.</Language_DE>
+		<Language_EN>No candidate found</Language_EN>
+		<Language_FR>Aucune donnée trouvée.</Language_FR>
+		<Language_IT>Nessun candidato trovato</Language_IT>
+	</String>
+  <String key="TEXT_CUSTOMER_PROPPOSE_FEEDBACK_TITLE">
+    <Language_DE>feedback</Language_DE>
+    <Language_EN>Feedback</Language_EN>
+    <Language_FR>Commentaires</Language_FR>
+    <Language_IT>feedback</Language_IT>>
+  </String>
+  <String key="TEXT_CUSTOMER_PROPPOSE_FEEDBACK_OF_NUMBER">
+    <Language_DE>Bitte erfassen Sie das Feedback zum Vorschlag:</Language_DE>
+    <Language_EN>Please enter feedback on the suggestion:</Language_EN>
+    <Language_FR>Veuillez saisir vos commentaires sur la proposition:</Language_FR>
+    <Language_IT>Si prega di inserire un feedback alla proposta:</Language_IT>
+  </String>
+
+	<!-- Candidates (SP) -->
+	<String key="TEXT_CANDIDATES_NUMBERS_OF_VACANCIES">
+		<Language_DE>Anzahl offene Stellen: </Language_DE>
+		<Language_EN>Number of vacant jobs:</Language_EN>
+		<Language_FR>Nombre de postes vacants:</Language_FR>
+		<Language_IT>Numero di posti vacanti:</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATES_NO_VACANCIES">
+		<Language_DE>Keine offenen Stellen gefunden.</Language_DE>
+		<Language_EN>No vacant job found.</Language_EN>
+		<Language_FR>Aucun poste vacant trouvé.</Language_FR>
+		<Language_IT>Nessun posto vacante.</Language_IT>
+	</String>
+
+	<String key="TEXT_CANDIDATE_PROFESSION">
+		<Language_DE>Beruf</Language_DE>
+		<Language_EN>Profession</Language_EN>
+		<Language_FR>Profession</Language_FR>
+		<Language_IT>Professione</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_YEAR">
+		<Language_DE>Jahrgang</Language_DE>
+		<Language_EN>Year of birth</Language_EN>
+		<Language_FR>Année de naissance</Language_FR>
+		<Language_IT>Anno di nascita</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_BRANCH">
+		<Language_DE>Branche</Language_DE>
+		<Language_EN>Branch</Language_EN>
+		<Language_FR>Branche</Language_FR>
+		<Language_IT>Settore</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_EMAIL">
+		<Language_DE>Mail an Berater</Language_DE>
+		<Language_EN>Mail to the consultant</Language_EN>
+		<Language_FR>Mail au conseiller</Language_FR>
+		<Language_IT>Mail al consulente</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_REQUEST">
+		<Language_DE>Anfragen</Language_DE>
+		<Language_EN>Request</Language_EN>
+		<Language_FR>Demande</Language_FR>
+		<Language_IT>Domanda</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_CONSULTANT">
+		<Language_DE>Berater</Language_DE>
+		<Language_EN>Consultant</Language_EN>
+		<Language_FR>Conseiller</Language_FR>
+		<Language_IT>Consulente</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_FIRST_NAME">
+		<Language_DE>Vorname</Language_DE>
+		<Language_EN>First Name</Language_EN>
+		<Language_FR>Prénom</Language_FR>
+		<Language_IT>Nome</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_LAST_NAME">
+		<Language_DE>Nachname</Language_DE>
+		<Language_EN>Last Name</Language_EN>
+		<Language_FR>Nom de famille</Language_FR>
+		<Language_IT>Cognome</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_CANTON">
+		<Language_DE>Kanton</Language_DE>
+		<Language_EN>Canton</Language_EN>
+		<Language_FR>Canton</Language_FR>
+		<Language_IT>Cantone</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_LOCATION">
+		<Language_DE>Ort</Language_DE>
+		<Language_EN>Location</Language_EN>
+		<Language_FR>Lieu</Language_FR>
+		<Language_IT>Luogo</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_SEX">
+		<Language_DE>Geschlecht</Language_DE>
+		<Language_EN>Sex</Language_EN>
+		<Language_FR>Sexe</Language_FR>
+		<Language_IT>Sesso</Language_IT>
+	</String>	
+	<String key="TEXT_CANDIDATE_LANGUAGE">
+		<Language_DE>Sprache</Language_DE>
+		<Language_EN>Language</Language_EN>
+		<Language_FR>Langue</Language_FR>
+		<Language_IT>Lingua</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_NATIONALITY">
+		<Language_DE>Nationalität</Language_DE>
+		<Language_EN>Nationality</Language_EN>
+		<Language_FR>Nationanlité</Language_FR>
+		<Language_IT>Nazionalità</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_PERCENT">
+		<Language_DE>Prozent</Language_DE>
+		<Language_EN>Percent</Language_EN>
+		<Language_FR>Pourcent</Language_FR>
+		<Language_IT>Percento</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_CIVIL_STATUS">
+		<Language_DE>Zivilstand</Language_DE>
+		<Language_EN>Civil status</Language_EN>
+		<Language_FR>État civil</Language_FR>
+		<Language_IT>Stato civile</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_DRIVER_LICENCE">
+		<Language_DE>Führerausweis</Language_DE>
+		<Language_EN>Driver licence</Language_EN>
+		<Language_FR>Permis de conduire</Language_FR>
+		<Language_IT>Permesso di condurre</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_CAR">
+		<Language_DE>Auto</Language_DE>
+		<Language_EN>Car</Language_EN>
+		<Language_FR>Voiture</Language_FR>
+		<Language_IT>Automobile</Language_IT>
+	</String>
+	<String key="TEXT_CANDIDATE_PERMITS">
+		<Language_DE>Bewilligung</Language_DE>
+		<Language_EN>Permits</Language_EN>
+		<Language_FR>Permis</Language_FR>
+		<Language_IT>Permessi</Language_IT>
+	</String>	
+	<String key="TEXT_JOB_NUMBER">
+		<Language_DE>Vakanzen Nummer</Language_DE>
+		<Language_EN>Vacancy number</Language_EN>
+		<Language_FR>Numéro de la vacance</Language_FR>
+		<Language_IT>Numero della vacanza</Language_IT>
+	</String>
+	<String key="TEXT_JOB_DESCRIPTION">
+		<Language_DE>Berufsbezeichnung</Language_DE>
+		<Language_EN>Job Description</Language_EN>
+		<Language_FR>Désignation de la profession</Language_FR>
+		<Language_IT>Definizione professione</Language_IT>
+	</String>
+	<String key="TEXT_JOB_START">
+		<Language_DE>Beginn</Language_DE>
+		<Language_EN>Beginning</Language_EN>
+		<Language_FR>Début</Language_FR>
+		<Language_IT>Inizio</Language_IT>
+	</String>
+	<String key="TEXT_JOB_ACTIVITY">
+		<Language_DE>Tätigkeit</Language_DE>
+		<Language_EN>Activity</Language_EN>
+		<Language_FR>Activité</Language_FR>
+		<Language_IT>Attività</Language_IT>
+	</String>
+	<String key="TEXT_JOB_DEMAND">
+		<Language_DE>Anforderung</Language_DE>
+		<Language_EN>Demand</Language_EN>
+		<Language_FR>Exigence</Language_FR>
+		<Language_IT>Requisiti</Language_IT>
+	</String>
+	<String key="TEXT_JOB_PROZENT">
+		<Language_DE>Beschäftigung</Language_DE>
+		<Language_EN>Employment level</Language_EN>
+		<Language_FR>Occupation</Language_FR>
+		<Language_IT>Grado di occupazione</Language_IT>
+	</String>
+	<String key="TEXT_JOB_TYPE">
+		<Language_DE>Anstellungsart</Language_DE>
+		<Language_EN>Kind of employment</Language_EN>
+		<Language_FR>Type d‘emploi</Language_FR>
+		<Language_IT>Genere di impiego</Language_IT>
+	</String>
+	<String key="TEXT_ADDRESS_CANTON">
+		<Language_DE>Kanton</Language_DE>
+		<Language_EN>Canton</Language_EN>
+		<Language_FR>Canton</Language_FR>
+		<Language_IT>Cantone</Language_IT>
+	</String>
+	<String key="TEXT_ADDRESS_REGION">
+		<Language_DE>Region</Language_DE>
+		<Language_EN>Region</Language_EN>
+		<Language_FR>Région</Language_FR>
+		<Language_IT>Regione</Language_IT>
+	</String>
+	<String key="TEXT_ADDRESS_LOCATION">
+		<Language_DE>Ort</Language_DE>
+		<Language_EN>Location</Language_EN>
+		<Language_FR>Localité</Language_FR>
+		<Language_IT>Luogo</Language_IT>
+	</String>
+	<String key="TEXT_EDUCATION">
+		<Language_DE>Ausbildung</Language_DE>
+		<Language_EN>Professional training</Language_EN>
+		<Language_FR>Formation</Language_FR>
+		<Language_IT>Formazione professionale</Language_IT>
+	</String>
+
+	<String key="TEXT_CANDIDATES_ADVISOR">
+		<Language_DE>Berater</Language_DE>
+		<Language_EN>Adviser</Language_EN>
+		<Language_FR>Conseiller</Language_FR>
+		<Language_IT>Consulente</Language_IT>
+	</String>
+	<String key="TEXT_BRANCH_OFFICE">
+		<Language_DE>Filiale</Language_DE>
+		<Language_EN>Branch</Language_EN>
+		<Language_FR>Filiale</Language_FR>
+		<Language_IT>Filiale</Language_IT>
+	</String>
+	<String key="TEXT_JOB_APPLICATION">
+		<Language_DE>Bewerbung</Language_DE>
+		<Language_EN>Application</Language_EN>
+		<Language_FR>Candidature</Language_FR>
+		<Language_IT>Candidatura</Language_IT>
+	</String>
+	<String key="TEXT_JOB_APPLICATION_ACTION">
+		<Language_DE>Jetzt bewerben</Language_DE>
+		<Language_EN>Apply now</Language_EN>
+		<Language_FR>Postuler maintenant</Language_FR>
+		<Language_IT>Candidare ora</Language_IT>
+	</String>
+
+	<!-- Dialog Language Codes -->
+	<String key="TEXT_OPEN_CONTRACT_QUEST_ACCEPT_CONTRACT_TITLE">
+		<Language_DE>Vertag akzeptieren</Language_DE>
+		<Language_EN>Accept contract</Language_EN>
+		<Language_FR>Accepter le contrat</Language_FR>
+		<Language_IT>Accetta contratto</Language_IT>
+	</String>
+	<String key="TEXT_OPEN_CONTRACT_QUEST_ACCEPT_CONTRACT">
+		<Language_DE>Sind sie sicher, dass Sie diesen Vertrag akzeptieren möchten?</Language_DE>
+		<Language_EN>Are you sure you want to accept this contract?</Language_EN>
+		<Language_FR>Êtes-vous sûr de vouloir accepter ce contrat?</Language_FR>
+		<Language_IT>È sicuro di voler accettare questo contratto?</Language_IT>
+	</String>
+	<String key="TEXT_OPEN_CONTRACT_QUEST_DECLINE_CONTRACT_TITLE">
+		<Language_DE>Vertag ablehnen</Language_DE>
+		<Language_EN>Decline contract</Language_EN>
+		<Language_FR>Refuser le contrat</Language_FR>
+		<Language_IT>Rifiuta contratto</Language_IT>
+	</String>
+	<String key="TEXT_OPEN_CONTRACT_QUEST_DECLINE_CONTRACT">
+		<Language_DE>Sind sie sicher, dass Sie diesen Vertrag ablehnen möchten?</Language_DE>
+		<Language_EN>Are you sure you want to decline this contract?</Language_EN>
+		<Language_FR>Êtes-vous sûr de vouloir refuser ce contrat?</Language_FR>
+		<Language_IT>È sicuro di voler rifiutare questo contratto?</Language_IT>
+	</String>
+	<String key="TEXT_OPEN_CONTRACT_QUEST_SIGN_CONTRACT_TITLE">
+		<Language_DE>Vertag unterzeichnen</Language_DE>
+		<Language_EN>Sign contract</Language_EN>
+		<Language_FR>Signer le contrat</Language_FR>
+		<Language_IT>Firma contratto</Language_IT>
+	</String>
+	<String key="TEXT_OPEN_CONTRACT_QUEST_SIGN_CONTRACT">
+		<Language_DE>Bitte unterzeichnetes Exemplar an folgende Email-Adresse oder Faxnummer übermitteln:</Language_DE>
+		<Language_EN>Please, send signed copy to the following email address or transmit by fax to:</Language_EN>
+		<Language_FR>Veuillez envoyer l'exemplaire signé à l'adresse e-mail ci-dessous ou au numéro de fax:</Language_FR>
+		<Language_IT>Per favore, inviare una copia firmata al seguente indirizzo di posta elettronica o trasmettere al seguente numero di fax:</Language_IT>
+	</String>
+  <String key="TEXT_OPEN_PROPOSAL_QUEST_ACCEPT_PROPOSAL_TITLE">
+    <Language_DE>Interessanter Vorschlag</Language_DE>
+    <Language_EN>Interesting suggestion</Language_EN>
+    <Language_FR>Proposition intéressante</Language_FR>
+    <Language_IT>Proposta interessante</Language_IT>
+  </String>
+  <String key="TEXT_OPEN_PROPOSAL_QUEST_ACCEPT_PROPOSAL">
+    <Language_DE>Sind sie sicher, dass Sie diesen Vorschlag weiter verfolgen möchten?</Language_DE>
+    <Language_EN>Are you sure you want to continue with this suggestion?</Language_EN>
+    <Language_FR>Êtes-vous sûr de vouloir continuer avec cette proposition?</Language_FR>
+    <Language_IT>Sei sicuro di voler continuare con questa proposta?</Language_IT>
+  </String>
+  <String key="TEXT_OPEN_PROPOSAL_QUEST_DECLINE_PROPOSAL_TITLE">
+    <Language_DE>Vorschlag ablehnen</Language_DE>
+    <Language_EN>Reject suggestion</Language_EN>
+    <Language_FR>Rejeter la proposition</Language_FR>
+    <Language_IT>Rifiuta proposta</Language_IT>
+  </String>
+  <String key="TEXT_OPEN_PROPOSAL_QUEST_DECLINE_PROPOSAL">
+    <Language_DE>Sind sie sicher, dass Sie diesen Vorschlag ablehnen möchten?</Language_DE>
+    <Language_EN>Are you sure you want to reject this suggestion?</Language_EN>
+    <Language_FR>Êtes-vous sûr de vouloir rejeter cette proposition?</Language_FR>
+    <Language_IT>Sei sicuro di voler rifiutare questa proposta?</Language_IT>
+  </String>
+
+	<!-- Send Message Codes -->
+	<String key="TEXT_SEND_MESSAGE_TITLE">
+		<Language_DE>Ihre Mitteilung</Language_DE>
+		<Language_EN>Your message</Language_EN>
+		<Language_FR>Votre message</Language_FR>
+		<Language_IT>Il suo messaggio</Language_IT>
+	</String>
+	<String key="TEXT_SEND_MESSAGE_CONTENT">
+		<Language_DE>Text</Language_DE>
+		<Language_EN>Text</Language_EN>
+		<Language_FR>Texte</Language_FR>
+		<Language_IT>Testo</Language_IT>
+	</String>
+	<String key="TEXT_SEND_MESSAGE_SEND">
+		<Language_DE>Absenden</Language_DE>
+		<Language_EN>Send</Language_EN>
+		<Language_FR>Envoi</Language_FR>
+		<Language_IT>Invia</Language_IT>
+	</String>
+	<String key="TEXT_SEND_MESSAGE_NAME">
+		<Language_DE>Name</Language_DE>
+		<Language_EN>Name</Language_EN>
+		<Language_FR>Nom</Language_FR>
+		<Language_IT>Nome</Language_IT>
+	</String>
+	<String key="TEXT_SEND_MESSAGE_SUBJECT">
+		<Language_DE>Betreff</Language_DE>
+		<Language_EN>Subject</Language_EN>
+		<Language_FR>Object</Language_FR>
+		<Language_IT>Oggetto</Language_IT>
+	</String>
+	<String key="TEXT_SEND_MESSAGE_NUMBER">
+		<Language_DE>Nummer</Language_DE>
+		<Language_EN>Number</Language_EN>
+		<Language_FR>Numéro</Language_FR>
+		<Language_IT>Numero</Language_IT>
+	</String>
+	<String key="TEXT_SEND_MESSAGE_EMAIL">
+		<Language_DE>Email-Adresse</Language_DE>
+		<Language_EN>Email Address</Language_EN>
+		<Language_FR>Adresse e-mail</Language_FR>
+		<Language_IT>Indirizzo e-mail</Language_IT>
+	</String>
+
+		<!-- Error Handling Language Codes -->
+	<String key="TEXT_PAGE_NOT_FOUND_ERROR">
+		<Language_DE>Die von Ihnen aufgerufene Seite wurde nicht gefunden!</Language_DE>
+		<Language_EN>The page you are looking for could not be found!</Language_EN>
+		<Language_FR>La page recherché n'a pas été trouvée!</Language_FR>
+		<Language_IT>Impossibile trovare la pagina da lei ricercata!</Language_IT>
+	</String>
+	<String key="TEXT_PAGE_NOT_FOUND_MESSAGE">
+		<Language_DE> Sie können Ihren Lieferanten kontaktieren und einen neuen Link anfordern.</Language_DE>
+		<Language_EN>Please contact your supplier and ask for a new link.</Language_EN>
+		<Language_FR>Vous pouvez contacter votre fournisseur et demander un nouveau lien.</Language_FR>
+		<Language_IT>Si metta in contatto con il suo fornitore e richieda un nuovo link.</Language_IT>
+	</String>
+	<String key="TEXT_DOCUMENT_NOT_FOUND_ERROR">
+		<Language_DE>Das von Ihnen aufgerufene Dokument wurde nicht gefunden.</Language_DE>
+		<Language_EN>The document you are looking for could not be found.</Language_EN>
+		<Language_FR>Le document recherché n'a pas été trouvé.</Language_FR>
+		<Language_IT>Impossibile trovare il documento da lei ricercato.</Language_IT>
+	</String>
+	<String key="TEXT_DOCUMENT_NOT_FOUND_MESSAGE">
+		<Language_DE>Dokument: </Language_DE>
+		<Language_EN>Document: </Language_EN>
+		<Language_FR>Document: </Language_FR>
+		<Language_IT>Documento: </Language_IT>
+	</String>
+	<String key="TEXT_SEND_MESSAGE_ERROR">
+		<Language_DE>Nachricht konnte nicht gesendet werden.</Language_DE>
+		<Language_EN>Message could not be sent</Language_EN>
+		<Language_FR>Impossible d'envoyer le message</Language_FR>
+		<Language_IT>Impossibile inviare il messaggio</Language_IT>
+	</String>
+  <String key="TEXT_SEND_FEEDBACK_ERROR">
+    <Language_DE>Feedback konnte nicht gesendet werden</Language_DE>
+    <Language_EN>Feedback could not be sent</Language_EN>
+    <Language_FR>Les commentaires n'ont pas pu être envoyés</Language_FR>
+    <Language_IT>Impossibile inviare il feedback</Language_IT>
+  </String>
+  <String key="TEXT_SEND_FEEDBACK_EMPTY">
+    <Language_DE>Bitte erfassen Sie das Feedback vor der Übermittlung</Language_DE>
+    <Language_EN>Please enter the feedback before submitting</Language_EN>
+    <Language_FR>S'il vous plaît entrez les commentaires avant de soumettre</Language_FR>
+    <Language_IT>Si prega di inserire il feedback prima di inviare</Language_IT>
+  </String>
+</Translations>

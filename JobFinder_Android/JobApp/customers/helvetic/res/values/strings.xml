@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HELVETIC PERSONAL AG - JobApp</string>
+    <string name="jobFinderAppCreateURL"><![CDATA[http://asmx.sputnik-it.com/development_IMT/goodjobs/AppRequest/Create/9182704B-F866-4b94-9C65-2C5397D26926/DE]]></string>
+
+</resources>

@@ -1,0 +1,32 @@
+﻿<font face="Trebuchet MS" size="2"> <p>Guten Tag,</p>
+
+<p>
+Dieses Dokument wurde von {MAVorname} {MANachname} an Sie weitergeleitet.
+</p>
+<p>
+P.S. Dies ist eine automatisch erstellte Nachricht. Bitte antworten Sie nicht auf dieses Mail.
+</p>
+
+<hr />
+
+<font face="Trebuchet MS" size="2">
+<b>
+
+<p>
+Freundliche Grüsse
+</p>
+
+<p>
+{MAVorname} {MANachname}
+</p>
+
+<p>
+Erstellt durch: <br/>
+{UserVorname} {UserNachname} <br/>
+Telefon: {UserTelefon} <br/>
+Telefax: {UserTelefax} <br/>
+EMail: {UserEmail}
+</p>
+
+<hr />
+

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Translations>
+	<!-- General Language Codes -->
+	<String key="TEXT_GENERAL_NO_DOCUMENTS">
+		<Language_DE>Es sind keine Dokumente in diesem Bereich vorhanden.</Language_DE>
+		<Language_EN>There are no documents in this section available.</Language_EN>
+		<Language_FR>Il n'ya pas de documents dans cette section est disponible.</Language_FR>
+		<Language_IT>Non ci sono documenti in questa sezione è disponibile.</Language_IT>
+	</String>
+	<String key="TEXT_GENERAL_NUMBERS_OF_DOCUMENTS">
+		<Language_DE>Anzahl vorliegende Dokumente: </Language_DE>
+		<Language_EN>Numbers of documents: </Language_EN>
+		<Language_FR>Ce numéro: </Language_FR>
+		<Language_IT>Questo numero del documento: </Language_IT>
+	</String>
+	<String key="TEXT_GENERAL_TERMS_AND_CONDITIONS">
+		<Language_DE>AGB</Language_DE>
+		<Language_EN>Terms</Language_EN>
+		<Language_FR>Conditions</Language_FR>
+		<Language_IT>Termini</Language_IT>
+	</String>
+
+	<!-- Masterpage Language Codes -->
+	<String key="TEXT_MASTER_WELCOME">
+		<Language_DE>Herzlich Willkommen </Language_DE>
+		<Language_EN>Welcome</Language_EN>
+		<Language_FR>Bienvenue</Language_FR>
+		<Language_IT>Benvenuti</Language_IT>
+	</String>
+	<String key="TEXT_MASTER_PREPARED_DOCUMENTS">
+		<Language_DE>Hier finden Sie Unterlagen welche wir für Sie bereitgestellt haben.</Language_DE>
+		<Language_EN>Here you will find your documents which we have prepared for you.</Language_EN>
+		<Language_FR>Ici vous trouverez vos documents que nous avons préparé pour vous.</Language_FR>
+		<Language_IT>Qui potrete trovare i documenti che abbiamo preparato per voi.</Language_IT>
+	</String>
+	<String key="TEXT_LOGIN_TERMS_AND_CONDITIONS">
+		<Language_DE>Bitte lesen und bestätigen Sie die "Allgemeinen Geschäftsbedingungen" bevor sie fortfahren.</Language_DE>
+		<Language_EN>Please read and confirm the "Terms and Conditions" before continuing.</Language_EN>
+		<Language_FR>S'il vous plaît lire et confirmer les "Conditions générales " avant de poursuivre.</Language_FR>
+		<Language_IT>Si prega di leggere e confermare il "Termini e Condizioni" prima di continuare.</Language_IT>
+	</String>
+	<String key="TEXT_LOGIN_TERMS_AND_CONDITIONS_CONFIRM">
+		<Language_DE>Ich bestätige die "Allgemeinen Geschäftsbedingungen" gelesen und akzeptiert zu haben.</Language_DE>
+		<Language_EN>I confirm to have read the "Terms and Conditions" and accepted.</Language_EN>
+		<Language_FR>Je confirme avoir lu les «Conditions générales » et accepté.</Language_FR>
+		<Language_IT>Confermo di aver letto "Termini e Condizioni" e accettata.</Language_IT>
+	</String>
+
+	<!-- Menu Language Codes -->
+	<String key="TEXT_MENU_TERMS_AND_CONDITIONS">
+		<Language_DE>AGB</Language_DE>
+		<Language_EN>TERMS</Language_EN>
+		<Language_FR>CONDITIONS</Language_FR>
+		<Language_IT>TERMINI</Language_IT>
+	</String>
+	<String key="TEXT_MENU_FRAME_AGREEMENT">
+		<Language_DE>RAHMENARBEITSVERTRAG</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_MENU_EMPLOYERS_CERTIFICATE">
+		<Language_DE>ARBEITGEBERBESCHEINIGUNG</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_MENU_BETWEEN_EARNINGS_FORMS">
+		<Language_DE>ZWISCHENVERDIENSTFORMULARE</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_MENU_PAYROLL">
+		<Language_DE>LOHNABRECHNUNGEN</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_MENU_WAGE_STATEMENT">
+		<Language_DE>LOHNAUSWEIS</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_MENU_OPERATING_CONTRACTS">
+		<Language_DE>EINSATZVERTRÄGE</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_MENU_REPORTS">
+		<Language_DE>RAPPORTE</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_MENU_RENTAL_AGREEMENT">
+		<Language_DE>VERLEIHVERTRÄGE</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_MENU_RENTAL_AGREEMENT_OPEN">
+		<Language_DE>NOCH OFFEN</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_MENU_BILLS">
+		<Language_DE>RECHNUNGEN</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+
+	<!-- Grid Language Codes -->
+	<String key="TEXT_DOCUMENT_ACTION_FORWARD">
+		<Language_DE>weiterleiten</Language_DE>
+		<Language_EN>forward</Language_EN>
+		<Language_FR>avant</Language_FR>
+		<Language_IT>in avanti</Language_IT>
+	</String>
+	<String key="TEXT_DOCUMENT_ACTION_ACCEPT">
+		<Language_DE>akzeptieren</Language_DE>
+		<Language_EN>accept</Language_EN>
+		<Language_FR>accepter</Language_FR>
+		<Language_IT>accettare</Language_IT>
+	</String>
+	<String key="TEXT_DOCUMENT_ACTION_DECLINE">
+		<Language_DE>ablehnen</Language_DE>
+		<Language_EN>decline</Language_EN>
+		<Language_FR>rejeter</Language_FR>
+		<Language_IT>respingere</Language_IT>
+	</String>
+	<String key="TEXT_CAPTION_DOCUMENT">
+		<Language_DE>Dokument</Language_DE>
+		<Language_EN>Document</Language_EN>
+		<Language_FR>Document</Language_FR>
+		<Language_IT>Documento</Language_IT>
+	</String>
+	<String key="TEXT_CAPTION_ACCEPTED">
+		<Language_DE>Akzeptiert am</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_CAPTION_DATE">
+		<Language_DE>Datum</Language_DE>
+		<Language_EN>Date</Language_EN>
+		<Language_FR>Date</Language_FR>
+		<Language_IT>Data</Language_IT>
+	</String>
+
+	<!-- Titles of Pages Language Codes -->
+	<String key="TEXT_PAGETITLE_RENTAL_CONTRACTS">
+		<Language_DE>Verleihverträge</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_OPEN_RENTAL_CONTRACTS">
+		<Language_DE>Offene Verträge</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_BILLS">
+		<Language_DE>Rechnungen</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_REPORTS">
+		<Language_DE>Rapporte</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_BETWEEN_EARNINGS_FORM">
+		<Language_DE>Zwischenverdienstformulare</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_SIGNED_REPORTS">
+		<Language_DE>Unterschreibene Rapporte</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_WAGE_STATEMENT">
+		<Language_DE>Lohnausweise</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_PAYROLL">
+		<Language_DE>Lohnabrechnungen</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_OPERATING_CONTRACTS">
+		<Language_DE>Einsatzverträge</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_PAGETITLE_CERTIFICATE_OF_EMPLOYMENT">
+		<Language_DE>Arbeitsbescheinigung</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+
+	<!-- Dialog Language Codes -->
+	<String key="TEXT_OPEN_CONTRACT_QUEST_ACCEPT_CONTRACT_TITLE">
+		<Language_DE>Vertag akzeptieren</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_OPEN_CONTRACT_QUEST_ACCEPT_CONTRACT">
+		<Language_DE>Sind sie sicher, dass Sie diesen Vertrag akzeptieren möchten?</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_OPEN_CONTRACT_QUEST_DECLINE_CONTRACT_TITLE">
+		<Language_DE>Vertag ablehnen</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_OPEN_CONTRACT_QUEST_DECLINE_CONTRACT">
+		<Language_DE>Sind sie sicher, dass Sie diesen Vertrag ablehnen möchten?</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_OPEN_CONTRACT_QUEST_SIGN_CONTRACT_TITLE">
+		<Language_DE>Vertag unterzeichnen</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_OPEN_CONTRACT_QUEST_SIGN_CONTRACT">
+		<Language_DE>Bitte unterzeichnetes Exemplar an folgende Email-Adresse oder Faxnummer übermitteln:</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+
+	<!-- Error Handling Language Codes -->
+	<String key="TEXT_PAGE_NOT_FOUND_ERROR">
+		<Language_DE>Die von Ihnen aufgerufene Seite wurde nicht gefunden!</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+	<String key="TEXT_PAGE_NOT_FOUND_MESSAGE">
+		<Language_DE> Sie können Ihren Lieferanten kontaktieren und einen neuen Link anfordern.</Language_DE>
+		<Language_EN></Language_EN>
+		<Language_FR></Language_FR>
+		<Language_IT></Language_IT>
+	</String>
+</Translations>

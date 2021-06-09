@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A52CD93-36CB-49A5-8890-A4ADFE482A21}"
+	ProjectSection(SolutionItems) = preProject
+		JobFinder.vsmdi = JobFinder.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "JobFinderApp", "JobFinderApp\JobFinderApp.vbproj", "{0F8AD6BA-1EB5-4C2A-B746-2686704DF3DE}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "JobFinderApp.Contracts", "Contracts\JobFinderApp.Contracts.vbproj", "{0752DA62-ECBA-4C52-92A0-B6A0E0FB30B8}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "JobFinderApp.DataAccess", "JobFinderApp.DataAccess\JobFinderApp.DataAccess.vbproj", "{F15480B8-BF83-4459-9011-684B5EF8EC85}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "JobFinderApp.Domain", "JobFinderApp.Domain\JobFinderApp.Domain.vbproj", "{8AFCB3E3-94BA-4D49-AC6F-6875F4165E02}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "JobFinderApp.Modelling", "JobFinderApp.Modelling\JobFinderApp.Modelling.modelproj", "{856C8F9E-ECFE-4C28-AF2C-409D3B2D44CB}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "JobFinderApp.Domain.Tests", "JobFinderApp.Domain.Tests\JobFinderApp.Domain.Tests.vbproj", "{32DF73C8-BDA9-488D-94BD-13DDD3B44C95}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://spbl04:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Contracts\\JobFinderApp.Contracts.vbproj
+		SccProjectName1 = Contracts
+		SccLocalPath1 = Contracts
+		SccProjectUniqueName2 = JobFinderApp.DataAccess\\JobFinderApp.DataAccess.vbproj
+		SccProjectName2 = JobFinderApp.DataAccess
+		SccLocalPath2 = JobFinderApp.DataAccess
+		SccProjectUniqueName3 = JobFinderApp.Domain.Tests\\JobFinderApp.Domain.Tests.vbproj
+		SccProjectName3 = JobFinderApp.Domain.Tests
+		SccLocalPath3 = JobFinderApp.Domain.Tests
+		SccProjectUniqueName4 = JobFinderApp.Domain\\JobFinderApp.Domain.vbproj
+		SccProjectName4 = JobFinderApp.Domain
+		SccLocalPath4 = JobFinderApp.Domain
+		SccProjectUniqueName5 = JobFinderApp.Modelling\\JobFinderApp.Modelling.modelproj
+		SccProjectName5 = JobFinderApp.Modelling
+		SccLocalPath5 = JobFinderApp.Modelling
+		SccProjectUniqueName6 = JobFinderApp\\JobFinderApp.vbproj
+		SccProjectName6 = JobFinderApp
+		SccLocalPath6 = JobFinderApp
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F8AD6BA-1EB5-4C2A-B746-2686704DF3DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F8AD6BA-1EB5-4C2A-B746-2686704DF3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F8AD6BA-1EB5-4C2A-B746-2686704DF3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F8AD6BA-1EB5-4C2A-B746-2686704DF3DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0752DA62-ECBA-4C52-92A0-B6A0E0FB30B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0752DA62-ECBA-4C52-92A0-B6A0E0FB30B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0752DA62-ECBA-4C52-92A0-B6A0E0FB30B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0752DA62-ECBA-4C52-92A0-B6A0E0FB30B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F15480B8-BF83-4459-9011-684B5EF8EC85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15480B8-BF83-4459-9011-684B5EF8EC85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15480B8-BF83-4459-9011-684B5EF8EC85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15480B8-BF83-4459-9011-684B5EF8EC85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AFCB3E3-94BA-4D49-AC6F-6875F4165E02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFCB3E3-94BA-4D49-AC6F-6875F4165E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFCB3E3-94BA-4D49-AC6F-6875F4165E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFCB3E3-94BA-4D49-AC6F-6875F4165E02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{856C8F9E-ECFE-4C28-AF2C-409D3B2D44CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{856C8F9E-ECFE-4C28-AF2C-409D3B2D44CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{856C8F9E-ECFE-4C28-AF2C-409D3B2D44CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{856C8F9E-ECFE-4C28-AF2C-409D3B2D44CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32DF73C8-BDA9-488D-94BD-13DDD3B44C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32DF73C8-BDA9-488D-94BD-13DDD3B44C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32DF73C8-BDA9-488D-94BD-13DDD3B44C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32DF73C8-BDA9-488D-94BD-13DDD3B44C95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = JobFinder.vsmdi
+	EndGlobalSection
+EndGlobal

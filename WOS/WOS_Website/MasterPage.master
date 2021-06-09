@@ -1,0 +1,150 @@
+﻿<%@ Master Language="VB" Inherits="WOS_Website.SiteMaster" Codebehind="MasterPage.master.vb" %>
+
+<!--
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+-->
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="expires" content="0" />
+    <meta http-equiv="Page-Exit" content="progid:DXImageTransform.Microsoft.Fade(Duration=1)" />
+    
+    <style type="text/css">
+        .style1
+        {
+            width: 5px;
+        }
+        .style2
+        {
+            height: 124px;
+            width: 347px;
+        }
+        .style4
+        {
+            height: 124px;
+            width: 299px;
+        }
+        .style5
+        {
+            width: 299px;
+        }
+        .style6
+        {
+            width: 299px;
+            height: 68px;
+        }
+        .style7
+        {
+            height: 68px;
+            width: 347px;
+        }
+        .style8
+        {
+            width: 428px;
+        }
+        .style9
+        {
+            height: 68px;
+            width: 428px;
+        }
+        .style10
+        {
+            height: 124px;
+            width: 428px;
+        }
+        .style11
+        {
+            width: 347px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="MainForm" runat="server" >
+    
+    <asp:ScriptManager ID="mainScriptManager" EnablePageMethods="true" runat="server">
+    </asp:ScriptManager>
+
+    <div id="wrap" style="margin-top:45px">
+        <asp:Panel ID="customerLogo" runat="server" CssClass="customerLogo"  Style="width: 50%">
+            <asp:Image ID="customer_logo" ImageUrl="~/CustomerLogo.aspx" runat="server" Style="float: left; margin-right:8px" />
+            <div style="float: left;">
+            <span><%= Session("CustomerName")%></span><br />
+            <span><%= Session("CustomerStreet") %></span><br />
+            <span><%= Session("CustomerPlace")%></span><br />
+            <span><%= Session("CustomerTelephone")%></span><br />
+            <%--<span><%= Session("CustomerFax")%></span><br />--%>
+            <span><%= Session("CustomerEMail")%></span><br />
+            </div>
+        </asp:Panel>
+        <asp:Panel ID="customerName" runat="server" CssClass="customerName">
+            <span id="welcomeText">
+                <iwc:Literal TextKey="TEXT_MASTER_WELCOME" runat="server" />
+                <%= Session("WelcomeName")%></span>
+            <br />
+            <span> <%= Session("WelcomeSubText")%></span>
+        </asp:Panel>
+        <div id="boxV" class="boxVH">
+            <div>
+                <iwc:Label ID="lblInfo" TextKey="TEXT_GENERAL_NO_DOCUMENTS" runat="server" Visible="false"></iwc:Label>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!--<div id="logo"></div>-->
+        <div id="icons">
+        </div>
+        <div id="globNav">  
+            <ul>
+                <li id="frameworkAgreement" runat="server"><a id="A1" href="FrameworkAgreement.ashx?Agreement.pdf" target="_blank" runat="server" style="float: left"><iwc:Literal TextKey="TEXT_MENU_FRAME_AGREEMENT" runat="server" /></a></li>
+                <li><a href="AGB.ashx?AGB.pdf" runat="server" target="_blank" style="float: left"><iwc:Literal TextKey="TEXT_MENU_TERMS_AND_CONDITIONS" runat="server" /></a> </li>
+            </ul>
+        </div>
+        <!-- #globNav -->
+        <!-- Navigationsblock:Start ?es=b5f9af67-beac-4bba-a84e-d230708e92a8 -->
+        <div id="navigation">
+            <asp:Panel ID="navigationPanelContainer" runat="server">
+            </asp:Panel>
+        </div>
+        <!-- Navigationsblock:Ende -->
+        <div id="footer">
+            <p>
+                © by mf Sputnik Informatik GmbH  : <a href="http://www.sputnik-it.com"
+                    target="_blank" name="footerLink01">sputnik-it.com</a></p>
+        </div>
+        <!-- #footer -->
+    </div>
+    <!-- #wrap -->
+    </form>
+    
+    <!-- Ressources and Scripts -->
+    <link href="<%= Page.ResolveUrl("~")%>css/sputnik-vertraege.css" rel="stylesheet"
+        type="text/css" media="all" />
+    <link href="<%= Page.ResolveUrl("~")%>css/lightboxen.css" rel="stylesheet" type="text/css"
+        media="all" />
+    <link href="<%= Page.ResolveUrl("~")%>css/jquery.alerts.css" rel="stylesheet" type="text/css"
+        media="all" />
+    <link href="<%= Page.ResolveUrl("~")%>css/ui-lightness/jquery-ui-1.8.13.custom.css" rel="stylesheet" type="text/css"
+        media="all" />
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~")%>js/jquery-1.5.1.min.js"></script>
+    <link rel="stylesheet" href="<%= Page.ResolveUrl("~")%>jquery.fancybox/jquery.fancybox.css"
+        type="text/css" media="screen" />
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~")%>jquery.fancybox/jquery.fancybox-1.2.1.js"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~")%>jquery.fancybox/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~")%>js/jquery.alerts.js"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~")%>js/tooltip.js"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~")%>js/utils.js"></script>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~")%>js/jquery-ui-1.8.13.custom.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a.lightbox").fancybox();
+        });
+
+    </script>
+
+</body>
+</html>

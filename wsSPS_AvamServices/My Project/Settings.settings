@@ -1,0 +1,93 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="errMailFrom" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">spwebService@sputnik-it.com</Value>
+    </Setting>
+    <Setting Name="errMailBody" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Fehler...</Value>
+    </Setting>
+    <Setting Name="Connstr_InfoService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=1234;Persist Security Info=True;User ID=GAVUser;Initial Catalog=Sputnik InfoSystem;Data Source=192.168.19.53</Value>
+    </Setting>
+    <Setting Name="ConnStr_ServiceUtil" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=1234;Persist Security Info=True;User ID=GAVUser;Initial Catalog=Sputnik GAV;Data Source=192.168.19.53</Value>
+    </Setting>
+    <Setting Name="ConnStr_SputnikInfoSystem" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=Sputnik InfoSystem;Data Source=192.168.19.53</Value>
+    </Setting>
+    <Setting Name="ConnStr_SputnikGAV" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=1234;Persist Security Info=True;User ID=GAVUser;Initial Catalog=Sputnik GAV;Data Source=192.168.19.53</Value>
+    </Setting>
+    <Setting Name="ReportDropInFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\192.168.19.54\ReportDropIn$</Value>
+    </Setting>
+    <Setting Name="CVDropInFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\192.168.19.54\CVDropIn$</Value>
+    </Setting>
+    <Setting Name="ERROR_Message_ReportNotFounded_MailBody" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;font face="Trebuchet MS" size="2"&gt;&lt;b&gt;Achtung:&lt;/b&gt; {0} Rapporte konnten nicht richtig zugeordnet werden.&lt;br&gt;Bitte gehen Sie in &lt;b&gt;Hauptübersicht: Rapportverwaltung -&gt; Neu -&gt; Automatische Rapportimport&lt;/b&gt; und ordnen Sie die Rapporte manuelle zu.</Value>
+    </Setting>
+    <Setting Name="ConnStr_Jobplattforms" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spJobPlattforms;Data Source=192.168.19.55;Current Language=German</Value>
+    </Setting>
+    <Setting Name="ConnStr_New_spContract" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spContract;Data Source=192.168.19.49;Current Language=German</Value>
+    </Setting>
+    <Setting Name="MySmtpServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">email-smtp.eu-west-1.amazonaws.com</Value>
+    </Setting>
+    <Setting Name="errMailSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">spwebService@sputnik-it.ch</Value>
+    </Setting>
+    <Setting Name="ConnStr_Vak" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spContract;Data Source=192.168.19.49;Current Language=German;Pooling=false</Value>
+    </Setting>
+    <Setting Name="SettingDb_Connection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spContract;Data Source=192.168.19.49;Current Language=German</Value>
+    </Setting>
+    <Setting Name="ConnStr_spContract" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spContract;Data Source=192.168.19.49;Current Language=German</Value>
+    </Setting>
+    <Setting Name="ConnStr_JobCh" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spContract;Data Source=192.168.19.49;Current Language=German</Value>
+    </Setting>
+    <Setting Name="ConnStr_SputnikCurrentPVLDb" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=GAV_PVL16092019;Data Source=192.168.19.49;Current Language=German</Value>
+    </Setting>
+    <Setting Name="ConnStr_SputnikUpdateSystem" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=SpUpdates;Data Source=192.168.19.49;Current Language=German;Max Pool Size=1000</Value>
+    </Setting>
+    <Setting Name="ConnStr_Scanning" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spScanJobs;Data Source=192.168.19.49;Current Language=German;Max Pool Size=1000</Value>
+    </Setting>
+    <Setting Name="ConnStr_SystemInfo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spSystemInfo;Data Source=192.168.19.49;Current Language=German;Max Pool Size=1000</Value>
+    </Setting>
+    <Setting Name="ConnStr_Applicant" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=applicant;Data Source=192.168.19.49</Value>
+    </Setting>
+    <Setting Name="ConnStr_PVLPublicInfo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spPVLPublicData;Data Source=192.168.19.49;Current Language=German</Value>
+    </Setting>
+    <Setting Name="Connstr_spSystemInfo_2016" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spSystemInfo;Data Source=192.168.19.49;Current Language=German</Value>
+    </Setting>
+    <Setting Name="ConnStr_Scanning_2016" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spScanJobs;Data Source=192.168.19.49;Current Language=German</Value>
+    </Setting>
+    <Setting Name="ConnStr_cvLizer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spCVLizerBaseInfo;Data Source=192.168.19.49;Current Language=German</Value>
+    </Setting>
+    <Setting Name="ConnStr_spPublicData" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spPublicData;Data Source=192.168.19.49;Current Language=German</Value>
+    </Setting>
+    <Setting Name="ConnStr_spJobplattforms" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog=spJobPlattforms;Data Source=192.168.19.49;Current Language=German</Value>
+    </Setting>
+    <Setting Name="ConnStr_CurrentPVLArchiveDbName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=12SPContract_User34;Persist Security Info=True;User ID=SPContract_User;Initial Catalog={0};Data Source=192.168.19.49;Current Language=German</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

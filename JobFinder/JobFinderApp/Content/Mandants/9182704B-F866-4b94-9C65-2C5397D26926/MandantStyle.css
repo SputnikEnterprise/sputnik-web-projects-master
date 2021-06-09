@@ -1,0 +1,60 @@
+﻿/* First the headerIcon class */
+
+.headerDiv 
+{   
+    float: left;
+    
+    width: 100px;
+    height: 29px; /* At Most 42 px */
+    
+    overflow: hidden;  
+}
+
+.headerTextDiv
+{
+     position: absolute; 
+     width: 100%; 
+     left: 0
+}
+
+.headerTextDiv h2
+{
+    width: 100%; 
+    text-align:center; 
+    line-height: 32px
+}
+
+.headerIcon 
+{ 
+    border: 0;
+    
+    /* 
+    Eventually stretch/shrink image:
+    width: ...px;
+    height: ...px;
+    */
+    width: 100px;
+        
+    /* Move to desired position: 
+            top right bottom left 
+    margin: 0   0     0      -18px;
+*/
+}
+
+/*
+.headerIcon 
+{  Crop from DB Icon with following rect:
+         rect(top, right, bottom, left)    
+    clip:rect(0px, 200px, 55px, 32px);
+    float: left;
+    position: absolute;
+}
+*/
+
+/* Then, optionally the adapted jquery.mobile-1.0.css content */
+/*
+.ui-page 
+{
+        background: #555555  url(background.gif) repeat;
+}
+*/

@@ -1,0 +1,47 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="CockpitWebClient.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <title>Cockpit WebClient</title>
+    
+     <%-- Css --%>
+    <link href="<%= ResolveClientUrl("~/Styles/base/jquery.ui.all.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%= ResolveClientUrl("~/Styles/ui-lightness/jquery-ui-1.8.16.custom.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%= ResolveClientUrl("~/Styles/ui.jqgrid.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%= ResolveClientUrl("~/Styles/Site.css") %>" rel="stylesheet" type="text/css" />
+    
+    <%-- Placeholder for additional css --%>
+    <asp:ContentPlaceHolder ID="AdditionalCssContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+     <%-- JavaScript --%>
+    <script src="<%= ResolveClientUrl("~/Scripts/jquery-1.6.2.min.js") %>" type="text/javascript"></script>  
+    <script src="<%= ResolveClientUrl("~/Scripts/jquery-ui-1.8.16.custom.min.js") %>" type="text/javascript"></script>  
+    <script src="<%= ResolveClientUrl("~/Scripts/jquery.jqGrid.min.js") %>" type="text/javascript"></script>
+    <script src="<%= ResolveClientUrl("~/Scripts/CockpitWebClient.js") %>" type="text/javascript"></script>  
+    
+    <%-- Placeholder for additional scripts --%>
+    <asp:ContentPlaceHolder ID="AdditionalScriptContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript">
+    // <![CDATA[
+        $(window).load(function () {
+            $("div#main").css("visibility", "visible");
+        });
+    // ]]>
+    </script>
+</head>
+<body>
+    <form runat="server">
+        <div id="main">
+           <%-- Placeholder for child page content --%>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,965 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SpContractModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="SpContractModelStoreContainer">
+          <EntitySet Name="Customer_Users" EntityType="SpContractModel.Store.Customer_Users" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Kandidaten_Online" EntityType="SpContractModel.Store.Kandidaten_Online" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="KD_Vakanzen" EntityType="SpContractModel.Store.KD_Vakanzen" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MySetting" EntityType="SpContractModel.Store.MySetting" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Stats_Downloads" EntityType="SpContractModel.Store.Stats_Downloads" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Stats_Mandants" EntityType="SpContractModel.Store.Stats_Mandants" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Stats_Queries" EntityType="SpContractModel.Store.Stats_Queries" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Stats_Downloads_Stats_Mandants" Association="SpContractModel.Store.FK_Stats_Downloads_Stats_Mandants">
+            <End Role="Stats_Mandants" EntitySet="Stats_Mandants" />
+            <End Role="Stats_Downloads" EntitySet="Stats_Downloads" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Stats_Queries_Stats_Mandants" Association="SpContractModel.Store.FK_Stats_Queries_Stats_Mandants">
+            <End Role="Stats_Mandants" EntitySet="Stats_Mandants" />
+            <End Role="Stats_Queries" EntitySet="Stats_Queries" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Customer_Users">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="User_ID" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_ID" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="User_Sex" Type="nvarchar" MaxLength="20" />
+          <Property Name="User_Vorname" Type="nvarchar" MaxLength="70" />
+          <Property Name="User_Nachname" Type="nvarchar" MaxLength="70" />
+          <Property Name="User_Initial" Type="nvarchar" MaxLength="50" />
+          <Property Name="User_Filiale" Type="nvarchar" MaxLength="50" />
+          <Property Name="User_Telefon" Type="nvarchar" MaxLength="20" />
+          <Property Name="User_Telefax" Type="nvarchar" MaxLength="20" />
+          <Property Name="User_eMail" Type="nvarchar" MaxLength="255" />
+          <Property Name="User_Homepage" Type="nvarchar" MaxLength="255" />
+          <Property Name="CreatedOn" Type="smalldatetime" />
+          <Property Name="User_Picture" Type="varbinary(max)" />
+          <Property Name="User_Sign" Type="varbinary(max)" />
+          <Property Name="Result" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Kandidaten_Online">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MANr" Type="int" />
+          <Property Name="Customer_ID" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_Strasse" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_Ort" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_Telefon" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_eMail" Type="nvarchar" MaxLength="255" />
+          <Property Name="Berater" Type="nvarchar" MaxLength="255" />
+          <Property Name="MA_Vorname" Type="nvarchar" MaxLength="255" />
+          <Property Name="MA_Nachname" Type="nvarchar" MaxLength="255" />
+          <Property Name="MA_Filiale" Type="nvarchar" MaxLength="50" />
+          <Property Name="MA_Kanton" Type="nvarchar" MaxLength="255" />
+          <Property Name="MA_Ort" Type="nvarchar" MaxLength="255" />
+          <Property Name="MA_Kontakt" Type="nvarchar" MaxLength="50" />
+          <Property Name="MA_State1" Type="nvarchar" MaxLength="50" />
+          <Property Name="MA_State2" Type="nvarchar" MaxLength="50" />
+          <Property Name="MA_Beruf" Type="nvarchar" MaxLength="1000" />
+          <Property Name="JobProzent" Type="nvarchar" MaxLength="255" />
+          <Property Name="MAGebDat" Type="datetime" />
+          <Property Name="MASex" Type="nvarchar" MaxLength="10" />
+          <Property Name="MAZivil" Type="nvarchar" MaxLength="50" />
+          <Property Name="MAFSchein" Type="nvarchar" MaxLength="50" />
+          <Property Name="MAAuto" Type="nvarchar" MaxLength="50" />
+          <Property Name="MANationality" Type="nvarchar" MaxLength="70" />
+          <Property Name="Bewillig" Type="nvarchar" MaxLength="50" />
+          <Property Name="BriefAnrede" Type="nvarchar" MaxLength="70" />
+          <Property Name="MA_Res1" Type="nvarchar" MaxLength="255" />
+          <Property Name="MA_Res2" Type="nvarchar" MaxLength="255" />
+          <Property Name="MA_Res3" Type="nvarchar" MaxLength="255" />
+          <Property Name="MA_Res4" Type="nvarchar" MaxLength="255" />
+          <Property Name="Transfered_User" Type="nvarchar" MaxLength="100" />
+          <Property Name="Transfered_On" Type="datetime" />
+          <Property Name="Transfered_Guid" Type="nvarchar" MaxLength="100" />
+          <Property Name="Result" Type="nvarchar" MaxLength="10" />
+          <Property Name="User_Nachname" Type="nvarchar" MaxLength="70" />
+          <Property Name="User_Vorname" Type="nvarchar" MaxLength="70" />
+          <Property Name="User_Telefon" Type="nvarchar" MaxLength="70" />
+          <Property Name="User_Telefax" Type="nvarchar" MaxLength="70" />
+          <Property Name="User_eMail" Type="nvarchar" MaxLength="255" />
+          <Property Name="MA_SSprache" Type="nvarchar" />
+          <Property Name="MA_MSprache" Type="nvarchar" />
+          <Property Name="MA_Eigenschaft" Type="nvarchar" />
+        </EntityType>
+        <EntityType Name="KD_Vakanzen">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="VakNr" Type="int" />
+          <Property Name="KDNr" Type="int" />
+          <Property Name="KDZHDNr" Type="int" />
+          <Property Name="Customer_ID" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_Strasse" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_Ort" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_Telefon" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_eMail" Type="nvarchar" MaxLength="255" />
+          <Property Name="Berater" Type="nvarchar" MaxLength="20" />
+          <Property Name="Filiale" Type="nvarchar" MaxLength="50" />
+          <Property Name="VakKontakt" Type="nvarchar" MaxLength="50" />
+          <Property Name="VakState" Type="nvarchar" MaxLength="50" />
+          <Property Name="Bezeichnung" Type="nvarchar" MaxLength="255" />
+          <Property Name="Slogan" Type="nvarchar" MaxLength="255" />
+          <Property Name="Gruppe" Type="nvarchar" MaxLength="255" />
+          <Property Name="ExistLink" Type="bit" />
+          <Property Name="VakLink" Type="nvarchar" MaxLength="255" />
+          <Property Name="Beginn" Type="nvarchar" MaxLength="255" />
+          <Property Name="JobProzent" Type="nvarchar" MaxLength="255" />
+          <Property Name="Anstellung" Type="nvarchar" MaxLength="100" />
+          <Property Name="Dauer" Type="nvarchar" MaxLength="255" />
+          <Property Name="MAAge" Type="nvarchar" MaxLength="100" />
+          <Property Name="MASex" Type="nvarchar" MaxLength="10" />
+          <Property Name="MAZivil" Type="nvarchar" MaxLength="50" />
+          <Property Name="MALohn" Type="nvarchar" MaxLength="70" />
+          <Property Name="Jobtime" Type="nvarchar" MaxLength="100" />
+          <Property Name="JobOrt" Type="nvarchar" MaxLength="70" />
+          <Property Name="MAFSchein" Type="nvarchar" MaxLength="50" />
+          <Property Name="MAAuto" Type="nvarchar" MaxLength="50" />
+          <Property Name="MANationality" Type="nvarchar" MaxLength="70" />
+          <Property Name="IEExport" Type="bit" />
+          <Property Name="KDBeschreibung" Type="nvarchar" />
+          <Property Name="KDBietet" Type="nvarchar" />
+          <Property Name="SBeschreibung" Type="nvarchar" />
+          <Property Name="Reserve1" Type="nvarchar" />
+          <Property Name="Taetigkeit" Type="nvarchar" />
+          <Property Name="Anforderung" Type="nvarchar" />
+          <Property Name="Reserve2" Type="nvarchar" />
+          <Property Name="Reserve3" Type="nvarchar" />
+          <Property Name="Ausbildung" Type="nvarchar" />
+          <Property Name="Weiterbildung" Type="nvarchar" />
+          <Property Name="SKennt" Type="nvarchar" />
+          <Property Name="EDVKennt" Type="nvarchar" />
+          <Property Name="Branchen" Type="nvarchar" />
+          <Property Name="CreatedOn" Type="smalldatetime" />
+          <Property Name="CreatedFrom" Type="nvarchar" MaxLength="100" />
+          <Property Name="ChangedOn" Type="smalldatetime" />
+          <Property Name="ChangedFrom" Type="nvarchar" MaxLength="100" />
+          <Property Name="Transfered_User" Type="nvarchar" MaxLength="100" />
+          <Property Name="Transfered_On" Type="datetime" />
+          <Property Name="Transfered_Guid" Type="nvarchar" MaxLength="100" />
+          <Property Name="Result" Type="nvarchar" MaxLength="10" />
+          <Property Name="Vak_Region" Type="nvarchar" MaxLength="255" />
+          <Property Name="Vak_Kanton" Type="nvarchar" MaxLength="255" />
+          <Property Name="User_Nachname_OLD" Type="nvarchar" MaxLength="70" />
+          <Property Name="User_Vorname_OLD" Type="nvarchar" MaxLength="70" />
+          <Property Name="User_Telefon_OLD" Type="nvarchar" MaxLength="70" />
+          <Property Name="User_Telefax_OLD" Type="nvarchar" MaxLength="70" />
+          <Property Name="User_eMail_OLD" Type="nvarchar" MaxLength="70" />
+          <Property Name="MSprachen" Type="nvarchar" />
+          <Property Name="SSprachen" Type="nvarchar" />
+          <Property Name="Qualifikation" Type="nvarchar" />
+          <Property Name="SQualifikation" Type="nvarchar" />
+          <Property Name="User_Guid" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="MySetting">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Userkey" Type="nvarchar" MaxLength="255" />
+          <Property Name="Passwort" Type="nvarchar" MaxLength="70" />
+          <Property Name="eMail" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_Name" Type="nvarchar" MaxLength="70" />
+          <Property Name="KD_ZHD" Type="nvarchar" MaxLength="70" />
+          <Property Name="ModulName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Vak_Guid" Type="nvarchar" MaxLength="255" />
+          <Property Name="MA_Guid" Type="nvarchar" MaxLength="255" />
+          <Property Name="KD_Guid" Type="nvarchar" MaxLength="255" />
+          <Property Name="DP_Guid" Type="nvarchar" MaxLength="255" />
+          <Property Name="Verleih_Guid" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_Logo" Type="varbinary(max)" />
+          <Property Name="Customer_Ort" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_Telefon" Type="nvarchar" MaxLength="70" />
+          <Property Name="Customer_Telefax" Type="nvarchar" MaxLength="70" />
+          <Property Name="Customer_eMail" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_AGB" Type="varbinary(max)" />
+          <Property Name="Customer_Strasse" Type="nvarchar" MaxLength="70" />
+          <Property Name="Customer_Homepage" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer_cssFile" Type="nvarchar" MaxLength="255" />
+          <Property Name="PrintVerleih" Type="tinyint" />
+          <Property Name="Customer_AGBFest" Type="varbinary(max)" />
+          <Property Name="Customer_AGBSonst" Type="varbinary(max)" />
+          <Property Name="Customer_AGBFest_I" Type="varbinary(max)" />
+          <Property Name="Customer_AGBSonst_I" Type="varbinary(max)" />
+          <Property Name="Customer_AGBFest_F" Type="varbinary(max)" />
+          <Property Name="Customer_AGBSonst_F" Type="varbinary(max)" />
+          <Property Name="Customer_AGBFest_E" Type="varbinary(max)" />
+          <Property Name="Customer_AGBSonst_E" Type="varbinary(max)" />
+          <Property Name="Customer_AGB_I" Type="varbinary(max)" />
+          <Property Name="Customer_AGB_F" Type="varbinary(max)" />
+          <Property Name="Customer_AGB_E" Type="varbinary(max)" />
+          <Property Name="Rahmenvertrag" Type="varbinary(max)" />
+          <Property Name="Rahmenvertrag_I" Type="varbinary(max)" />
+          <Property Name="Rahmenvertrag_F" Type="varbinary(max)" />
+          <Property Name="Rahmenvertrag_E" Type="varbinary(max)" />
+          <Property Name="AutoNotification" Type="tinyint" />
+          <Property Name="Visible_Candidate_Fields" Type="varchar" MaxLength="255" />
+          <Property Name="Visible_Vacancy_Fields" Type="varchar" MaxLength="256" />
+          <Property Name="Autonotification_MA" Type="bit" />
+          <Property Name="Autonotification_KD" Type="bit" />
+          <Property Name="GAVUnia" Type="nvarchar" MaxLength="255" />
+          <Property Name="TplFilename" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Stats_Downloads">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Stats_Mandants_ID" Type="int" Nullable="false" />
+          <Property Name="ApplicationId" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="FirstDownloadDateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Stats_Mandants">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MandantGuid" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Stats_Queries">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Stats_Mandants_ID" Type="int" Nullable="false" />
+          <Property Name="QueryDateTime" Type="datetime" Nullable="false" />
+          <Property Name="Client_Latitude" Type="decimal" Precision="9" Scale="6" />
+          <Property Name="Client_Longitude" Type="decimal" Precision="9" Scale="6" />
+          <Property Name="CantonFilter" Type="nvarchar" MaxLength="50" />
+          <Property Name="BranchFilter" Type="nvarchar" MaxLength="100" />
+          <Property Name="VacancyTitleFilter" Type="nvarchar" MaxLength="100" />
+          <Property Name="JobQualificationFilter" Type="nchar" MaxLength="100" />
+        </EntityType>
+        <Association Name="FK_Stats_Downloads_Stats_Mandants">
+          <End Role="Stats_Mandants" Type="SpContractModel.Store.Stats_Mandants" Multiplicity="1" />
+          <End Role="Stats_Downloads" Type="SpContractModel.Store.Stats_Downloads" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Stats_Mandants">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Stats_Downloads">
+              <PropertyRef Name="Stats_Mandants_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Stats_Queries_Stats_Mandants">
+          <End Role="Stats_Mandants" Type="SpContractModel.Store.Stats_Mandants" Multiplicity="1" />
+          <End Role="Stats_Queries" Type="SpContractModel.Store.Stats_Queries" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Stats_Mandants">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Stats_Queries">
+              <PropertyRef Name="Stats_Mandants_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="Get_Vakrec_By_ID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" StoreFunctionName="Get Vakrec By ID" Schema="dbo">
+          <Parameter Name="UserID" Type="nvarchar" Mode="In" />
+          <Parameter Name="RecID" Type="nvarchar" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SpContractModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="SpContractEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Kandidaten_Online" EntityType="SpContractModel.Kandidaten_Online" />
+          <EntitySet Name="KD_Vakanzen" EntityType="SpContractModel.KD_Vakanzen" />
+          <EntitySet Name="MySetting" EntityType="SpContractModel.MySetting" />
+          <EntitySet Name="Stats_Downloads" EntityType="SpContractModel.Stats_Downloads" />
+          <EntitySet Name="Stats_Mandants" EntityType="SpContractModel.Stats_Mandants" />
+          <EntitySet Name="Stats_Queries" EntityType="SpContractModel.Stats_Queries" />
+          <AssociationSet Name="FK_Stats_Downloads_Stats_Mandants" Association="SpContractModel.FK_Stats_Downloads_Stats_Mandants">
+            <End Role="Stats_Mandants" EntitySet="Stats_Mandants" />
+            <End Role="Stats_Downloads" EntitySet="Stats_Downloads" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Stats_Queries_Stats_Mandants" Association="SpContractModel.FK_Stats_Queries_Stats_Mandants">
+            <End Role="Stats_Mandants" EntitySet="Stats_Mandants" />
+            <End Role="Stats_Queries" EntitySet="Stats_Queries" />
+          </AssociationSet>
+          <EntitySet Name="Customer_Users" EntityType="SpContractModel.Customer_Users" />
+          <FunctionImport Name="Get_Vacancy_StoredProcedure" ReturnType="Collection(SpContractModel.Get_Vak_Rec_By_Id_Return_Type)">
+            <Parameter Name="UserID" Mode="In" Type="String" />
+            <Parameter Name="RecID" Mode="In" Type="String" />
+          </FunctionImport>
+          </EntityContainer>
+        <EntityType Name="Kandidaten_Online">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="MANr" />
+          <Property Type="String" Name="Customer_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Name" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Strasse" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Ort" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Telefon" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_eMail" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Berater" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_Vorname" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_Nachname" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_Filiale" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_Kanton" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_Ort" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_Kontakt" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_State1" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_State2" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_Beruf" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobProzent" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MAGebDat" />
+          <Property Type="String" Name="MASex" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAZivil" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAFSchein" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAAuto" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MANationality" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Bewillig" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="BriefAnrede" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_Res1" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_Res2" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_Res3" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_Res4" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Transfered_User" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Transfered_On" />
+          <Property Type="String" Name="Transfered_Guid" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Result" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Nachname" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Vorname" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Telefon" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Telefax" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_eMail" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_SSprache" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_MSprache" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_Eigenschaft" MaxLength="4000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="KD_Vakanzen">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="VakNr" />
+          <Property Type="Int32" Name="KDNr" />
+          <Property Type="Int32" Name="KDZHDNr" />
+          <Property Type="String" Name="Customer_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Name" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Strasse" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Ort" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Telefon" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_eMail" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Berater" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Filiale" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VakKontakt" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VakState" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Bezeichnung" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Slogan" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Gruppe" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="ExistLink" />
+          <Property Type="String" Name="VakLink" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Beginn" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobProzent" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Anstellung" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Dauer" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAAge" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MASex" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAZivil" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MALohn" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Jobtime" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobOrt" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAFSchein" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAAuto" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MANationality" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IEExport" />
+          <Property Type="String" Name="KDBeschreibung" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KDBietet" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SBeschreibung" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Reserve1" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Taetigkeit" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Anforderung" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Reserve2" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Reserve3" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Ausbildung" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Weiterbildung" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SKennt" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EDVKennt" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Branchen" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreatedOn" />
+          <Property Type="String" Name="CreatedFrom" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ChangedOn" />
+          <Property Type="String" Name="ChangedFrom" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Transfered_User" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Transfered_On" />
+          <Property Type="String" Name="Transfered_Guid" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Result" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Vak_Region" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Vak_Kanton" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MSprachen" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SSprachen" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Qualifikation" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SQualifikation" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Guid" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Nachname_OLD" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Vorname_OLD" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Telefon_OLD" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Telefax_OLD" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_eMail_OLD" MaxLength="70" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MySetting">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Userkey" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Passwort" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="eMail" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Name" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KD_ZHD" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ModulName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Vak_Guid" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MA_Guid" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KD_Guid" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DP_Guid" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Verleih_Guid" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Binary" Name="Customer_Logo" MaxLength="Max" FixedLength="false" />
+          <Property Type="String" Name="Customer_Ort" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Telefon" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Telefax" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_eMail" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Binary" Name="Customer_AGB" MaxLength="Max" FixedLength="false" />
+          <Property Type="String" Name="Customer_Strasse" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Homepage" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_cssFile" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Byte" Name="PrintVerleih" />
+          <Property Type="Binary" Name="Customer_AGBFest" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Customer_AGBSonst" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Customer_AGBFest_I" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Customer_AGBSonst_I" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Customer_AGBFest_F" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Customer_AGBSonst_F" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Customer_AGBFest_E" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Customer_AGBSonst_E" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Customer_AGB_I" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Customer_AGB_F" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Customer_AGB_E" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Rahmenvertrag" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Rahmenvertrag_I" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Rahmenvertrag_F" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="Rahmenvertrag_E" MaxLength="Max" FixedLength="false" />
+          <Property Type="Byte" Name="AutoNotification" />
+          <Property Type="String" Name="Visible_Candidate_Fields" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Visible_Vacancy_Fields" MaxLength="256" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Autonotification_MA" />
+          <Property Type="Boolean" Name="Autonotification_KD" />
+          <Property Type="String" Name="GAVUnia" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TplFilename" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Stats_Downloads">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="Stats_Mandants_ID" Nullable="false" />
+          <Property Type="String" Name="ApplicationId" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="FirstDownloadDateTime" Nullable="false" />
+          <NavigationProperty Name="Stats_Mandants" Relationship="SpContractModel.FK_Stats_Downloads_Stats_Mandants" FromRole="Stats_Downloads" ToRole="Stats_Mandants" />
+        </EntityType>
+        <EntityType Name="Stats_Mandants">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="MandantGuid" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Stats_Downloads" Relationship="SpContractModel.FK_Stats_Downloads_Stats_Mandants" FromRole="Stats_Mandants" ToRole="Stats_Downloads" />
+          <NavigationProperty Name="Stats_Queries" Relationship="SpContractModel.FK_Stats_Queries_Stats_Mandants" FromRole="Stats_Mandants" ToRole="Stats_Queries" />
+        </EntityType>
+        <EntityType Name="Stats_Queries">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="Stats_Mandants_ID" Nullable="false" />
+          <Property Type="DateTime" Name="QueryDateTime" Nullable="false" />
+          <Property Type="Decimal" Name="Client_Latitude" Precision="9" Scale="6" />
+          <Property Type="Decimal" Name="Client_Longitude" Precision="9" Scale="6" />
+          <Property Type="String" Name="CantonFilter" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="BranchFilter" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VacancyTitleFilter" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobQualificationFilter" MaxLength="100" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Stats_Mandants" Relationship="SpContractModel.FK_Stats_Queries_Stats_Mandants" FromRole="Stats_Queries" ToRole="Stats_Mandants" />
+        </EntityType>
+        <Association Name="FK_Stats_Downloads_Stats_Mandants">
+          <End Type="SpContractModel.Stats_Mandants" Role="Stats_Mandants" Multiplicity="1" />
+          <End Type="SpContractModel.Stats_Downloads" Role="Stats_Downloads" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Stats_Mandants">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Stats_Downloads">
+              <PropertyRef Name="Stats_Mandants_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Stats_Queries_Stats_Mandants">
+          <End Type="SpContractModel.Stats_Mandants" Role="Stats_Mandants" Multiplicity="1" />
+          <End Type="SpContractModel.Stats_Queries" Role="Stats_Queries" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Stats_Mandants">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Stats_Queries">
+              <PropertyRef Name="Stats_Mandants_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Customer_Users">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="User_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Name" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Sex" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Vorname" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Nachname" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Initial" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Filiale" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Telefon" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Telefax" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_eMail" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Homepage" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreatedOn" />
+          <Property Type="Binary" Name="User_Picture" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="User_Sign" MaxLength="Max" FixedLength="false" />
+          <Property Type="String" Name="Result" MaxLength="10" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <ComplexType Name="Get_Vak_Rec_By_Id_Return_Type" >
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="VakNr" />
+          <Property Type="Int32" Name="KDNr" />
+          <Property Type="Int32" Name="KDZHDNr" />
+          <Property Type="String" Name="Customer_ID" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Name" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Strasse" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Ort" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_Telefon" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Customer_eMail" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Berater" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Filiale" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VakKontakt" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VakState" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Bezeichnung" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Slogan" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Gruppe" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="ExistLink" />
+          <Property Type="String" Name="VakLink" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Beginn" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobProzent" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Anstellung" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Dauer" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAAge" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MASex" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAZivil" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MALohn" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Jobtime" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobOrt" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAFSchein" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAAuto" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MANationality" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IEExport" />
+          <Property Type="String" Name="KDBeschreibung" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KDBietet" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SBeschreibung" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Reserve1" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Taetigkeit" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Anforderung" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Reserve2" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Reserve3" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Ausbildung" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Weiterbildung" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SKennt" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EDVKennt" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Branchen" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreatedOn" />
+          <Property Type="String" Name="CreatedFrom" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ChangedOn" />
+          <Property Type="String" Name="ChangedFrom" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Transfered_User" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Transfered_On" />
+          <Property Type="String" Name="Transfered_Guid" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Result" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Vak_Region" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Vak_Kanton" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MSprachen" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SSprachen" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Qualifikation" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SQualifikation" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Guid" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Nachname_OLD" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Vorname_OLD" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Telefon_OLD" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Telefax_OLD" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_eMail_OLD" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="Binary" Name="User_picture" Nullable="true" />
+          <Property Type="Binary" Name="User_Sign" Nullable="true" />
+          <Property Type="String" Name="User_Nachname" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Vorname" MaxLength="70" FixedLength="false" Unicode="true" />
+        </ComplexType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SpContractModelStoreContainer" CdmEntityContainer="SpContractEntities">
+          <EntitySetMapping Name="Kandidaten_Online">
+            <EntityTypeMapping TypeName="SpContractModel.Kandidaten_Online">
+              <MappingFragment StoreEntitySet="Kandidaten_Online">
+                <ScalarProperty Name="MA_Eigenschaft" ColumnName="MA_Eigenschaft" />
+                <ScalarProperty Name="MA_MSprache" ColumnName="MA_MSprache" />
+                <ScalarProperty Name="MA_SSprache" ColumnName="MA_SSprache" />
+                <ScalarProperty Name="User_eMail" ColumnName="User_eMail" />
+                <ScalarProperty Name="User_Telefax" ColumnName="User_Telefax" />
+                <ScalarProperty Name="User_Telefon" ColumnName="User_Telefon" />
+                <ScalarProperty Name="User_Vorname" ColumnName="User_Vorname" />
+                <ScalarProperty Name="User_Nachname" ColumnName="User_Nachname" />
+                <ScalarProperty Name="Result" ColumnName="Result" />
+                <ScalarProperty Name="Transfered_Guid" ColumnName="Transfered_Guid" />
+                <ScalarProperty Name="Transfered_On" ColumnName="Transfered_On" />
+                <ScalarProperty Name="Transfered_User" ColumnName="Transfered_User" />
+                <ScalarProperty Name="MA_Res4" ColumnName="MA_Res4" />
+                <ScalarProperty Name="MA_Res3" ColumnName="MA_Res3" />
+                <ScalarProperty Name="MA_Res2" ColumnName="MA_Res2" />
+                <ScalarProperty Name="MA_Res1" ColumnName="MA_Res1" />
+                <ScalarProperty Name="BriefAnrede" ColumnName="BriefAnrede" />
+                <ScalarProperty Name="Bewillig" ColumnName="Bewillig" />
+                <ScalarProperty Name="MANationality" ColumnName="MANationality" />
+                <ScalarProperty Name="MAAuto" ColumnName="MAAuto" />
+                <ScalarProperty Name="MAFSchein" ColumnName="MAFSchein" />
+                <ScalarProperty Name="MAZivil" ColumnName="MAZivil" />
+                <ScalarProperty Name="MASex" ColumnName="MASex" />
+                <ScalarProperty Name="MAGebDat" ColumnName="MAGebDat" />
+                <ScalarProperty Name="JobProzent" ColumnName="JobProzent" />
+                <ScalarProperty Name="MA_Beruf" ColumnName="MA_Beruf" />
+                <ScalarProperty Name="MA_State2" ColumnName="MA_State2" />
+                <ScalarProperty Name="MA_State1" ColumnName="MA_State1" />
+                <ScalarProperty Name="MA_Kontakt" ColumnName="MA_Kontakt" />
+                <ScalarProperty Name="MA_Ort" ColumnName="MA_Ort" />
+                <ScalarProperty Name="MA_Kanton" ColumnName="MA_Kanton" />
+                <ScalarProperty Name="MA_Filiale" ColumnName="MA_Filiale" />
+                <ScalarProperty Name="MA_Nachname" ColumnName="MA_Nachname" />
+                <ScalarProperty Name="MA_Vorname" ColumnName="MA_Vorname" />
+                <ScalarProperty Name="Berater" ColumnName="Berater" />
+                <ScalarProperty Name="Customer_eMail" ColumnName="Customer_eMail" />
+                <ScalarProperty Name="Customer_Telefon" ColumnName="Customer_Telefon" />
+                <ScalarProperty Name="Customer_Ort" ColumnName="Customer_Ort" />
+                <ScalarProperty Name="Customer_Strasse" ColumnName="Customer_Strasse" />
+                <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+                <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+                <ScalarProperty Name="MANr" ColumnName="MANr" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KD_Vakanzen">
+            <EntityTypeMapping TypeName="SpContractModel.KD_Vakanzen">
+              <MappingFragment StoreEntitySet="KD_Vakanzen">
+                <ScalarProperty Name="User_eMail_OLD" ColumnName="User_eMail_OLD" />
+                <ScalarProperty Name="User_Telefax_OLD" ColumnName="User_Telefax_OLD" />
+                <ScalarProperty Name="User_Telefon_OLD" ColumnName="User_Telefon_OLD" />
+                <ScalarProperty Name="User_Vorname_OLD" ColumnName="User_Vorname_OLD" />
+                <ScalarProperty Name="User_Nachname_OLD" ColumnName="User_Nachname_OLD" />
+                <ScalarProperty Name="User_Guid" ColumnName="User_Guid" />
+                <ScalarProperty Name="SQualifikation" ColumnName="SQualifikation" />
+                <ScalarProperty Name="Qualifikation" ColumnName="Qualifikation" />
+                <ScalarProperty Name="SSprachen" ColumnName="SSprachen" />
+                <ScalarProperty Name="MSprachen" ColumnName="MSprachen" />
+                <ScalarProperty Name="Vak_Kanton" ColumnName="Vak_Kanton" />
+                <ScalarProperty Name="Vak_Region" ColumnName="Vak_Region" />
+                <ScalarProperty Name="Result" ColumnName="Result" />
+                <ScalarProperty Name="Transfered_Guid" ColumnName="Transfered_Guid" />
+                <ScalarProperty Name="Transfered_On" ColumnName="Transfered_On" />
+                <ScalarProperty Name="Transfered_User" ColumnName="Transfered_User" />
+                <ScalarProperty Name="ChangedFrom" ColumnName="ChangedFrom" />
+                <ScalarProperty Name="ChangedOn" ColumnName="ChangedOn" />
+                <ScalarProperty Name="CreatedFrom" ColumnName="CreatedFrom" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="Branchen" ColumnName="Branchen" />
+                <ScalarProperty Name="EDVKennt" ColumnName="EDVKennt" />
+                <ScalarProperty Name="SKennt" ColumnName="SKennt" />
+                <ScalarProperty Name="Weiterbildung" ColumnName="Weiterbildung" />
+                <ScalarProperty Name="Ausbildung" ColumnName="Ausbildung" />
+                <ScalarProperty Name="Reserve3" ColumnName="Reserve3" />
+                <ScalarProperty Name="Reserve2" ColumnName="Reserve2" />
+                <ScalarProperty Name="Anforderung" ColumnName="Anforderung" />
+                <ScalarProperty Name="Taetigkeit" ColumnName="Taetigkeit" />
+                <ScalarProperty Name="Reserve1" ColumnName="Reserve1" />
+                <ScalarProperty Name="SBeschreibung" ColumnName="SBeschreibung" />
+                <ScalarProperty Name="KDBietet" ColumnName="KDBietet" />
+                <ScalarProperty Name="KDBeschreibung" ColumnName="KDBeschreibung" />
+                <ScalarProperty Name="IEExport" ColumnName="IEExport" />
+                <ScalarProperty Name="MANationality" ColumnName="MANationality" />
+                <ScalarProperty Name="MAAuto" ColumnName="MAAuto" />
+                <ScalarProperty Name="MAFSchein" ColumnName="MAFSchein" />
+                <ScalarProperty Name="JobOrt" ColumnName="JobOrt" />
+                <ScalarProperty Name="Jobtime" ColumnName="Jobtime" />
+                <ScalarProperty Name="MALohn" ColumnName="MALohn" />
+                <ScalarProperty Name="MAZivil" ColumnName="MAZivil" />
+                <ScalarProperty Name="MASex" ColumnName="MASex" />
+                <ScalarProperty Name="MAAge" ColumnName="MAAge" />
+                <ScalarProperty Name="Dauer" ColumnName="Dauer" />
+                <ScalarProperty Name="Anstellung" ColumnName="Anstellung" />
+                <ScalarProperty Name="JobProzent" ColumnName="JobProzent" />
+                <ScalarProperty Name="Beginn" ColumnName="Beginn" />
+                <ScalarProperty Name="VakLink" ColumnName="VakLink" />
+                <ScalarProperty Name="ExistLink" ColumnName="ExistLink" />
+                <ScalarProperty Name="Gruppe" ColumnName="Gruppe" />
+                <ScalarProperty Name="Slogan" ColumnName="Slogan" />
+                <ScalarProperty Name="Bezeichnung" ColumnName="Bezeichnung" />
+                <ScalarProperty Name="VakState" ColumnName="VakState" />
+                <ScalarProperty Name="VakKontakt" ColumnName="VakKontakt" />
+                <ScalarProperty Name="Filiale" ColumnName="Filiale" />
+                <ScalarProperty Name="Berater" ColumnName="Berater" />
+                <ScalarProperty Name="Customer_eMail" ColumnName="Customer_eMail" />
+                <ScalarProperty Name="Customer_Telefon" ColumnName="Customer_Telefon" />
+                <ScalarProperty Name="Customer_Ort" ColumnName="Customer_Ort" />
+                <ScalarProperty Name="Customer_Strasse" ColumnName="Customer_Strasse" />
+                <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+                <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+                <ScalarProperty Name="KDZHDNr" ColumnName="KDZHDNr" />
+                <ScalarProperty Name="KDNr" ColumnName="KDNr" />
+                <ScalarProperty Name="VakNr" ColumnName="VakNr" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MySetting">
+            <EntityTypeMapping TypeName="SpContractModel.MySetting">
+              <MappingFragment StoreEntitySet="MySetting">
+                <ScalarProperty Name="TplFilename" ColumnName="TplFilename" />
+                <ScalarProperty Name="GAVUnia" ColumnName="GAVUnia" />
+                <ScalarProperty Name="Autonotification_KD" ColumnName="Autonotification_KD" />
+                <ScalarProperty Name="Autonotification_MA" ColumnName="Autonotification_MA" />
+                <ScalarProperty Name="Visible_Vacancy_Fields" ColumnName="Visible_Vacancy_Fields" />
+                <ScalarProperty Name="Visible_Candidate_Fields" ColumnName="Visible_Candidate_Fields" />
+                <ScalarProperty Name="AutoNotification" ColumnName="AutoNotification" />
+                <ScalarProperty Name="Rahmenvertrag_E" ColumnName="Rahmenvertrag_E" />
+                <ScalarProperty Name="Rahmenvertrag_F" ColumnName="Rahmenvertrag_F" />
+                <ScalarProperty Name="Rahmenvertrag_I" ColumnName="Rahmenvertrag_I" />
+                <ScalarProperty Name="Rahmenvertrag" ColumnName="Rahmenvertrag" />
+                <ScalarProperty Name="Customer_AGB_E" ColumnName="Customer_AGB_E" />
+                <ScalarProperty Name="Customer_AGB_F" ColumnName="Customer_AGB_F" />
+                <ScalarProperty Name="Customer_AGB_I" ColumnName="Customer_AGB_I" />
+                <ScalarProperty Name="Customer_AGBSonst_E" ColumnName="Customer_AGBSonst_E" />
+                <ScalarProperty Name="Customer_AGBFest_E" ColumnName="Customer_AGBFest_E" />
+                <ScalarProperty Name="Customer_AGBSonst_F" ColumnName="Customer_AGBSonst_F" />
+                <ScalarProperty Name="Customer_AGBFest_F" ColumnName="Customer_AGBFest_F" />
+                <ScalarProperty Name="Customer_AGBSonst_I" ColumnName="Customer_AGBSonst_I" />
+                <ScalarProperty Name="Customer_AGBFest_I" ColumnName="Customer_AGBFest_I" />
+                <ScalarProperty Name="Customer_AGBSonst" ColumnName="Customer_AGBSonst" />
+                <ScalarProperty Name="Customer_AGBFest" ColumnName="Customer_AGBFest" />
+                <ScalarProperty Name="PrintVerleih" ColumnName="PrintVerleih" />
+                <ScalarProperty Name="Customer_cssFile" ColumnName="Customer_cssFile" />
+                <ScalarProperty Name="Customer_Homepage" ColumnName="Customer_Homepage" />
+                <ScalarProperty Name="Customer_Strasse" ColumnName="Customer_Strasse" />
+                <ScalarProperty Name="Customer_AGB" ColumnName="Customer_AGB" />
+                <ScalarProperty Name="Customer_eMail" ColumnName="Customer_eMail" />
+                <ScalarProperty Name="Customer_Telefax" ColumnName="Customer_Telefax" />
+                <ScalarProperty Name="Customer_Telefon" ColumnName="Customer_Telefon" />
+                <ScalarProperty Name="Customer_Ort" ColumnName="Customer_Ort" />
+                <ScalarProperty Name="Customer_Logo" ColumnName="Customer_Logo" />
+                <ScalarProperty Name="Verleih_Guid" ColumnName="Verleih_Guid" />
+                <ScalarProperty Name="DP_Guid" ColumnName="DP_Guid" />
+                <ScalarProperty Name="KD_Guid" ColumnName="KD_Guid" />
+                <ScalarProperty Name="MA_Guid" ColumnName="MA_Guid" />
+                <ScalarProperty Name="Vak_Guid" ColumnName="Vak_Guid" />
+                <ScalarProperty Name="ModulName" ColumnName="ModulName" />
+                <ScalarProperty Name="KD_ZHD" ColumnName="KD_ZHD" />
+                <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+                <ScalarProperty Name="eMail" ColumnName="eMail" />
+                <ScalarProperty Name="Passwort" ColumnName="Passwort" />
+                <ScalarProperty Name="Userkey" ColumnName="Userkey" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Stats_Downloads">
+            <EntityTypeMapping TypeName="SpContractModel.Stats_Downloads">
+              <MappingFragment StoreEntitySet="Stats_Downloads">
+                <ScalarProperty Name="FirstDownloadDateTime" ColumnName="FirstDownloadDateTime" />
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="Stats_Mandants_ID" ColumnName="Stats_Mandants_ID" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Stats_Mandants">
+            <EntityTypeMapping TypeName="SpContractModel.Stats_Mandants">
+              <MappingFragment StoreEntitySet="Stats_Mandants">
+                <ScalarProperty Name="MandantGuid" ColumnName="MandantGuid" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Stats_Queries">
+            <EntityTypeMapping TypeName="SpContractModel.Stats_Queries">
+              <MappingFragment StoreEntitySet="Stats_Queries">
+                <ScalarProperty Name="JobQualificationFilter" ColumnName="JobQualificationFilter" />
+                <ScalarProperty Name="VacancyTitleFilter" ColumnName="VacancyTitleFilter" />
+                <ScalarProperty Name="BranchFilter" ColumnName="BranchFilter" />
+                <ScalarProperty Name="CantonFilter" ColumnName="CantonFilter" />
+                <ScalarProperty Name="Client_Longitude" ColumnName="Client_Longitude" />
+                <ScalarProperty Name="Client_Latitude" ColumnName="Client_Latitude" />
+                <ScalarProperty Name="QueryDateTime" ColumnName="QueryDateTime" />
+                <ScalarProperty Name="Stats_Mandants_ID" ColumnName="Stats_Mandants_ID" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Customer_Users">
+            <EntityTypeMapping TypeName="SpContractModel.Customer_Users">
+              <MappingFragment StoreEntitySet="Customer_Users">
+                <ScalarProperty Name="Result" ColumnName="Result" />
+                <ScalarProperty Name="User_Sign" ColumnName="User_Sign" />
+                <ScalarProperty Name="User_Picture" ColumnName="User_Picture" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="User_Homepage" ColumnName="User_Homepage" />
+                <ScalarProperty Name="User_eMail" ColumnName="User_eMail" />
+                <ScalarProperty Name="User_Telefax" ColumnName="User_Telefax" />
+                <ScalarProperty Name="User_Telefon" ColumnName="User_Telefon" />
+                <ScalarProperty Name="User_Filiale" ColumnName="User_Filiale" />
+                <ScalarProperty Name="User_Initial" ColumnName="User_Initial" />
+                <ScalarProperty Name="User_Nachname" ColumnName="User_Nachname" />
+                <ScalarProperty Name="User_Vorname" ColumnName="User_Vorname" />
+                <ScalarProperty Name="User_Sex" ColumnName="User_Sex" />
+                <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+                <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+                <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Get_Vacancy_StoredProcedure" FunctionName="SpContractModel.Store.Get_Vakrec_By_ID" >
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SpContractModel.Get_Vak_Rec_By_Id_Return_Type">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="VakNr" ColumnName="VakNr" />
+                <ScalarProperty Name="KDNr" ColumnName="KDNr" />
+                <ScalarProperty Name="KDZHDNr" ColumnName="KDZHDNr" />
+                <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+                <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+                <ScalarProperty Name="Customer_Strasse" ColumnName="Customer_Strasse" />
+                <ScalarProperty Name="Customer_Ort" ColumnName="Customer_Ort" />
+                <ScalarProperty Name="Customer_Telefon" ColumnName="Customer_Telefon" />
+                <ScalarProperty Name="Customer_eMail" ColumnName="Customer_eMail" />
+                <ScalarProperty Name="Berater" ColumnName="Berater" />
+                <ScalarProperty Name="Filiale" ColumnName="Filiale" />
+                <ScalarProperty Name="VakKontakt" ColumnName="VakKontakt" />
+                <ScalarProperty Name="VakState" ColumnName="VakState" />
+                <ScalarProperty Name="Bezeichnung" ColumnName="Bezeichnung" />
+                <ScalarProperty Name="Slogan" ColumnName="Slogan" />
+                <ScalarProperty Name="Gruppe" ColumnName="Gruppe" />
+                <ScalarProperty Name="ExistLink" ColumnName="ExistLink" />
+                <ScalarProperty Name="VakLink" ColumnName="VakLink" />
+                <ScalarProperty Name="Beginn" ColumnName="Beginn" />
+                <ScalarProperty Name="JobProzent" ColumnName="JobProzent" />
+                <ScalarProperty Name="Anstellung" ColumnName="Anstellung" />
+                <ScalarProperty Name="Dauer" ColumnName="Dauer" />
+                <ScalarProperty Name="MAAge" ColumnName="MAAge" />
+                <ScalarProperty Name="MASex" ColumnName="MASex" />
+                <ScalarProperty Name="MAZivil" ColumnName="MAZivil" />
+                <ScalarProperty Name="MALohn" ColumnName="MALohn" />
+                <ScalarProperty Name="Jobtime" ColumnName="Jobtime" />
+                <ScalarProperty Name="JobOrt" ColumnName="JobOrt" />
+                <ScalarProperty Name="MAFSchein" ColumnName="MAFSchein" />
+                <ScalarProperty Name="MAAuto" ColumnName="MAAuto" />
+                <ScalarProperty Name="MANationality" ColumnName="MANationality" />
+                <ScalarProperty Name="IEExport" ColumnName="IEExport" />
+                <ScalarProperty Name="KDBeschreibung" ColumnName="KDBeschreibung" />
+                <ScalarProperty Name="KDBietet" ColumnName="KDBietet" />
+                <ScalarProperty Name="SBeschreibung" ColumnName="SBeschreibung" />
+                <ScalarProperty Name="Reserve1" ColumnName="Reserve1" />
+                <ScalarProperty Name="Taetigkeit" ColumnName="Taetigkeit" />
+                <ScalarProperty Name="Anforderung" ColumnName="Anforderung" />
+                <ScalarProperty Name="Reserve2" ColumnName="Reserve2" />
+                <ScalarProperty Name="Reserve3" ColumnName="Reserve3" />
+                <ScalarProperty Name="Ausbildung" ColumnName="Ausbildung" />
+                <ScalarProperty Name="Weiterbildung" ColumnName="Weiterbildung" />
+                <ScalarProperty Name="SKennt" ColumnName="SKennt" />
+                <ScalarProperty Name="EDVKennt" ColumnName="EDVKennt" />
+                <ScalarProperty Name="Branchen" ColumnName="Branchen" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedFrom" ColumnName="CreatedFrom" />
+                <ScalarProperty Name="ChangedOn" ColumnName="ChangedOn" />
+                <ScalarProperty Name="ChangedFrom" ColumnName="ChangedFrom" />
+                <ScalarProperty Name="Transfered_User" ColumnName="Transfered_User" />
+                <ScalarProperty Name="Transfered_On" ColumnName="Transfered_On" />
+                <ScalarProperty Name="Transfered_Guid" ColumnName="Transfered_Guid" />
+                <ScalarProperty Name="Result" ColumnName="Result" />
+                <ScalarProperty Name="Vak_Region" ColumnName="Vak_Region" />
+                <ScalarProperty Name="Vak_Kanton" ColumnName="Vak_Kanton" />
+                <ScalarProperty Name="MSprachen" ColumnName="MSprachen" />
+                <ScalarProperty Name="SSprachen" ColumnName="SSprachen" />
+                <ScalarProperty Name="Qualifikation" ColumnName="Qualifikation" />
+                <ScalarProperty Name="SQualifikation" ColumnName="SQualifikation" />
+                <ScalarProperty Name="User_Guid" ColumnName="User_Guid" />
+                <ScalarProperty Name="User_Nachname_OLD" ColumnName="User_Nachname_OLD" />
+                <ScalarProperty Name="User_Vorname_OLD" ColumnName="User_Vorname_OLD" />
+                <ScalarProperty Name="User_Telefon_OLD" ColumnName="User_Telefon_OLD" />
+                <ScalarProperty Name="User_Telefax_OLD" ColumnName="User_Telefax_OLD" />
+                <ScalarProperty Name="User_eMail_OLD" ColumnName="User_eMail_OLD" />
+                <ScalarProperty Name="User_picture" ColumnName="User_picture" />
+                <ScalarProperty Name="User_Sign" ColumnName="User_Sign" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="SpContract" ZoomLevel="60">
+        <EntityTypeShape EntityType="SpContractModel.Kandidaten_Online" Width="1.5" PointX="2.375" PointY="0.625" Height="8.0018522135416674" />
+        <EntityTypeShape EntityType="SpContractModel.KD_Vakanzen" Width="1.5" PointX="0.5" PointY="0.625" Height="11.7818408203125" />
+        <EntityTypeShape EntityType="SpContractModel.MySetting" Width="1.5" PointX="4.125" PointY="0.75" Height="8.1661995442708388" />
+        <EntityTypeShape EntityType="SpContractModel.Stats_Downloads" Width="2" PointX="8.25" PointY="1.125" Height="1.7566536458333388" />
+        <EntityTypeShape EntityType="SpContractModel.Stats_Mandants" Width="1.875" PointX="6" PointY="2.875" Height="1.5923063151041674" />
+        <EntityTypeShape EntityType="SpContractModel.Stats_Queries" Width="2.5" PointX="8.25" PointY="3.625" Height="2.5783902994791674" />
+        <AssociationConnector Association="SpContractModel.FK_Stats_Downloads_Stats_Mandants" >
+          <ConnectorPoint PointX="6.9375" PointY="2.875" />
+          <ConnectorPoint PointX="6.9375" PointY="2.0033268229166694" />
+          <ConnectorPoint PointX="8.25" PointY="2.0033268229166694" />
+        </AssociationConnector>
+        <AssociationConnector Association="SpContractModel.FK_Stats_Queries_Stats_Mandants" >
+          <ConnectorPoint PointX="7.875" PointY="4.0461531575520837" />
+          <ConnectorPoint PointX="8.25" PointY="4.0461531575520837" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="SpContractModel.Customer_Users" Width="1.5" PointX="6.375" PointY="7.75" Height="3.7288216145833317" />
+        </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<tableConfigurations>
+
+  <!-- Allgemein / Nummerierung links nach rechts, oben nach unten -->
+
+  <!-- Tabelle 1: Nicht gebraucht im Moment, nur als Platzhalter. -->
+  <tableConfiguration id="tblGeneralData1" storedProcedure=""
+                      dataFormatterName="GeneralDataTable1Formatter" title="Übersicht über alle Daten">
+  </tableConfiguration>
+
+  <!-- Tabelle 2 -->
+  <tableConfiguration id="tblGeneralData2" storedProcedure="[dbo].[Cockpit. Get My Activity From Mail_Db: 4 All MD]"
+                      dataFormatterName="GeneralDataTable2Formatter" title="Aktivitäten der letzten 7 Tage">
+    <column id="CreatedOn" title="Datum" columnWidth="80" align="left"/>
+    <column id="eMail_Subjec" title="Bezeichnung" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 3 -->
+  <tableConfiguration id="tblGeneralData3" storedProcedure="[dbo].[Cockpit. Get My Kontakt From KDKontakt_Db: 4 All MD]"
+                      dataFormatterName="GeneralDataTable3Formatter" title="Kontaktarten der letzten 7 Tage">
+    <column id="KontaktType1" title="Bezeichnung" columnWidth="80" align="left"/>
+    <column id="AnzRec" title="Anzahl" columnWidth="80" align="right"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 4 -->
+  <tableConfiguration id="tblGeneralData4" storedProcedure="[dbo].[Cockpit. Get Vakanz Statistik seit Tage: 4 All MD]"
+                      dataFormatterName="GeneralDataTable4Formatter" title="Liste der Vakanzen der letzen 7 Tage">
+    <column id="CreatedOn" title="Erfasst am" columnWidth="80" align="left"/>
+    <column id="Firma1" title="Firma" columnWidth="80" align="left"/>
+    <column id="Bezeichnung" title="Bezeichnung" columnWidth="80" align="left"/>
+    <column id="Berater" title="BeraterIn" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 5 -->
+  <tableConfiguration id="tblGeneralData5" storedProcedure="[dbo].[Cockpit. Get Telefon Statistik seit Tage: 4 All MD]"
+                      dataFormatterName="GeneralDataTable5Formatter" title="Liste der Telefon der Telefonate der letzten 7 Tage">
+    <column id="EventTime" title="Erfasst am" columnWidth="80" align="left"/>
+    <column id="Firma1" title="Firma" columnWidth="80" align="left"/>
+    <column id="CallDuration" title="Dauer" columnWidth="80" align="left"/>
+    <column id="USName" title="Benutzer" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 6 -->
+  <tableConfiguration id="tblGeneralData6" storedProcedure="[dbo].[Cockpit. Get Offer Statistik seit Tage: 4 All MD]"
+                      dataFormatterName="GeneralDataTable6Formatter" title="Liste der Offerten der letzten 7 Tage">
+    <column id="CreatedOn" title="Erfasst am" columnWidth="80" align="left"/>
+    <column id="Of_Bezeichnung" title="Bezeichnung" columnWidth="80" align="left"/>
+    <column id="Of_Berater" title="BeraterIn" columnWidth="80" align="left"/>
+  </tableConfiguration>
+  
+  <!-- Einatz-Detail / Nummerierung links nach rechts, oben nach unten -->
+
+  <!-- Tabelle 1 -->
+  <tableConfiguration id="tblAssignmentOfPers1" storedProcedure="[dbo].[Cockpit. Get My Aktiv ESList For ES: 4 All MD]" 
+                      dataFormatterName="AssignmentOfPersonnelTable1Formatter" title="Liste der heute aktiven Einsätze">
+    <column id="ESNr" title="ESNr" columnWidth="150" align="left"/>
+    <column id="MANr" title="MANr" columnWidth="80" align="left"/>
+    <column id="Kandidat" title="Kandidat" columnWidth="80" align="left"/>
+    <column id="Firma1" title="Firma" columnWidth="80" align="left"/>
+    <column id="ES_Als" title="Einsatz als" columnWidth="80" align="left"/>
+    <column id="From_To" title="Von bis" columnWidth="150" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 2 -->
+  <tableConfiguration id="tblAssignmentOfPers2" storedProcedure="[dbo].[Cockpit. Get ESAktivList Statistik Neue ES innert Tage: 4 All MD]"
+                      dataFormatterName="AssignmentOfPersonnelTable2Formatter" title="Liste der neuen Einsätze seit 7 Tagen">
+
+    <column id="ES_Ab" title="Einsatz ab" columnWidth="80" align="left"/>
+    <column id="Firma1" title="Firma" columnWidth="80" align="left"/>
+    <column id="Kandidat" title="Kandidat" columnWidth="80" align="left"/>
+    <column id="ES_Als" title="Einsatz als" columnWidth="80" align="left"/>
+    <column id="ESKST" title="BeraterIn" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 3 -->
+  <tableConfiguration id="tblAssignmentOfPers3" storedProcedure="[dbo].[Cockpit.Get ESAktivList Statistik Nach Einstufung: 4 All MD]"
+                      dataFormatterName="AssignmentOfPersonnelTable3Formatter" title="Einsatzvergleich nach Einstufung der letzten 7 Tage">
+    <column id="image" title=""  columnWidth="32" align="center" javaScriptColumnFormatterFunctionName="JqGridColumnImageFormatter"/>
+    <column id="Einstufung" title="Bezeichnung" columnWidth="80" align="left"/>
+    <column id="Anzrec" title="Heute" columnWidth="80" align="left"/>
+    <column id="AnzRecOld" title="Vor 10 Tagen" columnWidth="80" align="left"/>
+    <column id="AnzDiff" title="Differenz" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 4 -->
+  <tableConfiguration id="tblAssignmentOfPers4" storedProcedure="[dbo].[Cockpit. Get ESList Statistik beendet innert Tage: 4 All MD]"
+                      dataFormatterName="AssignmentOfPersonnelTable4Formatter" title="Liste der beendenten Einsätze der letzen 7 Tage">
+    <column id="ES_Ab" title="Einsatz ab" columnWidth="80" align="left"/>
+    <column id="Firma1" title="Firma" columnWidth="80" align="left"/>
+    <column id="Kandidat" title="Kandidat" columnWidth="80" align="left"/>
+    <column id="ES_Als" title="Einsatz als" columnWidth="80" align="left"/>
+    <column id="ESKST" title="BeraterIn" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 5 -->
+  <tableConfiguration id="tblAssignmentOfPers5" storedProcedure="[dbo].[Cockpit. Get ESAktivList Statistik Nach ESBranche: 4 All MD]"
+                      dataFormatterName="AssignmentOfPersonnelTable5Formatter" title="Einsatzvergleich nach Branche der letzen 7 Tage">
+    <column id="image" title=""  columnWidth="32" align="center" javaScriptColumnFormatterFunctionName="JqGridColumnImageFormatter"/>
+    <column id="ESBranche" title="Bezeichnung" columnWidth="80" align="left"/>
+    <column id="AnzRec" title="Heute" columnWidth="80" align="left"/>
+    <column id="AnzRecOld" title="Vor 10 Tagen" columnWidth="80" align="left"/>
+    <column id="AnzDiff" title="Differenz" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 6 -->
+  <tableConfiguration id="tblAssignmentOfPers6" storedProcedure="[dbo].[Cockpit. Get ESList Statistik beginnend In Zukunft: 4 All MD]"
+                      dataFormatterName="AssignmentOfPersonnelTable6Formatter" title="Liste der zukünftigen Einsätze">
+    <column id="ES_Ab" title="Einsatz ab" columnWidth="80" align="left"/>
+    <column id="Firma1" title="Firma" columnWidth="80" align="left"/>
+    <column id="Kandidat" title="Kandidat" columnWidth="80" align="left"/>
+    <column id="ES_Als" title="Einsatz als" columnWidth="80" align="left"/>
+    <column id="ESKST" title="BeraterIn" columnWidth="80" align="left"/>
+  </tableConfiguration>
+  
+  <!-- Umsätze / Nummerierung links nach rechts, oben nach unten -->
+
+  <!-- Tabelle 1 -->
+  <tableConfiguration id="tblSalesFigures1" storedProcedure="[dbo].[Cockpit. Get REBetrag Grouped By Art: 4 All MD]"
+                    dataFormatterName="SalesFiguresTable1Formatter" title="Umsatzstatistik sei 7 Tagen nach Debitorenart">
+    <column id="Art" title="Bezeichnung" columnWidth="80" align="left"/>
+    <column id="TotalBetrag" title="Betrag" columnWidth="80" align="right"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 2 -->
+  <tableConfiguration id="tblSalesFigures2" storedProcedure="[dbo].[Cockpit. Get Propose Festumsatz in Zukunft: 4 All MD]"
+                    dataFormatterName="SalesFiguresTable2Formatter" title="Liste der Umsätze in der Zukunft">
+    <column id="Firma1" title="Firma" columnWidth="80" align="left"/>
+    <column id="Kandidat" title="Kandidat" columnWidth="80" align="left"/>
+    <column id="KSTBetrag" title="Betrag" columnWidth="80" align="left"/>
+    <column id="KST" title="BeraterIn" columnWidth="80" align="left"/>
+    <column id="RowCssClass" title="" columnWidth="0" align="left" hidden="true"/> 
+  </tableConfiguration>
+
+  <!-- Tabelle 3 -->
+  <tableConfiguration id="tblSalesFigures3" storedProcedure="[dbo].[Cockpit. Get REBetrag Grouped By Art_KDNr: 4 All MD]"
+                    dataFormatterName="SalesFiguresTable3Formatter" title="Liste der Umsätze in den letzen 7 Tagen">
+    <column id="Art" title="Art" columnWidth="80" align="left"/>
+    <column id="Fak_Dat" title="Datum" columnWidth="80" align="left"/>
+    <column id="R_Name1" title="Firma" columnWidth="80" align="left"/>
+    <column id="TotalBetrag" title="Betrag" columnWidth="80" align="left"/>
+    <column id="KST" title="BeraterIn" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 4 -->
+  <tableConfiguration id="tblSalesFigures4" storedProcedure="[dbo].[Cockpit. Get My Not Finished RPList For MA: 4 All MD]"
+                    dataFormatterName="SalesFiguresTable4Formatter" title="Liste der offenen Rapporte">
+    <column id="Kandidat" title="Kandidat" columnWidth="80" align="left"/>
+    <column id="Firma1" title="Firma" columnWidth="80" align="left"/>
+    <column id="Daten" title="Daten" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 5 -->
+  <tableConfiguration id="tblSalesFigures5" storedProcedure="[dbo].[Cockpit. Get RP REBetrag Grouped By Art Zukunft: 4 All MD]"
+                    dataFormatterName="SalesFiguresTable5Formatter" title="Liste der Temporär-Umsätze in der Zukunft">
+    <column id="Frima1" title="Firma" columnWidth="80" align="left"/>
+    <column id="Kandidat" title="Kandidat" columnWidth="80" align="left"/>
+    <column id="KSTBetrag" title="Betrag" columnWidth="80" align="left"/>
+    <column id="RPKST" title="BeraterIn" columnWidth="80" align="left"/>
+    <column id="RowCssClass" title="" columnWidth="0" align="left" hidden="true"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 6 -->
+  <tableConfiguration id="tblSalesFigures6" storedProcedure="[dbo].[Cockpit. Get My Not Payed OPList For OP: 4 All MD]"
+                    dataFormatterName="SalesFiguresTable6Formatter" title="Liste der offenen Debitoren">
+    <column id="R_Name1" title="Firma" columnWidth="80" align="left"/>
+    <column id="OffenerBetrag" title="Offener Betrag" columnWidth="80" align="left"/>
+    <column id="Fak_Dat" title="Datum" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Kandidatendaten / Nummerierung links nach rechts, oben nach unten -->
+
+  <!-- Tabelle 1 -->
+  <tableConfiguration id="tblCandidateData1" storedProcedure="[dbo].[Cockpit. Get MAList Statistik Neu seit Tage: 4 All MD]"
+                    dataFormatterName="CandidatesDataTable1Formatter" title="Liste der neuen Kandidaten der letzen 7 Tage">
+    <column id="CreatedOn" title="Erffast am" columnWidth="80" align="left"/>
+    <column id="Kandidat" title="Kandidat" columnWidth="80" align="left"/>
+    <column id="Beruf" title="Beruf" columnWidth="80" align="left"/>
+    <column id="PAnz" title="PAnz" columnWidth="80" align="left"/>
+    <column id="ESAnz" title="Einsätze" columnWidth="80" align="left"/>
+    <column id="NatelState" title="Natel" columnWidth="80" align="left"/>
+    <column id="EmailState" title="Email" columnWidth="80" align="left"/>
+    <column id="DokAnz" title="Dokument Anz." columnWidth="80" align="left"/>
+    <column id="BildState" title="Bild" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 2 -->
+  <tableConfiguration id="tblCandidateData2" storedProcedure="[dbo].[Cockpit. Get Propose_Vorstellung Statistik Neu seit Tage: 4 All MD]"
+                    dataFormatterName="CandidatesDataTable2Formatter" title="Liste der Vorstellungstermine der letzen 7 Tage">
+    <column id="TerminDate" title="Termin" columnWidth="80" align="left"/>
+    <column id="Firma1" title="Firma" columnWidth="80" align="left"/>
+    <column id="Kandidat" title="Kandidat" columnWidth="80" align="left"/>
+    <column id="Bezeichnung" title="Vorstellung" columnWidth="80" align="left"/>
+    <column id="KST" title="KST" columnWidth="80" align="left"/>
+    <column id="HighlightRow" title="" columnWidth="0" align="left" hidden="true" />
+  </tableConfiguration>
+
+  <!-- Tabelle 3 -->
+  <tableConfiguration id="tblCandidateData3" storedProcedure="[dbo].[Cockpit. Get My MAData For GebDat: 4 All MD]"
+                    dataFormatterName="CandidatesDataTable3Formatter"  title="Kandidaten-Geburtstage in den kommenden 7 Tagen">
+    <column id="Kandidat" title="Kandidat" columnWidth="80" align="left"/>
+    <column id="GebDat" title="GebDat" columnWidth="80" align="left"/>
+    <column id="Natel" title="Natel" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 4 -->
+  <tableConfiguration id="tblCandidateData4" storedProcedure="[dbo].[Cockpit. Get Offene ProposeList Statistik Innert Tage: 4 All MD]"
+                    dataFormatterName="CandidatesDataTable4Formatter"  title="Liste der aktiven Vorschläge der letzten 7 Tage">
+    <column id="CreatedOn" title="Erfasst am" columnWidth="80" align="left"/>
+    <column id="Firma1" title="Firma" columnWidth="80" align="left"/>
+    <column id="Kandidat" title="Kandidat" columnWidth="80" align="left"/>
+    <column id="Bezeichnung" title="Vorstellung" columnWidth="80" align="left"/>
+    <column id="KST" title="KST" columnWidth="80" align="left"/>
+    <column id="HighlightRow" title="" columnWidth="0" align="left" hidden="true" />
+  </tableConfiguration>
+
+  <!-- Tabelle 5 -->
+  <tableConfiguration id="tblCandidateData5" storedProcedure="[dbo].[Cockpit. Get My MAData For Bewilligung: 4 All MD]"
+                    dataFormatterName="CandidatesDataTable5Formatter"  title="Ablauf der Bewilligungen in den kommenden 7 Tagen">
+    <column id="Kandidat" title="Kandidat" columnWidth="80" align="left"/>
+    <column id="Bewilligung" title="Bewilligung" columnWidth="80" align="left"/>
+    <column id="Natel" title="Natel" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 6 -->
+  <tableConfiguration id="tblCandidateData6" storedProcedure="[dbo].[Cockpit. Get My Ver MAList For MA: 4 All MD]"
+                    dataFormatterName="CandidatesDataTable6Formatter"  title="Liste der vermittelbaren Kandidaten">
+    <column id="Kandidat" title="Kandidat" columnWidth="80" align="left"/>
+    <column id="Adresse" title="Adresse" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Kundendaten / Nummerierung links nach rechts, oben nach unten -->
+
+  <!-- Tabelle 1 -->
+  <tableConfiguration id="tblCustomerData1" storedProcedure="[dbo].[Cockpit. Get KDList Statistik Neu seit Tage: 4 All MD]"
+                    dataFormatterName="CustomerDataTable1Formatter" title="Liste der neuen Kunden der letzen 7 Tage">
+    <column id="CreatedOn" title="Erfasst am" columnWidth="80" align="left"/>
+    <column id="Firma1" title="Firma" columnWidth="80" align="left"/>
+    <column id="TelefonState" title="Telefon" columnWidth="80" align="left"/>
+    <column id="TelefaxState" title="Telefax" columnWidth="80" align="left"/>
+    <column id="EmailState" title="Email" columnWidth="80" align="left"/>
+    <column id="KDKAnz" title="KDKAnz" columnWidth="80" align="left"/>
+    <column id="KDZAnz" title="KDZAnz" columnWidth="80" align="left"/>
+    <column id="PAnz" title="PAnz" columnWidth="80" align="left"/>
+    <column id="ESAnz" title="ESAnz" columnWidth="80" align="left"/>
+ 
+  </tableConfiguration>
+
+  <!-- Tabelle 2 -->
+  <tableConfiguration id="tblCustomerData2" storedProcedure="[dbo].[Cockpit. Get My ZHDData For GebDat: 4 All MD]"
+                    dataFormatterName="CustomerDataTable2Formatter" title="Geburtstage der zust. Personen in den nächsten 7 Tagen">
+    <column id="Firma1" title="Firma" columnWidth="80" align="left"/>
+    <column id="ZustPerson" title="Z.Person" columnWidth="80" align="left"/>
+    <column id="Geb_Dat" title="Geburtsdatum" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+  <!-- Tabelle 3 -->
+  <tableConfiguration id="tblCustomerData3" storedProcedure="[dbo].[Cockpit. Get Pers KDKontaktList Statistik Innert Tage: 4 All MD]"
+                    dataFormatterName="CustomerDataTable3Formatter" title="Liste der Kundenkontakte der letzen 7 Tage">
+    <column id="CreatedOn" title="Erfasst am" columnWidth="80" align="left"/>
+    <column id="Firma1" title="Firma" columnWidth="80" align="left"/>
+    <column id="KonaktType1" title="Kontaktart" columnWidth="80" align="left"/>
+    <column id="KST" title="BeraterIn" columnWidth="80" align="left"/>
+  </tableConfiguration>
+
+
+  <!-- Tabelle 4 -->
+  <tableConfiguration id="tblCustomerData4" storedProcedure="[dbo].[Cockpit. Get My KDData For Kredit: 4 All MD]"
+                    dataFormatterName="CustomerDataTable4Formatter" title="Ablauf der Kreditversicherung in dne kommenden 7 Tagen">
+    <column id="Firma" title="Firma" columnWidth="80" align="left"/>
+    <column id="Kreditdaten" title="Kreditdaten" columnWidth="80" align="left"/>
+  </tableConfiguration>
+  
+</tableConfigurations>

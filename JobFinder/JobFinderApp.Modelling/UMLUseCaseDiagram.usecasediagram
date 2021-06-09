@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="dbb1c0d6-aadd-4f11-b0c8-6c60ecd3d075" name="UMLUseCaseDiagram" linkedPackageId="392472e2-ae0d-4ff6-b811-4e4385a3e4d4" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="dfd6e19f-b3a7-4e1f-8b83-81ef0f928e1f">
+      <profileInstance Id="e3c48e49-2072-4e17-bc58-e0fac00c567a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c1a1fa81-a1ef-4896-894e-1cb8adcdc5d8">
+      <profileInstance Id="7a6955a6-2971-4290-a342-387da429d296" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="303db770-3ce7-4c94-81c3-bb3da3b49fb3" name="Stellensuchender" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2146f20a-c5c9-48e3-803c-5784a5a1af8f" />
+        <targetEnds>
+          <association Id="adad60e8-698e-466c-bf84-66cf7e8dbfc1" isDerived="false" sourceEndRoleName="Stellensuchender" targetEndRoleName="App Update" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b3a7bf3a-8f2e-453b-abc2-c8485cac7f73" LastKnownName="App Update" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cae22775-1d82-4235-9e18-62e066f534f4" name="Stellensuchender" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="378e8117-c374-45e6-b53d-e2d284d14ee6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8653392c-dc64-4e46-b427-2bc09cf607b1" name="App Update" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4722fd52-20f1-4b90-916c-1fce891aba52" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0ddd7ccc-963f-4d63-95e3-6f6e470c334d" />
+          </association>
+          <association Id="2ef435c4-b95b-49e5-9ffd-60b91d5c1f17" isDerived="false" sourceEndRoleName="Stellensuchender" targetEndRoleName="Stelle suchen" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8fd89ba4-65da-4f6c-8650-1e1a826d60df" LastKnownName="Stelle suchen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="79c0f438-7f58-443f-b334-bdf35f5be947" name="Stellensuchender" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="918b8658-930a-4731-9194-cac8fcc9b7fb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9ffc9869-c86a-4208-a1c6-3830df272640" name="Stelle suchen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2611e009-a988-4c64-bc79-8a13d54e2f5b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f1a274e3-58e2-43ce-ba29-16c6c476ceb8" />
+          </association>
+          <association Id="a8259427-30a7-419e-8c0a-83007a456592" isDerived="false" sourceEndRoleName="Stellensuchender" targetEndRoleName="App installieren" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c5619d7f-1bc2-4550-89eb-f91677f0f93f" LastKnownName="App installieren" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="874799d5-24cf-4760-8b12-8926bf658efd" name="Stellensuchender" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fd38d94f-d47a-49fb-99b3-7d747bc03c85" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a7e877f5-089f-4fe6-a0fa-fc8c6cb6cd0c" name="App installieren" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a3849d1a-c9c3-4f0d-aece-7d6e89cef69a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fe337ddb-c611-4120-ac24-4e13f348e10f" />
+          </association>
+          <association Id="668ecb24-730e-4b51-9cf9-7cfae9843abf" isDerived="false" sourceEndRoleName="Stellensuchender" targetEndRoleName="Stellenanbieter kontaktieren" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f4a2661d-c82b-4963-86f4-766ec6c1e9d3" LastKnownName="Stellenanbieter kontaktieren" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fcc3e739-d274-4e21-b9ed-4c1a436391ce" name="Stellensuchender" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ba0b7339-97a1-42cb-b69e-86b5214361bf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f59e9639-917a-425c-8e5c-2772891c4b42" name="Stellenanbieter kontaktieren" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cdd83159-a76d-44f7-bde6-5a43a8ca873b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e535fd2c-e704-495c-9548-bfb167108143" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e6687d22-6ab3-453f-a6f1-da6ecf433809" name="Administrator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4dde98e5-6100-48c3-b1d9-6c2643806ae9" />
+        <targetEnds>
+          <association Id="41685ece-a1d2-4449-a789-ed65549fb457" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Statistiken" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e02bab5a-0729-4837-a360-ef341da3407d" LastKnownName="Statistiken" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ae279628-e9e3-42f4-af87-31d007e4a26e" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fe8770a4-d572-4c42-ae22-9714c72b1e97" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="94afa6b6-b286-4a43-9a38-e174352969f6" name="Statistiken" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="74ab3998-5f0e-45c9-baef-536166d79675" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="68a368b6-80fb-457d-a5c0-984d7780f331" />
+          </association>
+          <association Id="400669a3-63c2-415c-9e3d-2edd88b56d33" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="App-Deployment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="177930cb-c3cd-4080-8404-be3c4063675b" LastKnownName="App-Deployment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c738012a-4491-443b-aa46-8b89c42406dc" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="868d8588-e259-4097-a9e9-b0429cee341d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="54c1d672-768f-4858-8e45-6f1e27a4a1b9" name="App-Deployment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e891b35c-414a-469e-907c-08e88b80f348" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="312c64ba-7fe4-4c6c-bc07-831b3a997017" />
+          </association>
+          <association Id="1831c20a-0b45-49ff-9e66-aee98070a060" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Kunde einrichten" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7a7a9afc-880c-4fcc-b07e-3b21b1af07cd" LastKnownName="Kunde einrichten" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bbd2b3ca-767a-4104-a7cf-4398b30b432e" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fb5d91a8-ebb1-48db-9995-7af868958b98" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="220f06d9-9be2-4338-9115-650a9082077d" name="Kunde einrichten" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="feef1ae9-12ec-4218-b6b7-367fdf88a9e1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="178cab5a-7599-429d-8714-5a1dd671e6ce" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8fd89ba4-65da-4f6c-8650-1e1a826d60df" name="Stelle suchen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="60d77bde-2e85-497f-9dfc-fe7932939a8b" />
+        <suppliersInternal>
+          <dependency Id="d16df714-2ebb-4c9a-86a0-d83993d8ea95">
+            <useCaseMoniker Id="7a7a9afc-880c-4fcc-b07e-3b21b1af07cd" LastKnownName="Kunde einrichten" />
+            <elementDefinition Id="c4bbc501-f09d-4be2-afa0-ef33cf79784e" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7a7a9afc-880c-4fcc-b07e-3b21b1af07cd" name="Kunde einrichten" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="14e671f7-76a9-431d-83db-5ec2483fc13b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f4a2661d-c82b-4963-86f4-766ec6c1e9d3" name="Stellenanbieter kontaktieren" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d6d29619-527a-42d5-ad12-243c9ca5aa16" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c5619d7f-1bc2-4550-89eb-f91677f0f93f" name="App installieren" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="571387da-f156-499b-b536-abbf0784b78a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="177930cb-c3cd-4080-8404-be3c4063675b" name="App-Deployment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3187d66a-5257-459d-994f-f10288ab9de0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e02bab5a-0729-4837-a360-ef341da3407d" name="Statistiken" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2be39f46-6661-4d7c-8da2-197175793c9f" />
+        <suppliersInternal>
+          <dependency Id="5d702d79-13ab-43a8-a511-1ca61f0b462b">
+            <useCaseMoniker Id="c5619d7f-1bc2-4550-89eb-f91677f0f93f" LastKnownName="App installieren" />
+            <elementDefinition Id="03501950-ba83-4ec5-8255-6f56e7241c18" />
+          </dependency>
+          <dependency Id="fdc562af-a9dc-49cc-bfec-6463e79429c1">
+            <useCaseMoniker Id="8fd89ba4-65da-4f6c-8650-1e1a826d60df" LastKnownName="Stelle suchen" />
+            <elementDefinition Id="5e8013f0-64f5-451b-ab1b-0f00d1bfbd66" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b3a7bf3a-8f2e-453b-abc2-c8485cac7f73" name="App Update" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b7ea1e57-963b-4a5f-bb51-7e91f8d8955b" />
+        <suppliersInternal>
+          <dependency Id="6ac4779f-04bc-45af-a3ef-b100f3e912f5">
+            <useCaseMoniker Id="177930cb-c3cd-4080-8404-be3c4063675b" LastKnownName="App-Deployment" />
+            <elementDefinition Id="21cdb8b8-dac3-48f4-9b5e-74f6c9948458" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="392472e2-ae0d-4ff6-b811-4e4385a3e4d4" name="JobFinderApp.Modelling">
+    <elementDefinition Id="bc34b766-0ad6-4279-b6bd-b8f9fc8257eb" />
+  </package>
+</useCaseModelRoot>

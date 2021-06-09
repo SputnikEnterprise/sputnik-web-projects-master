@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="VB" CodeBehind="SPGAV2012Data.asmx.vb" Class="GAV_Services.Service1" %>
